@@ -1,0 +1,133 @@
+{
+    "game-start": [
+        [
+            "Hello, <happy, nb> I am so glad to play this game with you today! I love trains, they look so cool!"
+        ],
+        [
+            " <greeting,nb> Hi there! I am so excited we get to play today! <curious-right,nb> Do you like trains <pause,nb>? I certainly do!!"
+        ],
+        [
+            "<sing-song,nb> [child-name], you are here! It's so good to see you! <smile,nb> You are just in time to join me in building this train. <curious-right,nb> Would you like to help me?"
+        ],
+        [
+            "Hey, [child-name]! <sing-song,nb> It's time for a fun activity! We are going to build a train! <pause,nb> Can you help me do this?"
+        ],
+        [
+            "Yay, you are here! <excited,nb> Now that you're here, we can begin our game! <smile,nb> I hope you like trains because today we are going to build one!"
+        ]
+    ],
+    "tutorial-1":
+	[
+		[
+			"<smileonly,nb> Lets do a quick overview of how to play this game. <calm,nb> I will teach you all the basic steps, but the game is pretty simple."
+		]
+	],
+	"tutorial-2":
+	[
+		[
+			"First let's learn how to select one of the train areas. <focuson-game,nb> Click on where the arrows are pointing, and then you will see all the possible pieces that can be put on that spot <lookat-child,nb>."
+		]
+	],
+	"tutorial-3":
+	[
+		[
+			"<smile,nb> Great, now we can see all the wheel pieces. We need to drag one of the wheels on to the slots. <focuson-game,nb> Click on the left wheel, and, while holding the mouse down, drag it onto the yellow slot where the arrow is pointing."
+		]
+	],
+	"tutorial-4":
+	[
+		[
+			"<lookat-game,nb> Whenever you do not like a piece, you can throw it in the trash to change it. <smile,nb> Lets drag the wheel into the trash."
+		]
+	],
+	"tutorial-5":
+	[
+		[
+			"<lookat-child,nb> Now that we have learned how to put pieces on the train correctly, <smileonly,nb> let's get to the actual game. <pause,nb> In this game we need to put pieces on the train in a specific order.",
+			"<anticipate,nb> Today we are first going to create the base of the train, and then add the additional pieces. <focuson-game,nb> You can see that 2 slots are marked. These slots are the body of the train and the train cabin. <lookat-child,nb>",
+			"<focuson-game,nb> The train we are trying to make is shown in the upper right corner. When adding pieces to the train, <smile,nb> make sure they are the same pieces as in the example.",
+			"<focuson-game,nb> First, add the body of the train, which is the left highlighted piece, and then add the cabin, which is the right highlighted piece. <return-front,nb> Add each piece in order." 
+		]
+	],
+	"tutorial-5-wrong":
+	[
+		[
+			"<head-shake,nb> You made a little mistake, but that's okay. <calm,nb> Remember, you needed to first put on the body piece and then the cabin piece."
+		]
+	],
+	"tutorial-6":
+	[
+		[
+			"<lookat-child> Next we are going to put on the wheels. <pause,nb> Put on the two wheels from left to right."
+		]
+	],
+	"tutorial-6-wrong":
+	[
+		[
+			"<head-shake,nb> You inverted the order of the wheels. <curious-left,nb> Next time, put on the left wheel first and then the right wheel."
+		]
+	],
+	"tutorial-7":
+	[
+		[
+			"<happy,nb> Only one piece left: the smoke piece. <pause,nb> Put the smoke piece on top of the body of the train."
+		]
+	],
+    "tutorial-8": [
+        [
+            "Great, you have learned the basics of the game! <bounce,nb> Lets play!"
+        ]
+    ],
+    "level-1-intro": [
+        [
+            "<lookat-child,nb> Today, we are going to try and build a very cool looking train. <anticipate,nb> But, in order to do that, we need to put the pieces in the right order on the train.",
+            "<focuson-game,nb> So we are first going to put on the middle pieces such as the body and cabin, then put on the surrounding pieces of the train."
+        ],
+        [
+            "<sing-song,nb> Now we are going to build an awesome train together! <smile,nb> We want to put the train together correctly, so we need to put the pieces on in the right order.",
+            "<focuson-game,nb> First, we will put on the middle pieces, and then we will put on the outside pieces. <return-front,nb> Does that make sense? <pause,nb> Lets give it a try!"
+        ],
+        [
+            "How would you like to build a train with me [child-name]? <pause,nb> It's not too hard, <happy,nb> but we do need to put all of the pieces in the correct spots.",
+            "<anticipate,nb> To begin, we will place the middle pieces, like the body and the cabin, in the correct places and then put on the rest of the pieces."
+        ]
+    ],
+    "level-1": [
+		[
+			"<calm,nb> Put the {piece-type1} on the train please."
+		],
+		[
+			"<curious-left,nb> Now we need to add the {piece-type1} to the train."
+		],
+		[
+			"<anticipate,nb> The next step is to put the {piece-type1} on the train. <smileonly,nb> I am sure it will look great." 
+		],
+		[
+			"<lookat-game,nb> The train is still missing the {piece-type1}. Let's put it next on the train."
+		],
+		[
+			"Oh look <bounce,nb>, a new piece. Put the {piece-type1} in the correct location please."
+		],
+		[
+			"Good. <smileonly,nb> Now let's try this next piece. <nod,nb> It looks like a {piece-type1}. <pause,nb> Where does it go?" 
+		],
+		[
+			"<head-tilt,nb> How about this one? <pause,nb> Where does this {piece-type1} go?" 
+		],
+		[
+			"So far so good!<happy,nb> This next piece is the {piece-type1}. <smile,nb> Put it in the right spot please."
+		]
+	],
+    "game-first-time": [
+        [
+            "<lookat-child,nb> Yay! <sing-song,nb> I'm excited to play the house game with you today! <smile,nb>",
+            "<lookat-child,nb> We'll be playing with each other. <curious-left,nb> First, you'll build a house, and I'll ask you questions to guess what your house looks like. <curious-right,nb> Then we'll switch! So I'll build one, and you'll ask me questions about my design. <spinning-neck,nb>",
+            "<focuson,nb> To build your design, you'll drag wall, house, roof, and plant pieces into spots on an empty house frame. <smile,nb> Then I'll ask you yes-or-no questions about all the pieces you might have used. After you answer all my questions, I'll make a guess at the end. I hope I get it right! <happy.nb>",
+            "<speak,nb> Then when we switch, I'll show you several different houses, one of which is my house. <excited,nb> You can ask me questions about my design to figure out which house is mine. <smile,nb> You can make a final guess at any time!",
+            "<lookat-child,nb> Okay, let's play! <happy,nb> I can't wait; we'll have so much fun playing together. <excited,nb>"
+        ]
+    ]
+
+
+}
+

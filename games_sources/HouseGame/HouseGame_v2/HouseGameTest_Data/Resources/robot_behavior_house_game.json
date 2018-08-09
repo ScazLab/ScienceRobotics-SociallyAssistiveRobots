@@ -1,0 +1,333 @@
+{
+    "game-first-time": [
+        [
+            " Hello, I am excited to play the House game with you today!",
+            " We are both going to be playing against each other. First you build a house and I try to guess it, and then I build a house and you have to guess what it looks like.",
+            " To build your house you are going to drag wall, house, roof and plant pieces into slots. And the I am going to ask questions about your house, and make a guess at the end.",
+            " When I build a house, I am going to show you several possible houses, one of which is my house. Then you can ask me questions about what the house looks like.",
+            "Okay, lets play! I am sure we  are going to have a lot of fun"
+        ]
+    ],
+    "game-start": [
+        [
+            "Hello [child-name]! I had a lot of fun playing the house game with you last time. Lets remember house to play. We each build a house and then try to guess what the others persons house looks like"
+        ],
+        [
+            "Hey there! I have this great idea for a house I want to build. Lets see if you can ask questions to find out what it looks like. But first you will build a house and I am going to try to guess it."
+        ],
+        [
+            "(other one)"
+        ],
+        [
+            "(other one)"
+        ]
+    ],
+    "child-builder-start": [
+        [
+            "Okay, so you are going to start building. Click on a slot, and you can drag pieces into it. Try to make a very cool looking house."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "child-answering-questions-start": [
+        [
+            "Now I need to ask you some questions to guess what house you have. So try to answer every question according to your house."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "ask-question-piece": [
+        [
+            "Hmmmmm, lets see. Does your house have {piece_name}?"
+        ],
+        [
+            
+        ],
+        [
+            
+        ],
+        [
+           
+        ],
+        [
+            
+        ],
+        [
+
+        ],
+        [
+            
+        ],
+        [
+            
+        ],
+        [
+           
+        ],
+        [
+            
+        ],
+        [
+
+        ]
+    ],
+
+    "ask-question-color": [
+        [
+            "Anywhere on your house, do you have a {color} piece?"
+        ],
+        [
+            
+        ],
+        [
+            
+        ]
+    ],
+    "child-builder-compare-houses": [
+        [
+            "Lets take a look at the house that you built side by side and the one I think you built, and see if they are the same house."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "child-builder-correct-house": [
+        [
+            "Awesome. I was able to guess your house. Thanks for providing me the correct answers to the questions I asked"
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ]
+    ],
+    "child-builder-wrong-piece": [
+        [
+            "Oh no! Looks like our {piece_type} are different. Are you sure you answered my question about the {piece_type} correctly?"
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "child-builder-inverted-pieces": [
+        [
+            " Looks like I have guessed the correct pieces for the {piece_type} . But they are in the wrong places. We need to be a bit more carefull next time about which one is left and which one is right"
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "restart": [
+        [
+            " Do you want to play another round? Just click the New game button"
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ]
+    ],
+    "child-guesser-start": [
+        [
+            "I have built a house, and its on the screen with other random houses. Ask me some questions so you can figure out which one it is."
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ]
+    ],
+    "child-guess-piece-yes": [
+        [
+            "Yes! I do have a {piece_name} on my house. Hope that helps!"
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ]
+    ],
+    "child-guess-piece-no": [
+        [
+            "Let me take a look. No, unfortunatly I dont have a {piece_name} on my house"
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ]
+    ],
+    "robot-builder-compare-houses": [
+        [
+            "Lets compare the houses. I wonder if the house I built is the same that you guessesd."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "robot-builder-correct-house": [
+        [
+            "Yay. You were able to ask the right questions and guess exactly the house I was thinking of. Good job!"
+        ],
+        [
+
+        ],
+        [
+
+        ],
+        [
+
+        ]
+    ],
+        "robot-builder-wrong-piece": [
+        [
+            "Oh no! Looks like our {piece_types} are different. Are you sure you answered my question about the {piece_type} correctly?"
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "robot-builder-inverted-pieces": [
+        [
+            "You might have inverted the pieces for {piece_type}. But it was pretty close"
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+
+    ]
+}
+

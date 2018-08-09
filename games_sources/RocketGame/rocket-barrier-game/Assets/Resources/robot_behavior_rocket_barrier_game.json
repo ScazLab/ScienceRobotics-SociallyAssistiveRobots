@@ -1,0 +1,555 @@
+{
+    "game-first-time" : [
+        [
+            "Hello! <greeting,nb> Welcome to the rocket-ship game. <happy,nb> We're going to have lots of fun <lookat_child,nb>!",
+            "This is a two player game. One person will be the builder and one person will be the explainer. The explainer builds a rocket on the screen <focuson-game,nb> by dragging and dropping pieces onto the empty rocket ship.",
+            "Once that ship is finished, the explainer <lookat_child, nb> will have to describe what each piece of their rocket ship looks like and where it goes to the builder. You will not be able to look at each other's rockets!",
+            "After the builder is done, we can look at the two rocket ships next to each other and talk about how similar they are and ways to improve how to explain for next time! Let's do it!"
+        ]
+    ], 
+    "game-start" : [
+        [
+            "<happy,nb> Hey, there! <head-tilt,nb> Remember how to play? Here's a quick reminder: <speak,nb> One person uses their epic explaining skills <focuson-game,nb> and describes what their rocket ship looks like to the other person, piece by piece. Then the other person has to build it <lookat_child,nb> without looking at the explainer's rocket ship."
+        ],
+        [
+            "<happy,nb> Hi [child-name], and [guardian-name]. <conspiratorial,nb> I'm sure you remember this game. <speak,nb> A builder builds a rocket using clues from the explainer, who is explaining their own rocket! <wide-eyed,nb> Don't forget, you can't look at the other person's rocket."
+        ],
+        [
+            "<happy,nb> Welcome back, rocket experts. Remember this game? <lookat_child,nb> One of you will be the explainer, and explain a rocket, and the other will build it, using the explainer's hints about each piece. Eyes on your rocket only! Let's begin."
+        ],
+        [
+            "<happy,nb> Hey guys! <smile,nb> Welcome back to the rocket ship game. You know the drill. <speak,nb> The builder has to listen to the explainer's hints, and try to make an exact copy of the explainer's rocket."
+        ],
+        [
+            "<lookat_child,nb> Nice to see you, [child-name]. <happy,nb> Ready for some rocket-building? I know I am, let's get started. <head-tilt,nb> Don't forget: the explainer describes their robot, and the builder will try to build it. <wide-eyed,nb> Eyes on your rocket ship only until the game is over."
+        ],
+        [
+            "What's up, [child-name]? Hope you are ready for some rocket building. <lookat_child, nb> One of you will be the explainer and explain a rocket, <speak,nb> and the other will build it from the explainer's hints about each piece."
+        ],
+        [
+            "Hey, how's it going? <lookat_child,nb> Hope you brought your listening and describing skills today. <head-tilt,nb> Remember how to play? <speak,nb> The explainer describes their rocket, and the builder listens, and will try to build it on the screen from that description <focuson-game,nb>"
+        ],
+        [
+            "<happy,nb> Welcome back, astronaut [child-name] and astronaut [guardian-name]. <smileonly,nb> Let's recap: <focuson-game,nb> one person explains what their rocket ship looks like, piece by piece, using their epic explaining skills. <lookat_child,nb> Then the other person has to build it, without looking at the explainer's rocket ship."
+        ]
+    ],
+    "explainer-start-building" : [
+        [
+            "{look-at-explainer} {explainer-name}, it's your turn to build a rocket first and then explain how to build it to {look-at-builder} {builder-name}!"
+        ],
+        [
+            "You guys know how it goes, {look-at-explainer} {explainer-name}, you build a rocket first, and then, {look-at-builder} {builder-name}, you build the same rocket based on {explainer-name}'s hints."
+        ],
+        [
+            "Let's go! {look-at-explainer} {explainer-name}, your turn to build the rocket first, and then explain it to {builder-name}, so they can build the same one!"
+        ],
+        [
+            "{look-at-explainer} Alright {explainer-name}, it's time to build your rocket! {look-at-builder} {builder-name}, remember: no looking!"
+        ],
+        [
+            "{look-at-explainer} {explainer-name}, let's build this rocket! {look-at-builder} {builder-name}, make sure not to look."
+        ],
+        [
+            "{look-at-explainer} It's your turn, {explainer-name}, let's build this rocket. {look-at-builder} {builder-name}, it's your turn to look away while {explainer-name} is building their rocket."
+        ],
+        [
+            "{look-at-explainer} Let's go {explainer-name}, time to build your rocket. {look-at-builder} {builder-name}, no looking!"
+        ],
+        [
+            "Here we go! {look-at-explainer} {explainer-name}, I hope you're excited to build this rocket. {look-at-builder} {builder-name}, it might be a good idea to turn your head away so you don't see {explainer-name}'s rocket"
+        ],
+        [
+            "{look-at-explainer} {explainer-name}, here we go! <smile,nb> Let's build this rocket. {look-at-builder} {builder-name}, make sure not to look at {explainer-name}'s rocket as they're building it."
+        ],
+        [
+            "{look-at-explainer} Are you ready, {explainer-name}? It's time to build your rocket. {look-at-builder} {builder-name}, make sure you don't peek at the rocket while {explainer-name} is building it."
+        ]
+    ], 
+    "builder-start-building" : [
+        [
+            "{look-at-explainer} Great job {explainer-name} building your rocket. <smileonly,nb> Now it's time to explain it to {builder-name}, {look-at-builder} so they can build the exact same rocket."
+        ],
+        [
+            "{look-at-builder} {builder-name}, get excited! <happy,nb> It's your turn to build your rocket. {look-at-builder} Remember, it has to be exactly the same as {explainer-name}'s rocket."
+        ],
+        [
+            "{look-at-explainer} Let's go {explainer-name}! <smileonly,nb> Explain your rocket to {builder-name} so they can build the same rocket!"
+        ],
+        [
+            "{look-at-explainer} Excellent, {explainer-name}, <happy,nb> now it's {builder-name}'s turn to build a rocket. {look-at-explainer} Make sure you explain to {builder-name} how to build the exact same rocket you just built!"
+        ],
+        [
+            "{look-at-builder} {builder-name}, get ready to start building! <head-tilt,nb> Make sure you follow {explainer-name}'s directions so you build the same rocket as they did!"
+        ],
+        [
+            "<happy,nb> This is great! {look-at-builder} {builder-name}, let's start building your rocket based on the instructions from {explainer-name}!"
+        ]
+    ],
+    "encouragement" : [
+        [
+            "<smile,nb> Alright!"
+        ],
+        [
+            "<happy,nb> Very cool!"
+        ],
+        [
+            "<conspiratorial,nb> Good work."
+        ],
+        [
+            "<happy,nb> Keep it up!"
+        ],
+        [
+            "<happy,nb> This is fun!"
+        ],
+        [
+            "<conspiratorial,nb> I'm having fun, aren't you?"
+        ],
+        [
+            "<smile,nb> You got it."
+        ],
+        [
+            "<happy,nb> Super!"
+        ],
+        [
+            "<happy,nb> Yeah, {active-player-name}!"
+        ]
+    ],
+    "prompt-inactivity" : [
+        [
+            "<wide-eyed,nb> Let's do another piece, {active-player-name}."
+        ],
+        [
+            "Try to do another piece, {active-player-name}."
+        ],
+        [
+            "Why don't you try the next piece, {active-player-name}?"
+        ],
+        [
+            "Time to try the next piece, {active-player-name}!"
+        ],
+        [
+            "Keep it going {active-player-name}, next piece."
+        ],
+        [
+            "Ready for the next piece?"
+        ],
+        [
+            "Let's move on to the next piece, {active-player-name}."
+        ],
+        [
+            "Finish up this piece, {active-player-name}."
+        ]
+    ],
+    "prompt-hurry-up" : [
+        [
+            "Alright, let's try to finish up!"
+        ],
+        [
+            "Time to start wrapping the rocket ship up."
+        ],
+        [
+            "We're almost done with the game, time to finish up the descriptions."
+        ],
+        [
+            "We're nearly to blast off, <focuson-game,nb>, let's finish up."
+        ],
+        [
+            "Put those finishing touches into place and wrap up the clues. We're nearly to blast off!"
+        ],
+        [
+            "T-minus 1 minute, finish up that rocket!"
+        ]
+    ],
+    "round-over" : [
+        [
+            "Alright! Let's take a look at the two rockets <focuson-game,nb>."
+        ],
+        [
+            "We're done! Next step is to see how similar your rockets ended up! <focuson-game,nb>"
+        ],
+        [
+            "Looks like we're done! <focuson-game,nb> Let's see the rockets side-by-side."
+        ],
+        [
+            "Teamwork makes the dream work! Let's see how you did. <focuson-game,nb>"
+        ],
+        [
+            "Woohoo, we're done. Let's take a look at those <focuson-game,nb> rockets next to each other."
+        ],
+        [
+            "Excellent, we have finished. Shall we <focuson-game,nb> take a look?"
+        ],
+        [
+            "Ok, [child-name]. <lookat_child,nb> Now we will look at your rocket ship and [guardian-name]'s together. <focuson-game,nb>"
+        ],
+        [
+            "Alright, that is the end of this round. <focuson-game,nb> Time to look at both of your rocket ships."
+        ],
+        [
+            "This round is over! Why don't we see these two ships together now? <focuson-game,nb>"
+        ],
+        [
+            "It seems like we finished this round! <focuson-game,nb> Let's take a look at your two ships."
+        ]
+    ],
+    "feedback-success" : [
+        [
+            "{look-at-builder} {builder-name}, your rocket matched {explainer-name}'s rocket perfectly! <smile> Way to go!"
+        ]
+    ],
+    "feedback-body-wrong-piece-correct-color" : [
+        [
+            "One of the body pieces isn't the correct, but good try. Can you see the mistake you made? To me, it looks like <focuson-game,nb> it has some of the same colors. Try to be more specific about it's design."
+        ],
+        [
+            "It looks like the builder had a different piece for the body of the rocket ship here, good try. Always think about location, color, and pattern when you are describing a piece."
+        ],
+        [
+            "This isn't quite the right body piece. Why do you think the builder didn't put the right piece here? You did a good job describing some of the colors, but also focus on more specific things about the body piece."
+        ],
+        [
+            "There are some of the same colors in the body pieces you both chose, I see that you are working hard to be descriptive. You should also consider the design of the body piece."
+        ],
+        [
+            "The body pieces are hard because there are so many of them, but you are doing great. The colors of the body piece you described are very close, so good work. Think about if the piece has fuel, or if it has an animal, or arm."
+        ]
+    ],
+    "feedback-body-wrong-piece-wrong-color" : [
+        [
+            "A good description is key to getting the rocket pieces right. This body piece wasn't quite correct this time, but next time, you've totally got it."
+        ],
+        [
+            "Keep up the good work. This body piece isn't quite the same as your original. Do you see that? You've got this."
+
+        ],
+        [
+            "The body piece that you described is different from the one off of your rocket ship. Talk about the color of your body piece, if it has fuel, or if it has an animal, or arm."
+        ],
+        [
+            "These body pieces don't seem to be very similar. Nice try!"
+        ],
+        [
+            "Try describing what color your body pieces are, if it has a design, and then where it is on your rocket ship."
+        ],
+        [
+            "Describing where to put the right pieces in the body is hard because there are so many pieces. Think about what row or column it is in and then what number from the left or right. You got it!"
+        ]
+    ],
+    "feedback-fin-right-should-be-left" : [
+        [
+            "It seems like you have described the right fin piece, but it was put on the wrong side. Do you think you said that this fin was on the right or left? Next time, it might help to describe the location of the piece you are talking about first."
+        ],
+        [
+            "So close. Are you sure that you explained that this fin piece was on the right? It seems like you actually had it on the left."
+        ],
+        [
+            "The builder thought this fin piece was supposed to go on the right, did you mean the left? On your ship it is on the left. Remember to try and be as specific as possible."
+        ],
+        [
+            "It seems like you may have gotten the left and right confused. It is confusing with your right versus your partner's right. Make sure you communicate and explain the best you can. Both are fine to use!"
+        ],
+        [
+            "This fin piece looks <focuson-game,nb> like it should be on the left side. Make sure you are clear which side you mean to your partner."
+        ]
+    ],
+    "feedback-fin-left-should-be-right" : [
+        [
+            "These fin pieces look flip flopped. Whoops! Nice try."
+        ],
+        [
+            "Huh. It seems like the fin piece that is here was supposed to go on the right side. Lefts and rights can be confusing!"
+        ],
+        [
+            "You are working hard. I love it. This fin piece though: doesn't quite look right. Did you mean to say it was on the right side? That's what it looks like happened here."
+        ],
+        [
+            "Close! The correct fin piece is here, just on the wrong side. Looks like this fin was supposed to go on the left, not the right."
+        ],
+        [
+            "Nice try, but, if you look at your rocket ship, this fin piece was actually on the other side. It can be challenging!"
+        ]
+    ],
+    "feedback-fin-wrong-shape-correct-color" : [
+        [
+            "You got the right color on the fin piece, but the shape isn't quite right. Do you see that? You can get it next time."
+        ],
+        [
+            "It's hard because some of the pieces are the same color as others. That is the case for this fin piece, the color you described to your partner was great. However, the shape seems a bit off."
+        ],
+        [
+            "The fin piece color is correct, great work. But, the shape that you described was different from the one on your rocket."
+        ],
+        [
+            "It can be hard to describe these weird fin shapes. Think about another object that might look similar to you. Great work describing the correct color."
+        ],
+        [
+            "The fin piece colors are the same for both rockets! Yay! The shapes look different, do you see that? The more specific you can be, the more it will help your partner!"
+        ]
+    ],
+    "feedback-fin-correct-shape-wrong-color" : [
+        [
+            "Excellent, you got the correct fin shape, which is the hard part. Don't forget to think about the color too."
+        ],
+        [
+            "Good work describing the fin piece shape! That can be difficult. Just seems like the color is not quite right."
+        ],
+        [
+            "Hmmmm, the fin color isn't right. Do you see that? The shapes match though, good work!"
+        ],
+        [
+            "You're halfway there on that fin piece. You got shape right! But, make sure you think about the color too." 
+
+        ],
+        [
+            "You are doing great. If you look at these two fins next to each other, <focuson-game,nb> the shapes are the same! The colors aren't the same though. Do you see that? It is an easy fix. Just remember to narrow the pieces down by talking about color and then shape."
+        ]
+    ],
+    "feedback-fin-wrong-shape-wrong-color" : [
+        [
+            "Huh, this fin piece was not one that you had on the original rocket ship. Nice try."
+        ],
+        [
+            "These two fins aren't quite the same. When you explain, think about the colors, the shape, and the special features."
+        ],
+        [
+            "Huh, the fin you described to your partner is different from the one you had on your own rocket. Keep working hard and being specific."
+        ],
+        [
+            "<focuson-game,nb> It doesn't seem like the fin the builder put here is correct. Can you see the difference between the two fin pieces?"
+        ],
+        [
+            "This fin isn't quite right. There are only 2 fins and lots of options to choose from - it can be hard. Keep being specific. Way to go!"
+        ]
+    ],
+    "feedback-booster-correct-design-wrong-flamecolor" : [
+        [
+            "This booster piece is super important for blast off. There are a few pieces that look like this, so it is important to describe as much as possible. The top design is correct, but don't forget about the flame color. Good job!"
+        ],
+        [
+            "The hard part is explaining the difference between the top of your booster, you did it! Now just think about the color of the flame too and you got it. Good job!"
+        ],
+        [
+            "So close. The color of the fire of these two booster pieces is different, but the top parts of these pieces are the same. Just think about flame color too next time."
+        ],
+        [
+            "Almost there. Great job describing the design for the top of your booster. It seems like the color of the flames are different though. You got it next time!"
+        ],
+        [
+            "You got the top design of the booster piece right, great work. Just remember to also think about the color of the flame."
+        ]
+    ],
+    "feedback-booster-wrong-design-correct-flamecolor" : [
+        [
+            "You almost explained it perfectly. Looks like here that you had the right color of the flame on this booster piece, but the top is a little different. See that? You got it next time."
+        ],
+        [
+            "Almost. The flame on this booster piece is correct, but there was a little confusion about the top part of the booster. See how your booster is slightly different from your partner's? Think about the top part too. Nice work so far!"
+        ],
+        [
+            "You are close. You described the flame color of this booster piece perfectly. The top is the hard part, Describe the color, shape, and design if you can, too!"
+        ],
+        [
+            "It looks like you did a great job explaining the color of the fire on this booster, but don't forget to be specific about the top part too."
+        ],
+        [
+            "The top parts of the booster pieces can look very similar, don't forget to be specific about them. Great work with describing the color of the fire."
+        ]
+    ],
+    "feedback-booster-wrong-piece-correct-color" : [
+        [
+            "It seems like you described the correct color for this booster piece. Great job! But remember to also consider shape and other features. Good work!"
+        ],
+        [
+            "Nicely done. You described the correct booster piece color, good job! Although, at a closer look, it does seem like these two pieces are different."
+        ],
+        [
+            "Way to go! The booster piece colors are close to the same. Just keep in mind you should do your best to also describe the other parts of the booster pieces."
+        ],
+        [
+            "Huh. It seems like these boosters are different. But, they have similar colors - good job describing. Think about design too!"
+        ]
+    ], 
+    "feedback-booster-wrong-piece-wrong-color" : [
+        [
+            "<focuson-game,nb> It doesn't seem like the booster piece the builder put here is correct. Can you see the difference between the two pieces?"
+        ],
+        [
+            "These two boosters aren't quite the same. When you explain, think about the colors, the shape, and the special features."
+        ],
+        [
+            "Explaining can be hard. These two pieces are different; do you remember how you explained it? Next time, try to be as specific as you can!"
+        ],
+        [
+            "Almost there, but your booster <focuson-game,nb> isn't quite the same as the one you described to your partner.  A booster can be powered by a balloon, or dynamite, or fire. Think about describing how yours is powered or what color it is."
+        ],
+        [
+            "Hmm, the booster you described to your partner is different from the one you had on your own rocket. Keep working hard and being specific."
+        ]
+    ],
+    "feedback-cone-correct-shape-wrong-color" : [
+        [
+            "You are doing great. If you look at these two cone pieces here, <focuson-game,nb> the shapes are similar. That's great! The colors aren't the same though. Do you see that? It is an easy fix. Just remember to narrow the pieces down by talking about color, and then shape."
+        ],
+        [
+            "Great work! The shape looks close. It looks like the colors are different though. Be specific! You got it."
+        ],
+        [
+            "Huh. It looks like the colors are different, and you almost got the right shape. The cone of your partner's rocket ship should look like the one you described. You got this!"
+        ],
+        [
+            "Don't forget about the color of the cone! But, the shape looks close. Great work!"
+        ],
+        [
+            "The shape of your cone looks close. Don't forget to also explain the color: purple, green, or blue! Be specific!"
+        ]
+    ],
+    "feedback-cone-wrong-shape-correct-color" : [
+        [
+            "You got the cone color down, nice work. Consider shape too!"
+        ],
+        [
+            "Yes! The colors of the cone pieces are the same. But if you look at these two shapes, the one you described is a little different."
+        ],
+        [
+            "Good job, the color of your cone matches the one you explained. However, the shape is not quite right."
+        ],
+        [
+            "Look at these two cones <focuson-game,nb>. The colors are perfect. It seems like the shapes of the two cone pieces are different though. You see that? Be specific, you got this."
+        ],
+        [
+            "The shape of the cone pieces is the harder part. Think about a shape or object you can compare it to when you are explaining. The color of the cone is great; good work."
+        ]
+    ],
+    "feedback-cone-wrong-shape-wrong-color" : [
+        [
+            "Oops! <focuson-game,nb> it looks like you didn't get the cone quite right. You'll get it next time!"
+        ],
+        [
+            "Huh, these cone pieces don't match. When you explain, make sure to describe both the color and the shape of the pieces."
+        ],
+        [
+            "<focuson-game,nb> It doesn't look like the cone piece was the same between both rockets. Keep working hard to be specific."
+        ],
+        [
+            "There are many options of cone pieces, it can be hard to find the right one. The descriptions are really important. Keep at it!"
+        ],
+        [
+            "Keep up the good work! The cone piece isn't correct, but I'm sure you'll try hard next time!"
+        ]
+    ],
+    "restart-prompt" : [
+        [
+            "Want to play again? <focuson-game,nb> Press the yellow button below!"
+        ]
+    ],
+	"graceful-exit-explainer-finish" : [
+		[
+			"Alright, it's time to finish playing this game. {look-at-explainer} {explainer-name}, why don't you finish building your rocket and then we'll shut this game down?"
+		]
+	], 
+	"graceful-exit-builder-finish-halfway" : [
+		[
+			"Let's move on to something else and stop playing this game. {look-at-builder} {builder-name}, finish up half of this rocket, and we'll be done."
+		]
+	], 
+	"graceful-exit-builder-finish-completely" : [
+		[
+			"{look-at-builder}, hey {builder-name}, let's finish up building this rocket becasue it's time to finish playing this game!"
+		]
+	],
+	"graceful-exit-end-of-round" : [
+		[
+			"Great job rocket-builders! We're now done with this game!"
+		]
+	],
+	"goodbye" : [
+		[
+			"I had so much fun playing this game with you two! Thanks for playing this game with me."
+		]
+	],
+	"tutorial-01-intro" : [
+		[
+			"I'm so excited to begin playing the rocket-building game with you {explainer-name}, and {builder-name}!",
+		 	"This game will require teamwork between the two of you.", 
+			"To play the game, first, one of you will build a rocket that you design. Then, you'll explain how to build the exact same rocket to your partner!",
+			"Let's begin learning how to play this super fun game!"
+		]
+	],
+	"tutorial-02-touch-body-pieces" : [
+		[
+			"{explainer-name}, you get to start by building your own rocket.",
+			"{builder-name}, you can watch {explainer-name} building their rocket during this practice game.",
+			"But in the real game while {explainer-name} is building, {builder-name}, make sure you're not looking! {explainer-name}'s rocket is a secret until {explainer-name} gives you instructions on how to build it.",
+			"To begin, {explainer-name}, you have an outline of a rocket with no pieces on it. Let's start by putting some body pieces on the rocket.",
+			"{explainer-name}, please touch one of the body piece outlines in the yellow box on the screen so we can fill the body."
+		]
+	],
+	"tutorial-03-vent-body-piece" : [
+		[
+			"Great! Isn't it awesome that we have so many choices of what pieces to put in the body of the rocket?",
+			"Now let's fill our first slot with the vent piece. Drag and drop the vent piece, the one shown with the yellow box, to the body of the rocket."
+		]
+	],
+	"tutorial-04-trash" : [
+		[
+			"Actually, I don't like the vent piece. Drag the vent piece to the trash can, please? You can drag the vent piece to either one of the trash cans, which are shown with a yellow box."
+		]
+	],
+	"tutorial-05-put-on-body-pieces" : [
+		[
+			"I'm glad that vent is gone.",
+			"Now let's fill all of our body slots with the fuel piece. Drag and drop the fuel piece from the right sidebar to the body of the rocket four times."
+		]
+	],
+	"tutorial-06-touch-booster-pieces" : [
+		[
+			"Excellent work with the body pieces, {explainer-name}! Now let's put on some engines on our rocket.",
+			"Touch one of the engine outline pieces on the rocket, shown within the yellow box, so we can see what engine options we have."
+		]
+	],
+	"tutorial-07-put-on-booster-pieces" : [
+		[
+			"{explainer-name}, let's put on two of the blue engines with the red flame. Drag and drop them onto the rocket!"
+		]
+	],
+	"tutorial-08-touch-fin-pieces" : [
+		[
+			"{explainer-name}, you've got this down. Let's put on the fin pieces next. Touch one of the fin piece outlines, highlighed by the yellow triangles, so we can put the fins on!"
+		]
+	],
+	"tutorial-09-put-on-fin-pieces" : [
+		[
+			"Excellent! Please put on two purple fins on the rocket."
+		]
+	],
+	"tutorial-10-touch-cone-piece" : [
+		[
+			"Last, but certainly not least, let's put on the cone. {explainer-name}, touch the cone outline, shown here in yellow."
+		]
+	],
+	"tutorial-11-put-on-cone-piece" : [
+		[
+			"Great! Please put on the yellow cone to finish the rocket."
+		]
+	],
+	"tutorial-12-finish-explainer-building" : [
+		[
+			"Excellent work, {explainer-name}. You're done building your rocket. Click the green button at the bottom of the screen to show that you're done building your rocket."
+		]
+	],
+	"tutorial-13-begin-builder" : [
+		[
+			"Now the real fun begins. {explainer-name}, it's your job to explain the rocket you built to your partner so that {builder-name} builds the exact same rocket as you.",
+			"{builder-name}, this blank rocket is yours. As {explainer-name} explains their rocket to you, you will build it here.",
+			"If {explainer-name}, you want to look back at your rocket, you can press the blue button at the bottom and switch back to the rocket you built so that you can give {builder-name} some hints.",
+			"Let's practice! {explainer-name}, explain your rocket to {builder-name}, and {builder-name}, build the rocket that {explainer-name} tells you to build.",
+			"Once you're finished, we'll be able to compare your rockets to see if you've built the same rocket."
+		]
+	],
+	"tutorial-14-end-tutorial" : [
+		[
+			"Great job with the tutorial! Let's play a game without my help. Press the orange button below to start a new game."
+		]
+	]
+}
+

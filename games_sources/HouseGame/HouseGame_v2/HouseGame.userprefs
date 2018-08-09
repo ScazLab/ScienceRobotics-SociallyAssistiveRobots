@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Slot.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Constants.cs" Line="5" Column="16" />
+      <File FileName="Assets\Scripts\Slot.cs" Line="6" Column="16" />
+      <File FileName="Assets\Scripts\Utilities.cs" Line="8" Column="16" />
+      <File FileName="Assets\Scripts\RocketPieceInfo.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\BuilderSceneController.cs" Line="7" Column="16" />
+      <File FileName="Assets\Scripts\DragHandler.cs" Line="6" Column="16" />
+      <File FileName="Assets\Scripts\EndGameComparisonController.cs" Line="7" Column="16" />
+      <File FileName="Assets\Scripts\Logger.cs" Line="4" Column="16" />
+      <File FileName="Assets\Scripts\ExplainerSceneController.cs" Line="5" Column="16" />
+      <File FileName="Assets\Scripts\MainGameController1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PanelAnimationEventHandler.cs" Line="4" Column="16" />
+      <File FileName="Assets\Scripts\RosbridgeUtilities.cs" Line="8" Column="16" />
+      <File FileName="Assets\Scripts\RosbridgeWebSocketClient.cs" Line="8" Column="16" />
+      <File FileName="Assets\Scripts\TrashSlot.cs" Line="6" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <RunToCursorBreakpoint file="C:\Users\Nicole\Documents\Unity Games\HouseGame\HouseGame\Assets\Scripts\Constants.cs" line="102" column="78" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

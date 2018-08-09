@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainGame.Plugins", "TrainGame.Plugins.csproj", "{2CB9B991-2844-E329-9A39-A2E6E4537BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainGame", "TrainGame.csproj", "{A68779CA-DA38-C889-C541-A24A2529F184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainGame.Editor", "TrainGame.Editor.csproj", "{31C97DD6-4653-5A92-BD9B-ACC974E4C3E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB9B991-2844-E329-9A39-A2E6E4537BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB9B991-2844-E329-9A39-A2E6E4537BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB9B991-2844-E329-9A39-A2E6E4537BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB9B991-2844-E329-9A39-A2E6E4537BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68779CA-DA38-C889-C541-A24A2529F184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68779CA-DA38-C889-C541-A24A2529F184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68779CA-DA38-C889-C541-A24A2529F184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68779CA-DA38-C889-C541-A24A2529F184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C97DD6-4653-5A92-BD9B-ACC974E4C3E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C97DD6-4653-5A92-BD9B-ACC974E4C3E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C97DD6-4653-5A92-BD9B-ACC974E4C3E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C97DD6-4653-5A92-BD9B-ACC974E4C3E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,246 @@
+Mono path[0] = 'C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Managed'
+Mono path[1] = 'C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Mono'
+Mono config path = 'C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55350
+Multi-casting "[IP] 10.0.75.1 [Port] 55350 [Flags] 2 [Guid] 695129532 [EditorId] 2773607950 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-1SP849N) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [10.0.75.1:55350]
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) Iris(TM) Graphics 6100 (ID=0x162b)
+    Vendor:   Intel
+    VRAM:     4195 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\websocket-sharp.dll (this message is harmless)
+Loading C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\websocket-sharp.dll into Unity Child Domain
+- Completed reload, in  0.176 seconds
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 79.575638 ms
+[2016-11-11 18:59:42.859] trying linux path for config: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Resources/yurp_config.txt
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.MainGameController:Awake() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:64)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+[2016-11-11 18:59:42.967] Could not read config file! File path given was C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Resources/yurp_config.txt
+Error: System.IO.FileNotFoundException: Could not find file "C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Resources\yurp_config.txt".
+File name: 'C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Resources\yurp_config.txt'
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) [0x00337] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/FileStream.cs:354 
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.OpenRead (System.String path) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:363 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize) [0x00077] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/StreamReader.cs:167 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader:.ctor (string,System.Text.Encoding)
+  at System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:587 
+  at System.IO.File.ReadAllText (System.String path) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:582 
+  at HouseGame.Utilities.ParseConfig (System.String path, HouseGame.GameConfig& gameConfig) [0x00023] in C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Utilities.cs:23 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogError(Object, Object)
+HouseGame.Logger:LogError(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:41)
+HouseGame.Utilities:ParseConfig(String, GameConfig&) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Utilities.cs:55)
+HouseGame.MainGameController:Awake() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:68)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 41)
+
+[2016-11-11 18:59:42.976] Could not read config file! Will try default values of toucan=true, server IP=192.168.1.254, port=9090.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+HouseGame.Logger:LogWarning(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:30)
+HouseGame.MainGameController:Awake() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:69)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 30)
+
+[2016-11-11 18:59:42.979] trying linux path for robot utterances file: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Resources/robot_behavior_house_game.json
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.MainGameController:Awake() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:86)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+[2016-11-11 18:59:42.983] Could not read robot utterances file! File path given was C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/hg_Data/Resources/robot_behavior_house_game.json
+Error: System.IO.FileNotFoundException: Could not find file "C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Resources\robot_behavior_house_game.json".
+File name: 'C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Resources\robot_behavior_house_game.json'
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options) [0x00337] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/FileStream.cs:354 
+  at System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.OpenRead (System.String path) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:363 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize) [0x00077] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/StreamReader.cs:167 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader:.ctor (string,System.Text.Encoding)
+  at System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:587 
+  at System.IO.File.ReadAllText (System.String path) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.IO/File.cs:582 
+  at HouseGame.Utilities.ParseRobotUtterancesFile (System.String path, System.Collections.Generic.Dictionary`2& robotUtterances) [0x00013] in C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Utilities.cs:71 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogError(Object, Object)
+HouseGame.Logger:LogError(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:41)
+HouseGame.Utilities:ParseRobotUtterancesFile(String, Dictionary`2&) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Utilities.cs:103)
+HouseGame.MainGameController:Awake() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:90)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 41)
+
+[2016-11-11 18:59:42.993] Could not read robot utterances file!
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+HouseGame.Logger:LogWarning(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:30)
+HouseGame.MainGameController:Awake() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:91)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 30)
+
+[2016-11-11 18:59:43.230] Do not have opal configuration... trying hardcoded IP 192.168.1.254 and port 9090
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+HouseGame.Logger:LogWarning(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:30)
+HouseGame.MainGameController:Start() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:104)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 30)
+
+[2016-11-11 18:59:43.331] [websocket] creating new websocket... 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.RosbridgeWebSocketClient:SetupSocket() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:90)
+HouseGame.MainGameController:Start() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:114)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+[2016-11-11 18:59:43.418] [websocket] connecting to websocket...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.RosbridgeWebSocketClient:SetupSocket() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:114)
+HouseGame.MainGameController:Start() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:114)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\hg_Data\Managed\System.Xml.dll (this message is harmless)
+11/11/2016 11:00:04 AM|Fatal|WebSocket.processException:0|System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+                             
+                               at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+                               at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+                               at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+                               at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+[2016-11-11 19:00:04.967] [websocket] Error in websocket! An exception has occurred while connecting.
+System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.TcpClient.Connect (System.Net.IPEndPoint remote_end_point) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.TcpClient.Connect (System.Net.IPAddress[] ipAddresses, Int32 port) [0x00000] in <filename unknown>:0 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogError(Object, Object)
+HouseGame.Logger:LogError(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:41)
+HouseGame.RosbridgeWebSocketClient:HandleOnError(Object, ErrorEventArgs) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:235)
+WebSocketSharp.Ext:Emit(EventHandler`1, Object, ErrorEventArgs)
+WebSocketSharp.WebSocket:error(String, Exception)
+WebSocketSharp.WebSocket:processException(Exception, String)
+WebSocketSharp.WebSocket:connect()
+WebSocketSharp.WebSocket:Connect()
+HouseGame.RosbridgeWebSocketClient:SetupSocket() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:116)
+HouseGame.MainGameController:Start() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:114)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 41)
+
+[2016-11-11 19:00:04.982] [websocket] Websocket closed with status: An exception has occurred while connecting.
+Code: 1006
+Clean close? False
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.RosbridgeWebSocketClient:HandleOnClose(Object, CloseEventArgs) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:248)
+WebSocketSharp.Ext:Emit(EventHandler`1, Object, CloseEventArgs)
+WebSocketSharp.WebSocket:close(CloseEventArgs, Boolean, Boolean)
+WebSocketSharp.WebSocket:processException(Exception, String)
+WebSocketSharp.WebSocket:connect()
+WebSocketSharp.WebSocket:Connect()
+HouseGame.RosbridgeWebSocketClient:SetupSocket() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:116)
+HouseGame.MainGameController:Start() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:114)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+[2016-11-11 19:00:04.995] [websocket] trying to connect to websocket...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.RosbridgeWebSocketClient:Reconnect() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:131)
+HouseGame.RosbridgeWebSocketClient:HandleOnClose(Object, CloseEventArgs) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:254)
+WebSocketSharp.Ext:Emit(EventHandler`1, Object, CloseEventArgs)
+WebSocketSharp.WebSocket:close(CloseEventArgs, Boolean, Boolean)
+WebSocketSharp.WebSocket:processException(Exception, String)
+WebSocketSharp.WebSocket:connect()
+WebSocketSharp.WebSocket:Connect()
+HouseGame.RosbridgeWebSocketClient:SetupSocket() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:116)
+HouseGame.MainGameController:Start() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\MainGameController.cs:114)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+[2016-11-11 19:00:06.019] [websocket] Time elapsed, trying to reconnect...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.RosbridgeWebSocketClient:OnTimeElapsed(Object, ElapsedEventArgs) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:264)
+System.Timers.Timer:Callback(Object)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+
+[2016-11-11 19:00:06.028] [websocket] trying to connect to websocket...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:Log(Object, Object)
+HouseGame.Logger:Log(Object, Object) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\Logger.cs:19)
+HouseGame.RosbridgeWebSocketClient:Reconnect() (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:131)
+HouseGame.RosbridgeWebSocketClient:OnTimeElapsed(Object, ElapsedEventArgs) (at C:\Users\Nicole\Documents\Unity Games\HouseGame_v2\HouseGame_v2\Assets\Scripts\RosbridgeWebSocketClient.cs:266)
+System.Timers.Timer:Callback(Object)
+ 
+(Filename: C:/Users/Nicole/Documents/Unity Games/HouseGame_v2/HouseGame_v2/Assets/Scripts/Logger.cs Line: 19)
+

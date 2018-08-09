@@ -1,0 +1,418 @@
+{
+	"game-start": 
+	[
+		[
+			"Hello, <happy, nb> I am so glad to play this game with you today! I love trains, they look so cool!"
+		],
+		[
+            " <greeting,nb> Hi there! I am so excited we get to play today! <curious-right,nb> Do you like trains <pause,nb>? I certainly do!!"		
+		],
+		[
+		  "<sing-song,nb> [child-name], you are here! It's so good to see you! <smile,nb> You are just in time to join me in building this train. <curious-right,nb> Would you like to help me?"
+		],
+		[
+		  "Hey, [child-name]! <sing-song,nb> It's time for a fun activity! We are going to build a train! <pause,nb> Can you help me do this?"
+		],
+        [
+            "Yay, you are here! <excited,nb> Now that you're here, we can begin our game! <smile,nb> I hope you like trains because today we are going to build one!" 
+        ]
+	],
+	"tutorial-1":
+	[
+		[
+			"<smileonly,nb> Lets do a quick overview of how to play this game. <calm,nb> I will teach you all the basic steps, but the game is pretty simple."
+		]
+	],
+	"tutorial-2":
+	[
+		[
+			"First let's learn how to select one of the train areas. <focuson-game,nb> Click on where the arrows are pointing, and then you will see all the possible pieces that can be put on that spot <lookat-child,nb>."
+		]
+	],
+	"tutorial-3":
+	[
+		[
+			"<smile,nb> Great, now we can see all the wheel pieces. We need to drag one of the wheels on to the slots. <focuson-game,nb> Press with your finger on the left wheel, and, while holding your finger down, drag it onto the yellow slot where the arrow is pointing."
+		]
+	],
+	"tutorial-4":
+	[
+		[
+			"<lookat-game,nb> Whenever you do not like a piece, you can throw it in the trash to change it. <smile,nb> Lets drag the wheel into the trash."
+		]
+	],
+	"tutorial-5":
+	[
+		[
+			"<lookat-child,nb> Now that we have learned how to put pieces on the train correctly, <smileonly,nb> let's get to the actual game. <pause,nb> In this game we need to put pieces on the train in a specific order.",
+			"<anticipate,nb> Today we are first going to create the base of the train, and then add the additional pieces. <focuson-game,nb> You can see that 2 slots are marked. These slots are the body of the train and the train cabin. <lookat-child,nb>",
+			"<focuson-game,nb> The train we are trying to make is shown in the upper right corner. When adding pieces to the train, <smile,nb> make sure they are the same pieces as in the example.",
+			"<focuson-game,nb> First, add the body of the train, which is the left highlighted piece, and then add the cabin, which is the right highlighted piece. <return-front,nb> Add each piece in order." 
+		]
+	],
+	"tutorial-5-wrong":
+	[
+		[
+			"<head-shake,nb> You made a little mistake, but that's okay. <calm,nb> Remember, you needed to first put on the body piece and then the cabin piece."
+		]
+	],
+	"tutorial-6":
+	[
+		[
+			"<lookat-child> Next we are going to put on the wheels. <pause,nb> Put on the two wheels from left to right."
+		]
+	],
+	"tutorial-6-wrong":
+	[
+		[
+			"<head-shake,nb> You inverted the order of the wheels. <curious-left,nb> Next time, put on the left wheel first and then the right wheel."
+		]
+	],
+	"tutorial-7":
+	[
+		[
+			"<happy,nb> Only one piece left: the smoke piece. <pause,nb> Put the smoke piece on top of the body of the train."
+		]
+	],
+	"tutorial-8":
+	[
+		[
+			"Great, you have learned the basics of the game! <bounce,nb> Lets play!"
+		]
+	],
+	"level-1-intro":
+	[
+		[
+			"<lookat-child,nb> Today, we are going to try and build a very cool looking train. <anticipate,nb> But, in order to do that, we need to put the pieces in the right order on the train.",
+			"<focuson-game,nb> So we are first going to put on the middle pieces such as the body and cabin, then put on the surrounding pieces of the train."
+		],
+		[
+            "<sing-song,nb> Now we are going to build an awesome train together! <smile,nb> We want to put the train together correctly, so we need to put the pieces on in the right order.",
+            "<focuson-game,nb> First, we will put on the middle pieces, and then we will put on the outside pieces. <return-front,nb> Does that make sense? <pause,nb> Lets give it a try!"	
+		],
+		[
+            "How would you like to build a train with me [child-name]? <pause,nb> It's not too hard, <happy,nb> but we do need to put all of the pieces in the correct spots.",
+            "<anticipate,nb> To begin, we will place the middle pieces, like the body and the cabin, in the correct places and then put on the rest of the pieces."
+		]	
+	],
+	"level-1":
+	[
+		[
+			"<calm,nb> Put the {piece-type1} on the train please."
+		],
+		[
+			"<curious-left,nb> Now we need to add the {piece-type1} to the train."
+		],
+		[
+			"<anticipate,nb> The next step is to put the {piece-type1} on the train. <smileonly,nb> I am sure it will look great." 
+		],
+		[
+			"<lookat-game,nb> The train is still missing the {piece-type1}. Let's put it next on the train."
+		],
+		[
+			"Oh look <bounce,nb>, a new piece. Put the {piece-type1} in the correct location please."
+		],
+		[
+			"Good. <smileonly,nb> Now let's try this next piece. <nod,nb> It looks like a {piece-type1}. <pause,nb> Where does it go?" 
+		],
+		[
+			"<head-tilt,nb> How about this one? <pause,nb> Where does this {piece-type1} go?" 
+		],
+		[
+			"So far so good!<happy,nb> This next piece is the {piece-type1}. <smile,nb> Put it in the right spot please."
+		],
+		[
+			"<smile,nb> The train sure is looking good! <head-tilt,nb> Now, where do you think the {piece-type1} goes? Place it there please." 
+		],
+		[
+			"What about this one? <pause,nb> Where should you put the {piece-type1}?"
+		],
+		[
+			"How about the {piece-type1}? <anticipate,nb> I bet you know where this goes. Put it in its spot please."
+		],
+		[
+			"<laugh,nb> You are doing very well. Here is the next one. <lookat-game,nb> Go ahead, put the {piece-type1} where it belongs."
+		],
+		[
+			"Well done! <smileonly,nb> You are getting very good at this! <anticipate,nb> Here is the {piece-type1}. Put it where it goes please."
+		],
+		[
+			"I'm very impressed! <excited,nb> The train is looking great! Let's add another piece. <lookat-child,nb> Find where the {piece-type1} goes."
+		],
+		[
+			"<bounce,nb> Next, take the {piece-type1} and put it on the train in the correct position."
+		]
+	],
+	"level-1-wrong":
+	[
+		[
+			"Oh no. <concerned,nb> It looks like you put that piece on at the wrong time. You should have put on the {piece-type1}. <smileonly,nb> Try to put that on next."
+		],
+		[
+			"<head-shake,nb> Nope, it doesn't look like that was the correct piece. <lookat-child,nb> Why don't you try the {piece-type1}?"
+		],
+		[
+			"<head-shake,nb> Not quite. The correct thing to do in this case is to use the {piece-type1}. <lookat-child,nb> Go ahead and try that one." 
+		],
+		[
+			"<concerned,nb> That doesn't seem quite right. <pause,nb> Try again. Maybe try the {piece-type1}?" 
+		],
+		[
+			"Almost. <focuson-game,nb> Let's see what went wrong here. Oh, <lookat-child,nb> perhaps you should try the {piece-type1} instead?"
+		]
+	],
+	"level-2-intro":
+	[
+		[
+            "So for today we are going to build the central parts of the train and then do the other parts.  "
+        ],
+        [
+            "In this task, <idle,nb> we want to build the train starting at the center and then do the others parts such as wheels and chimneys. Why don't we try using the pieces from left to right?" 
+        ],
+        [
+            "Alright, <idle-expressive,nb> today we will try to build the train going from the center to the outside."
+        ]
+	],
+	"level-2":
+	[
+		[
+			"[child-name], now put on the {piece-type1}, and then after that put on the {piece-type2}."
+		],
+		[
+  		    "[child-name], <calm,nb> the train needs a {piece-type1} and a {piece-type2}. Put them on in that order."
+		],
+		[
+			"<smile,nb> First put on the {piece-type1} and then put on the {piece-type2} please."
+		],
+		[
+			"Find where the {piece-type1} goes and place it there. <smileonly,nb> Then put on the {piece-type2}."
+		],
+		[
+			"<curious-right,nb> [child-name], next take the {piece-type1} and the {piece-type2}, and place them in their respective places."
+		],
+		[
+			"<anticipate,nb> Look, here is the {piece-type1}. Put it in its place and then put the {piece-type2} in its spot."
+		],
+		[
+			"<lookat-child,nb> [child-name], locate the spot for the {piece-type1} and place it there. <pause,nb> Then place the {piece-type2} where it goes."
+		],
+		[
+			"[child-name], put the {piece-type1} where it belongs, and then take the {piece-type2} and place it in its spot."
+		],
+		[
+			"<head-tilt,nb> Where does the {piece-type1} go? <lookat-game,nb> Put it on the train please and then put the {piece-type2} on the train too!"
+		],
+		[
+			"<anticipate,nb> Look at that, it's the {piece-type1}. <lookat-child,nb> [child-name], can you put it where it belongs and then take the {piece-type2} and place it on the train in its spot?"
+		]
+	],
+	"level-2-wrong":
+	[
+		[
+			"You put on the wrong piece, you should have put on the {piece-type1} on this step, and then {piece-type2}."
+		],
+		[
+			"Good try, <head-shake,nb> but you should have actually put the {piece-type1} next, and then {piece-type2}."
+		],
+		[
+			"Sorry, <head-shake,nb> that's not right. The correct piece to use is actually the {piece-type1} first and {piece-type2} after it."
+		],
+		[
+			"You were very close. Why don't you try using the {piece-type1} on this step? And next step is {piece-type2}"
+		],
+		[
+			"Oops. Wrong piece. You should use the {piece-type1} first and then {piece-type2}."
+		]
+	],
+    "level-3-intro": [
+		[
+			"Hello, <happy,nb> today we are going to build some very cool trains. <anticipate,nb> When building a train it can be important to first put on the wheels, so that it can hold up the rest of the structure",
+			"<focuson-game,nb> So let's start by putting on the wheels left to right first, and then we will move on to the rest of the train. <smileonly,nb>"
+		],
+		[
+            "<greeting,nb> Hi again, as you may know, <excited,nb> we are going to be building some exciting trains today. <lookat-child,nb> We want to start by putting on the wheels first as the base of the train.",
+            "<focuson-game,nb> We will begin by putting the wheels on, starting from the left. Afterwards we will build the rest of the train. <return-front,nb>"
+		],
+		[
+            "<happy,nb> Hi there! So good to see you! As we build trains today, we are going to focus on putting the wheels on first to make sure the train doesn't fall apart.",
+            "The wheels need to be put on from the left to the right. <lookat-game,nb> Once that is complete we can put on the rest of the parts of the train."
+		]
+       
+    ],
+	"level-3":
+	[
+		[
+			"<calm,nb>The pieces we need to put on the train in order are: {piece-type1}, {piece-type2}, and {piece-type3}" 
+		],
+		[
+			"Here is a list of the pieces that we want to put on the train: {piece-type1}, {piece-type2}, {piece-type3}."
+		],
+		[
+			"The three pieces we will use right now are {piece-type1}, {piece-type2}, and {piece-type3}."
+		],
+		[
+			"The order you want to place the pieces is {piece-type1}, {piece-type2}, {piece-type3}."
+		],
+		[
+			"We will be using the following pieces: {piece-type1}, {piece-type2}, {piece-type3}. Please put them on the train in that order."
+		],
+		[
+			"The parts of the train that need to be put on are the {piece-type1}, {piece-type2}, and {piece-type3}."
+		],
+		[
+			"The next step is to take the {piece-type1}, {piece-type2}, and {piece-type3} and put them on the train in that order."
+		],
+		[
+			"Please place the {piece-type1}, the {piece-type2}, and the {piece-type3} on the train in that order."
+		]
+	],
+	"level-3-wrong":
+	[
+		[
+			"Three pieces can be a lot to remember. <nod,nb> So let me help to remind you. It was the {piece-type1}, then the {piece-type2}, and last the {piece-type3}" 
+		],
+		[
+			"Almost. <head-shake,nb> The correct order of the pieces actually was: the {piece-type1}, the {piece-type2} and then the {piece-type3}."
+		],
+		[
+			"Wow, you were so close. Why don't you try again? The necessary order is: first, the {piece-type1}, second, the {piece-type2}, and third, the {piece-type3}."
+		],
+		[
+			"Nice effort, but you must have mixed up the pieces. Here is the order again: {piece-type1}, {piece-type2}, {piece-type3}."
+		]
+	],
+	"level-4-intro":
+	[
+		[
+		    "<anticipate,nb> For today, we are going to build the train from front to back. <smile,nb> Lets try to put on the pieces in order from left to right."
+		],
+		[
+		    "In this task, <lookat-game,nb> we want to build the train starting at the front and then working to the back. <head-tilt,nb> Why don't we try using the pieces from left to right?"
+		],
+		[
+		    "Alright [child-name], <happy,nb> today we will try to build the train going from the front to the back. <curious-right,nb> You should pick up the pieces on the left and work your way to the right."
+		]
+	],
+	"level-4":
+	[
+		[
+			" <bounce,nb> You are doing a great job! Next step is to first put on the {piece-type1}, followed by the {piece-type2}, then the {piece-type3}, and last the {piece-type4}."
+		],
+		[
+			"Excellent! <happy,nb> Now please put on the pieces in the following order: {piece-type1}, {piece-type2}, {piece-type3}, {piece-type4}."
+		],
+		[
+			"<smile,nb> Very well done! The next step is to put on the {piece-type1}, {piece-type2}, {piece-type3}, and the {piece-type4} in that order."
+		],
+		[
+			"You are so impressive! <smileonly,nb> Great job! Now you need to put on the {piece-type1}, followed by the {piece-type2}, followed by the {piece-type3}, and finally the {piece-type4}."
+		],
+		[
+			"Way to go! <laugh,nb> You are doing very well. Next you should put on the {piece-type1}, then the {piece-type2}, then the {piece-type3}, and then the {piece-type4}"
+		],
+		[
+			"Awesome! <smileonly,nb> The next step is to put on the pieces in this order: {piece-type1}, {piece-type2}, {piece-type3}, {piece-type4}."
+		]
+	],
+	"level-4-wrong":
+	[
+		[
+			"This step was {piece-type1}, then {piece-type2}, then {piece-type3}, then {piece-type4}. Try again"
+		],
+		[
+			"Not quite. <head-shake,nb> The correct order is {piece-type1}, {piece-type2}, {piece-type3}, {piece-type4}. Try that order."
+		],
+		[
+			"Almost, you were supposed to put them in this order: {piece-type1}, {piece-type2}, {piece-type3}, {piece-type4}. Can you put them in that order?"
+		],
+		[
+			"Very close, but you were supposed to arrange them as follows: {piece-type1}, {piece-type2}, {piece-type3}, {piece-type4}. Put them in that order please."
+		]
+	],
+	"both-trains-right":
+	[
+		[
+			"Wow. <laugh,nb> I am very impressed. You put all the exact pieces just like the example on the train!"
+		],
+		[
+			"Way to go! <smile,nb> That is correct! Keep going!"
+		],
+		[
+			"Very well done. <happy,nb> You put the train together exactly as you were supposed to."
+		],
+		[
+			"That looks great! <bounce,nb> You put the pieces in the correct places!"
+		],
+		[
+			"Fabulous! <laugh,nb> You are so skilled! Both trains are completely alike."
+		],
+		[
+			"Nice, <smileonly,nb> you are such a hard worker. You assembled the train perfectly!"
+		],
+		[
+			"Superb! <smileonly,nb> Way to follow my instructions! It is a perfect match."
+		]
+	],
+	"both-trains-wrong":
+	[
+		[
+			"<lookat-game,nb> It looks like you made some mistakes. <wide-eyed,nb> The train was supposed to have the same pieces as the example train. But I am sure you will get it right next time"
+		],
+		[
+			"<concerned,nb> It seems that a few of the pieces are ordered incorrectly. <lookat-game,nb> Remember to try to match the example train. Why don't you try again?"
+		],
+		[
+			"<focuson-game,nb> I think you messed up somewhere. You want both trains to look exactly alike. <return-front,nb> I bet you will get it next time."
+		],
+		[
+			"<head-tilt,nb> Some of the pieces are in the wrong positions. <lookat-game,nb> Do you see how the two trains are not the same? <smile, nb> If you try again, I think you can get it right."
+		],
+		[
+			"<wide-eyed,nb> What happened? You put a couple of the pieces in the wrong spots. <smile,nb> Next time I am certain you will succeed."
+		],
+		[
+			"<calm,nb> Remember that we want both of the trains to look the same. There are a few corrections to be made. <smileonly,nb> Try again please!"
+		],
+		[
+			"<concerned,nb> It appears that there are a few mistakes to be fixed so that both trains match. <bounce,nb> I know you can fix them!"
+		]
+	],
+	"another-game":
+	[
+		[
+			"<excited,nb> I love playing this game with you. Do you want to play another round?"
+		],
+		[
+			"<smile,nb> This certainly is an enjoyable game! <head-tilt,nb> Can we play again?"
+		],
+		[
+			"<sing-song,nb> Wow [child-name], you did so well! <head-tilt,nb> Shall we play again?"
+		],
+		[
+			"<happy,nb> This is so much fun! Would you like to play the game some more?"
+		],
+		[
+			"<smile,nb> Way to go! You did great! <head-tilt,nb> Are you up for another round?"
+		],
+		[
+			"<bounce,nb> I wish I could play games with you every day! <head-tilt,nb> Shall we try again and play another round?"
+		],
+		[
+			"<excied,nb> Well done [child-name]! You are a natural! Would you like to join me in playing another round of the game?"
+		]
+	],
+	"end":
+	[
+		[
+			"Oh no. <sad,nb> It looks like we have run out of time. <excited,nb> But we will get another chance to play this game again!"
+		],
+		[
+			"<sad-headshake,nb> I wish we could play forever, but I have to go now. <bounce,nb> I hope we can play again soon!"
+		],
+		[
+			"<sad,nb> Well, it seems that time is up. <happy,nb> Don't worry though, we will play together again very soon!"
+		]
+	]
+}
+
+
