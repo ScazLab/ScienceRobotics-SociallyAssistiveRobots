@@ -1,0 +1,5 @@
+{
+"server": "192.168.2.3",
+"port": "9090",
+"log_debug_to_ros": true
+}

@@ -1,0 +1,490 @@
+{
+    "game-first-time": [
+        [
+            "Yay! <bounce,nb> I'm excited to play the house game with you today!",
+            "We'll be playing with each other. <curious-left,nb> First, you'll build a house, and I'll ask you questions to guess what your house looks like. <curious-right,nb> Then we'll switch! So I'll build one, and you'll ask me questions about my design. <spinning-neck,nb>",
+            "<focuson-game,nb> To build your design, you'll drag wall, house, roof, and plant pieces into spots on an empty house frame. <smile,nb> Then I'll ask you yes-or-no questions about all the pieces you might have used. <pause,nb> After you answer all my questions, I'll make a guess at the end. <happy,nb> I hope I get it right!",
+            "<speak,nb> Then when we switch, I'll show you several different houses, one of which is my house. <excited,nb> You can ask me questions about my design to figure out which house is mine. <smileonly,nb> You can make a final guess at any time!",
+            "<lookat-child,nb> Okay, let's play! <sing-song,nb> I can't wait; we'll have so much fun playing together. <excited,nb>"
+        ]
+    ],
+    "game-start": [
+        [
+            "Cool! <happy,nb> I love the house game. Do you know how to play? <focuson-game,nb> We each build a house by dragging design pieces into the frame of the house, and then ask questions to guess what the other person's house looks like. <return-front,nb>"
+            "<curious-left,nb> If you need some help on how to play, please touch the tutorial button!"
+        ],
+        [
+            "<greeting,nb> Hi [child-name], it is time to play the house game! <bounce,nb> I've been waiting for this. I have a great idea for a house I want to build. <lookat-child,nb> But first you should build your design, so I can try to guess yours! <anticipate,nb> All you have to do to get started is touch the house frame and start dragging pieces in. <pause,nb>"
+            "Don't forget that if you need any help, just touch the tutorial button!"
+        ],
+        [
+            "Alrighty [child-name], Are you excited to play the house game? <pause,nb> Well, let's do a little recap just to review: <speak,nb> first, you build a house by dragging house pieces into slots on the house frame. Then I'll try to guess. <curious-left> Then we get to switch so I can build a design!"
+            "<anticipate,nb> If you need some help on how to play, touch the tutorial button."
+        ],
+        [
+            "Yay! <bounce,nb> Welcome back to the coolest house building game ever! <head-tilt,nb> Are you ready to start building some awesome houses? I know that I am! <curious-right,nb> First, you can build a house by dragging different pieces into slots. I'll ask you some questions to figure out what yours looks like. <anticipate,nb> Then it's my turn to build a house for you to guess."
+            "If you need more instructions, <lookat-game,nb> Touch the tutorial button on the screen."
+        ],
+        [
+            "Okay! <happy,nb> I love designing houses, and it's going to be great today! <head-tilt,nb> [child-name], Do you know how to play? Drag pieces into the house frame slots to create your design. <anticipate,nb> Then I'll ask you questions about what you built to try and guess what your house looks like!"
+        ],
+        [
+            "<excited,nb> Great! [child-name], you know how this works, right? <focuson-game,nb> Click on a spot on the frame of the house, and then start dragging cool pieces onto it from the sides of the screen. <return-front,nb>"
+        ]
+    ],
+    "child-builder-start": [
+        [
+            "Okay, <nod,nb> it's time to start building. <focuson-game,nb> Click on any spot on the house frame, and the building materials you can use for that spot will appear on the sides of the screen for you to drag and drop them in. <smileonly,nb> I can't wait to see your very cool house design!"
+        ],
+        [
+            "Here we go; <smile,nb> let's get started! [child-name], it's your turn to build first. <lookat-game,nb> Play around with the pieces as much as you like and see what looks best!"
+        ],
+        [
+            "<excited,nb> [child-name], you're up! Click on any house spot, and start dragging pieces into it. <smileonly,nb> Decide what you want your house to look like and make it awesome!"
+        ],
+        [
+            "Ready to start? <pause,nb> Here we go! <calm,nb> Piece by piece, you can start designing your house by dragging piece options from the side of the screen onto the house frame. <anticipate,nb> Play around with these pieces and watch your house come together!"
+        ]
+    ],
+    "child-answering-questions-start": [
+        [
+            "Great job finishing your design! <smile,nb> I can't wait to see what it looks like! <speak,nb> I'm going to ask you questions, so I can put together a guess. <anticipate,nb> Hopefully I'll get it right. <thanks,nb> Thanks for helping me!"
+        ],
+        [
+            "<smile,nb> Wow, you're done with your design! I bet it looks great. <bounce,nb> I can't wait to make a guess about your house. <pause,nb> Now I'm going to ask you some questions. <thanks,nb> Thanks for helping me get it right!"
+        ],
+        [
+            "<happy,nb> Yay, you finished your house! Now I'll start asking you some questions. <lookat-child,nb> After I get your answers, I'll be able to make a good guess about your cool design!"
+        ],
+        [
+            "<bounce,nb> Excellent job on your house design! <anticipate,nb> Now it is my turn to ask you some questions about your house! <thanks,nb> Thanks for helping me with your answers, so I can make a good guess!"
+        ]
+    ],
+    "ask-question-piece": [
+        [
+            "Okay, let's see. <lookat-game,nb> Does your house have a {piece-name}?"
+        ],
+        [
+            "<lookat-game,b> [child-name] Did you use a {piece-name} in your house design?"
+        ],
+        [
+            "Okay cool. <curious-left,nb> What about a {piece-name}?"
+        ],
+        [
+            "<smile,nb> I love making guesses! I wonder... <focuson-game,nb> do you have a {piece-name} in your house? <return-front,nb>"
+        ],
+        [
+            "<excited,nb> Super! I love how we work so well together. <lookat-child,nb> [child-name], Do you have a {piece-name} in your house?"
+        ],
+        [
+        	"<anticipate,nb> Okay, let me make a guess. <pause,nb> Is there a {piece-name} in your house?"
+        ],
+        [
+        	"<thanks,nb> Thanks so much for answering my questions! <lookat-child,nb> Does your house have a {piece-name}?"
+        ],
+        [
+            "<calm,nb> So, [child-name], is a {piece-name} part of your house?"
+        ],
+        [
+        	"<smile,nb> Wonderful! How about a {piece-name}? Does your house have it?"
+        ],
+        [
+            "Oh, <spinning-neck,nb> there are so many possibilities I'm thinking of right now. <anticipate,nb> Do you have a {piece-name}?"
+        ],
+        [
+        	"Excellent! <smile,nb> Can't wait to put this all together and make a guess. What about a {piece-name}?"
+        ],
+        [
+        	  "<lookat-game,nb> What do I want to know... oh yeah, a {piece-name}! <pause,nb> [child-name], did you use a {piece-name} in your design?"
+        ]
+    ],
+
+    "ask-question-color": [
+        [
+            "<curious-right,nb> [child-name], Do you have a {color} piece anywhere on your house?"
+        ],
+        [
+            "<anticipate,nb> Is there anything that has a {color} color on your house?"
+        ],
+        [
+            "What about {color}? <head-tilt,nb> [child-name], are there any pieces on your house with that color?"
+        ]
+    ],
+    "child-builder-compare-houses": [
+        [
+            "<thanks,nb> Thanks for answering all my questions! Based on what you told me [child-name], I came up with a house design that I think should match yours. <speak,nb> Let's take a look at them side by side to see how close we got!"
+        ],
+        [
+            "<excited,nb> I love playing this with you! I came up with my guess of your design after hearing all of your answers. <bounce,nb> Let's see if I got it right!"
+        ],
+        [
+            "<smileonly,nb> Cool! It is time to compare the house you built and the design I just created after asking you all those questions. <anticipate,nb> Is my guess correct?"
+        ],
+        [
+            "<happy,nb> All set! Let's take a look. <focuson-game,nb> This is the house that you built, and this is my guess based on your answers to my questions. <lookat-child,nb> Do they match?"
+        ],
+        [
+            "<smileonly,nb> Alright, test time! <speak,nb> [child-name], let's take your house, and my guess, and put them side by side to see whether they are the same house."
+        ]
+    ],
+    "child-builder-correct-house": [
+        [
+            "<bounce,nb> Awesome! I can't believe I was able to match your house design. <thanks,nb> Thanks for helping me by answering my questions so perfectly!"
+        ],
+        [
+            "Wonderful! <smile,nb> I am so glad that my copy of your house was correct. <thanks,nb> Thanks so much for providing answers to my questions. <excited,nb> We are such a great team!"
+        ],
+        [
+        	"<lookat-game,nb> Wow, I was able to correctly guess what your house looks like! <bounce,nb> This makes me so happy! <pause,nb> I couldn't have done it without you. <thanks,nb> Thank you for answering my questions!"
+        ],
+        [
+        	  "<sing-song,nb> Yay! My copy was correct! Thanks so much. <thanks,nb> The answers you gave me were really helpful!"
+        ]
+    ],
+    "child-builder-wrong-piece": [
+        [
+            "<head-shake,nb> Oh no! Looks like our {piece-type} are different. <smileonly,nb> [child-name], team work is important <pause,nb>- your answers to my questions are really crucial for us to get this right!"
+        ],
+        [
+            "<lookat-game,nb> Wait, something's strange here. Our {piece-type} don't match. <pause,nb> Don't forget, I need your best effort to answer my questions in order to make an accurate copy of your design!"
+        ],
+        [
+            "<concerned,nb> It seems that our {piece-type} aren't the same. <speak,nb> Let's make sure we're being really detail-oriented in our questions and answers next time we play!"
+        ],
+        [
+            "<head-shake,nb> Oh no, a mismatch! Looks like my {piece-type} is different from the one that you have. <curious-right, nb> Next time, please pay attention to the details of the questions I ask about your design!"
+        ],
+        [
+            "<concerned,nb> Oh no, my {piece-type} looks different than yours. <calm,nb> To be a great team, I really rely on you to answer my questions correctly!"
+        ],
+        [
+            "<focuson-game,nb> Looks like my {piece-type} is different from the one in your house! <lookat-child,nb> Remember [child-name], my design can't be correct unless you help me out by answering my questions!"
+        ],
+        [
+            "<head-shake,nb> The {piece-type} pieces here aren't quite correct. <lookat-child,nb> Looks like we could use a little more work on our communication when we play together next!"
+        ],
+        [
+            "<concerned,nb> Ah, the {piece-type} pieces are not the same. <anticipate,nb> Let me see. <pause,nb> I'll try to make my questions really detailed, <speak,nb> and I hope you can pay attention to those details when you give me your answers!"
+        ]
+    ],
+    "child-builder-inverted-pieces": [
+        [
+            "<curious-left,nb> It looks like I guessed the correct pieces for the {piece-type}, but they are in the wrong places. <smile,nb> Next time, let's be more careful with our lefts and rights!"
+        ],
+        [
+            "<wide-eyed,nb> Ah, this is interesting! These {piece-type} pieces are the right ones, but they aren't where they should be! <calm,nb> Let's make sure that we pay more attention to placement next time!"
+        ],
+        [
+            "This is almost correct, <head-shake,nb> except that the {piece-type} pieces are in different places in my house and yours. <smileonly,nb> But no worries! <curious-left,nb> Next time, we'll be more careful when we talk about where each piece should go!"
+        ]
+    ],
+    "restart": [
+        [
+           "<lookat-child,nb> [child-name], do you want to play another round? Just click the new game button."
+        ],
+        [
+        	 "<happy,nb> I hope you had as much fun as I did! <anticipate,nb> Want to play another round? Just click the new game button if you do."
+        ],
+        [
+        	 "<bounce,nb> Awesome round! Do you want to switch roles? <pause,nb> Just click the new game button, and we can start a new round."
+        ],
+        [
+        	 "<smile,nb> Yay, that was fun [child-name]! Do you want to play again? <focuson-game,nb> Click the new game button and let's start a new round!<return-front,nb>"
+        ]
+    ],
+    "child-guesser-start": [
+        [
+          "<smileonly,nb> Okay! <lookat-game,nb> I designed a house. It's one of the houses up on the screen. It's your turn to guess now. <anticipate,nb> Ask me some questions, so you can figure out which one it is."
+        ],
+        [
+        	"<happy,nb> Great! My house is ready! <focuson-game,nb> It's one of the houses that is currently on the screen. <lookat-child,nb> [child-name], <anticipate,nb> ask me any questions about what pieces I used, so that you can guess which design is mine."
+        ],
+        [
+        	"<smile,nb> Awesome! I just built a house, and it's on the screen. <focuson-game,nb> There are some other random houses there too. <lookat-child,nb> [child-name], <curious-right,nb> you can ask me as many questions as you want in order to figure out what my house looks like!"
+        ],
+        [
+        	"Yay! <smile,nb> It's your turn to guess what my house looks like! <focuson-game,nb> I just built a really cool house, and it's one of the ones on the screen. <lookat-child,nb> Before you make a final guess, feel free to ask me questions about the materials I used, so you can easily figure out which one is mine!"
+        ]
+    ],
+    "child-guess-piece-yes": [
+        [
+           "<nod,nb> Yes! I do have a {piece-name} on my house. <happy,nb> Hope that helps!"
+        ],
+        [
+        	"<nod,nb> That's correct! <sing-song,nb> There is a {piece-name} on my house!"
+        ],
+        [
+        	"Yay! <bounce,nb> My house does have a {piece-name}! <speak,nb> Looks like you're getting some good info from your guesses!"
+        ],
+        [
+        	"<excited,nb> Bingo! A {piece-name} is totally on my house!"
+        ],
+        [
+        	"<nod,nb> You are absolutely correct! <smile,nb> I do have a {piece-name} on my house!"
+        ],
+        [
+        	"<nod,nb> Right! A {piece-name} is definitely there on my house. <smile,nb> Keep up the good guesses!"
+        ],
+        [
+        	"<nod,nb> That is correct! <bounce,nb> A {piece-name} is exactly what I have on my house."
+        ],
+        [
+        	"<happy,nb> Yes! I have a {piece-name} on my house! <laugh,nb> Hope that helps!"
+        ],
+        [
+        	"<nod,nb> You are right! A {piece-type} is on my house! <smileonly,nb> Great guess!"
+        ],
+        [
+        	"<sing-song,nb> Wonderful! My house does have a {piece-name} on it!"
+        ],
+        [
+        	"<happy,nb> Way to go! My house does have a {piece-name}! <smile,nb> You got this!"
+        ]
+    ],
+    "child-guess-piece-no": [
+        [
+           "Let me take a look. <lookat-game,nb> No, unfortunately I dont have a {piece-name} on my house."
+        ],
+        [
+        	"Ah, let's see. <focuson-game,nb> Unfortunately, I don't have a {piece-name} on my house. <lookat-child,nb> Would you like to make another guess [child-name]?"
+        ],
+        [
+        	"<lookat-game,nb> Oh, super close! But nope, sorry [child-name], there is no {piece-name} on my house."
+        ],
+        [
+        	"<head-shake,nb> Nope, incorrect. There is no {piece-name} on my house this time."
+        ],
+        [
+        	"<head-shake,nb> Nope, a {piece-name} is actually not in my house design."
+        ],
+        [
+        	"<lookat-game,nb> Let me take a look here. Ah, nope, no {piece-name} on my house."
+        ],
+        [
+        	"<head-shake,nb> Sorry, there is actually no {piece-name} on my house. <lookat-child,nb> Do you have another guess?"
+        ],
+        [
+        	"<lookat-game,nb> Let me see. <pause,nb> Nope,  there is no {piece-name} this time."
+        ],
+        [
+        	"<head-shake,nb> Sorry, there is no {piece-name} on my house. <smileonly,nb> But it's a good guess!"
+        ],
+        [
+        	"<focuson-game,nb> Okay, let's take a look...<return-front,nb> No, sorry, I don't have a {piece-name} on my house."
+        ],
+        [
+        	"<excited,nb> Ooh, a {piece-name}! I like that guess. <pause,nb> But unfortunately, <head-shake,nb> it's not part of my house design."
+        ]
+    ],
+    "robot-builder-compare-houses": [
+        [
+            "<excited,nb> great final guess! Let's compare the houses and see if you guessed my design correctly."
+        ],
+        [
+            "Yay, <bounce,nb> here comes the fun! <focuson-game,nb> Time to compare my house design and your final guess to see if we matched everything.<lookat-child,nb>"
+        ],
+        [
+            "<happy,nb> Nice job with your questions and making a final guess! <lookat-game,nb> Let's compare our houses. <pause,nb> Do they match [child-name]?"
+        ],
+        [
+            "All set with your final guess? <smile,nb> Let's put our houses together and compare them! <lookat-game,nb> What do we see? Do they look the same?"
+        ]
+    ],
+    "robot-builder-correct-house": [
+        [
+            "<sing-song,nb> Wow! You were able to ask the right questions and perfectly re-create the house I had designed. <happy,nb> Good job!"
+        ],
+        [
+          	"Fantastic! <bounce,nb> Your questions were exactly on point, and your final guess was correct! <smileonly,nb> We are a great team!"
+        ],
+        [
+        	"Yay! <excited,nb> Your guess is correct! It's exactly the house that I designed. <smileonly,nb> Great question asking!"
+        ],
+        [
+        	"Brilliant! <laugh,nb> You asked great questions and figured out exactly the house I had designed. <smile,nb> Awesome job [child-name]!"
+        ]
+    ],
+        "robot-builder-wrong-piece": [
+        [
+            "<wide-eyed,nb> Uh oh! Looks like our {piece-type} are different. <speak,nb> [child-name], don't forget to ask as many specific questions as you need, so you can better understand what type of {piece-type} I used in my design!"
+        ],
+        [
+            "<head-shake,nb> This part doesn't look quite right. <focuson-game,nb> Oh! Our {piece-type} don't match. <lookat-child,nb> Next time, pay attention to each of the possible {piece-type}, and ask questions to get the details perfect!"
+
+        ],
+        [
+            "<head-shake,nb> It seems that our {piece-type} aren't the same. There are multiple types of {piece-type}. <speak,nb> [child-name], Make sure you ask me questions in order to narrow it down!"
+        ],
+        [
+            "<head-shake,nb> Oops, we've got a mismatch! <focuson-game,nb> Looks like my {piece-type} is different from the one that you have. <concerned,nb> When you ask questions [child-name], listen carefully to my answers and choose which houses fit based on that!"
+        ],
+        [
+            "<wide-eyed,nb> Huh. My {piece-type} looks different from yours. It can be confusing with all the different possible types. <curious-right,nb> [child-name], take your time to think about it, and ask me detailed questions to narrow it down!"
+        ],
+        [
+            "<focuson-game,nb> Looks like my {piece-type} is different from the one in your house! <curious-left,nb> Think carefully about the details you hear in my answers!"
+        ],
+        [
+            "Ah, <head-shake,nb> the {piece-type} aren't quite right. <concerned,nb> Next time [child-name], think about how to best cut down the options and ask me questions to help you do that!"
+        ],
+        [
+            "Ah, <head-shake,nb> these two {piece-type} are not the same. <speak,nb> Make sure to be extra detail-oriented next time you ask me questions about my design!"
+        ],
+        [
+            "<wide-eyed,nb> Huh, it's close, but these two {piece-type} don't quite match. <speak,nb> Make sure to ask me questions to ensure that they match next time!"
+        ]
+    ],
+    "robot-builder-inverted-pieces": [
+        [
+            "<lookat-game,nb> Pretty close! The {piece-type} used are the right pieces but are not quite in the right spots. <smileonly,nb> We'll do better next time!"
+        ],
+        [
+            "<smileonly,nb> Very close! The {piece-type} pieces are the right ones, but in opposite spots, <concerned,nb> so let's be careful about placement next time. <smile,nb> Keep up the great work, though!"
+        ],
+        [
+            "<excited,nb> Way to go! Just one tiny mistake - <focuson-game,nb> it looks like the {piece-type} might have swapped spots. <lookat-child,nb> You can do it next time!"
+        ]
+
+    ],
+    "end-game": [
+        [
+            "<sad,nb> Seems like we are out of time! But I had so much fun [child-name]. <smile,nb> We should defintely play again! Bye!"
+        ]
+    ],
+    "child-building-tutorial": [
+        [
+            "<smileonly,nb> Lets learn the basics of the game. <excited,nb> We are going to start off by learning how to build your very own house!"
+        ]
+    ],
+    "child-building-tutorial-1": [
+        [
+            "<focuson-game,nb> First, you need to select a house part, and then you can drag pieces from the side onto it. To start, click on any of the yellow outlines to select the walls <return-front,nb>."
+        ]
+    ],
+    "child-building-tutorial-2": [
+        [
+            "<happy,nb> Good! Now you can drag pieces onto the walls. <lookat-game,nb> Lets try dragging the blue and grey wall onto the spot. <curious-left> Just click and keep the left button on your mouse pressed as you drag the piece to any of the empty yellow spots!"
+        ]
+    ],
+    "child-building-tutorial-3": [
+        [
+            "All the wall pieces have to be the same. <speak,nb> So now that the blue and grey piece is on, you can't place the piece with orange bricks on it. <smileonly,nb> Try to see if it works.",
+            "<head-shake,nb> As you can see, dragging another type of piece does not work for walls. Lets complete the house with the grey and blue walls then."
+
+        ]
+    ],
+    "child-building-tutorial-4": [
+        [
+            "<smileonly,nb> Cool! Now our house has all the walls in place. Next up is the roof. <lookat-game,nb> Click on the roof so the roof pieces will show."
+        ]
+    ],
+    "child-building-tutorial-5": [
+        [
+            "<smile,nb> I really like that palm tree for a roof. Lets try putting it on! <focuson-game,nb> Drag it from the side onto the roof highlighted in yellow. <return-front,nb>"
+        ]
+    ],
+    "child-building-tutorial-6": [
+        [
+            "<head-shake,nb> Huh, now that it's on the house, I am not sure if I like that piece anymore. <curious-left,nb> Lets try dragging the piece to the trash and then put on another roof piece."
+        ]
+    ],
+    "child-building-tutorial-7": [
+        [
+            "<excited,nb> Great. Now we can choose another roof piece. Lets put on the dark blue roof."
+        ]
+    ],
+    "child-building-tutorial-8": [
+        [
+            "<lookat-game,nb> All that is left now are the doors. Click on any of the two doors in the house."
+        ]
+    ],
+    "child-building-tutorial-9": [
+        [
+            "<focuson-game,nb> Drag the two different doors onto the empty door slots on the house. <excited,nb> Once you do this, our house will be all done!"
+        ]
+    ],
+    "child-building-tutorial-10": [
+        [
+            "<bounce,nb> Yay! The house is all built! <anticipate,nb> [child-name], click the check button, so I can try to guess what the house you built looks like"
+        ]
+    ],
+    "robot-guessing-tutorial": [
+        [
+            "<speak,nb> Now I am going to ask questions about your house to figure out which one you built. <spinning-neck,nb> Try to answer the questions according to your house, which is shown on the screen"
+        ]
+    ],
+    "robot-guessing-tutorial-1": [
+        [
+            "<speak,nb> So [child-name], I am wondering if you have blue and grey walls? <focuson-game,nb> It looks like you do in this case. So press the check to say that your house has blue and grey walls <lookat-child,nb>"
+        ]
+    ],
+    "robot-guessing-tutorial-2": [
+        [
+            "<curious-right,nb> All your previous answers will be shown in the panel on the side. <lookat-game,nb> Notice how the blue and grey wall piece is currently on the black panel in the left side.",
+            "The next question is if your right door is yellow. <anticipate,nb> The picture has a right arrow to show that I am asking about the right door.",
+            "<nod,nb> Your right door is yellow, so you should click the green check arrow to say that your house does have a yellow right door."
+        ]
+    ],
+    "robot-guessing-tutorial-3": [
+        [
+            "Now, I am wondering if your roof is a palm tree? <head-shake,nb> But your roof is actually the dark blue roof. <speak,nb> So press the red x to say that your house does not have the palm tree roof."
+        ]
+    ],
+    "robot-guessing-tutorial-4": [
+        [
+            "<spinning-neck,nb> My last question is a bit more tricky. I am asking about the colors of your house. <head-tilt,nb> [child-name], do you have dark or light blue anywhere on your house? <pause,nb>",
+            "Actually it does seem that one of your doors is light blue. <happy,nb> And your walls have light blue in them. And your roof is also dark blue. <smileonly,nb> Wow your house has a lot of blue in it!",
+            "<excited,nb> Since there is at least one blue piece in your house, you should press the green check mark!"
+        ]
+    ],
+    "robot-both-houses-tutorial-1": [
+        [
+            "<focuson-game,nb> On this screen, we show you an example of the house you built and the house we think you built. <lookat-child,nb>",
+            "It looks like there is one tiny difference in the houses. <lookat-game,nb> I accidently switched up the walls and thought you had the orange walls. <return-front,nb>",
+            "<smile,nb> Next time I will try to do a bit better! <anticipate,nb> Now press the New Game button, and it will be your turn to guess what house I built!"
+        ]
+    ],
+    "child-guesser": [
+        [
+            "<focuson-game,nb> On the screen, there are 4 houses. One is the house that I built. You can ask questions to figure out which of the four houses is mine. <lookat-child,nb>",
+            "To ask a question, you need to click on the question mark, <lookat-game,nb>, which is located on top of one of the pieces on the left panel.",
+            "<speak,nb> To start off, why dont you ask me if my house has blue and grey walls? <curious-left,nb> Click on the question mark pointed at by the arrow."
+        ]
+    ],
+    "child-guesser-1": [
+        [
+            "<head-shake,nb> My house does not have grey and blue walls. <focuson-game,nb> The answer to the question is also shown on the bottom. As you can see, there is a grey and blue wall with an x through it. <pause,nb>",
+            "This means that it is not on my house. <lookat-game,nb> Therefore, my house cannot be any of the two top ones because they both have blue and grey walls.",
+            "<lookat-child,nb> Click on the exes next to the houses, so that the houses will be crossed out. <curious-right,nb> It will now be easier to remember that those two houses are not my house."
+        ]
+    ],
+    "child-guesser-2": [
+        [
+            "<happy,nb> Great! Now you know that my house can only be one of the two at the bottom.",
+            "<anticipate,nb> [child-name], next you should ask me if my door is the light blue glass door. <lookat-game,nb> Click on the question pointed at by the arrow."
+        ]
+    ],
+    "child-guesser-3": [
+        [
+            "<nod,nb> My house does have a light blue glass door. <focuson-game,nb> Lets take a look at the two houses at the bottom. The one on the right has a yellow door, so it can't possibly be that one. <return-front,nb> Please put an x through the one with the yellow door."
+        ]
+    ],
+    "child-guesser-4": [
+        [
+            "So now 3 out of the 4 houses have an x through them. <excited,nb> Which means it can only be the bottom left house. <anticipate,nb> [child-name], click on the green check on the house to say that you believe that this house is mine."
+        ]
+    ],
+    "child-guesser-5": [
+        [
+            "<smileonly,nb> Awesome job [child-name]! <lookat-game,nb> Now click on the submit final guess button, and we can check to see if the house that I built and the house that you selected are the same."
+        ]
+    ],
+    "robot-both-houses-tutorial-2": [
+        [
+            "<anticipate,nb> [child-name], it looks like you are all ready to play this game by yourself now. <excited,nb> Click on the New Game button, and we will get started!"
+        ]
+    ]
+
+
+}
+
