@@ -1,0 +1,13 @@
+<launch>    
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+        <arg name="port" value="9090"/>
+    </include>
+    <!-- Global variables here -->
+    <param name="/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+    
+    <!-- rosbag for recording interactions -->
+    <node pkg="rosbag" type="record" name="rosbag_record_common"
+       args="-o $(find sar_core)/logs/rosbags/rosbag_common /rosout /sar/jibo/health"/>
+
+    <node pkg="sar_core" type="robot_health_monitor.py" name="robot_health_monitor" output="screen"/>
+</launch>

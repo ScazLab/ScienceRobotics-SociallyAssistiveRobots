@@ -1,0 +1,8 @@
+{
+	"game_social_stories_filepath": "/home/sar/src/sar-games/StoryGame.x86_64",
+	"game_rocket_barrier_filepath": "/home/sar/src/sar-games/06_30_17a_rocket_barrier_game.x86_64",
+	"game_house_perspective_taking_filepath": "/home/sar/src/sar-games/HouseGame.x86_64",
+	"game_train_sequencing_filepath": "/home/sar/src/sar-games/TrainGame.x86_64",
+	"visual_schedule_filepath": "file:///home/sar/catkin_ws/src/sar_core/resources/visual_schedule/test.html",
+	"parent_journal_filepath": "file:///home/sar/catkin_ws/src/sar_core/resources/parent_journal/text.html"
+}

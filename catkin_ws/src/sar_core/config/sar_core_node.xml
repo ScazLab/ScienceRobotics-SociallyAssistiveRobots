@@ -1,0 +1,66 @@
+<launch>
+    <!-- tts for debugging -->
+    <group if="false">
+        <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>
+        <node pkg="sar_core" type="tts.py" name="tts" output="screen"/>
+    </group>
+
+    <!-- testing nodes -->
+    <group if="false">
+        <node pkg="sar_core" type="basic_listener.py" name="basic_listener" output="screen"/>
+        <node pkg="sar_core" type="basic_publisher.py" name="basic_publisher" output="screen"/>
+    </group>
+
+    <!-- core nodes -->
+    <node pkg="sar_core" type="session_manager.py" name="session_manager" output="screen">
+        <!-- <param name="_g_day" type="int" value="1" /> -->
+    </node>
+    <node pkg="sar_core" type="visual_schedule.py" name="visual_schedule" output="screen" />
+    <!-- <node pkg="sar_core" type="user_tracking_fusion.py" name="user_tracking_fusion" output="screen">
+        <param name="flag_fusion_mode" type="str" value="left" />
+    </node> -->
+    <node pkg="sar_core" type="user_monitor.py" name="user_monitor" output="screen">
+        <param name="test_flag_face_following" type="bool" value="false" />
+        <param name="test_flag_ja_seeking" type="bool" value="false" />
+    </node>
+    <node pkg="sar_core" type="robot_proxy.py" name="robot_proxy" output="screen" />
+    <node pkg="sar_core" type="vja_monitor.py" name="vja_monitor" output="screen" />
+
+    <node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen" />
+
+    <node pkg="sar_core" type="personalization_manager.py" name="personalization_manager" output="screen" />
+
+    <!-- node pkg="sar_social_stories" type="ss_game_node.py" name="ss_game_node" output="screen" -->
+
+    <!-- rosbag for recording interactions -->
+    <group if="true">
+        <node pkg="rosbag" type="record" name="rosbag_record_common"
+           args="--split --duration=10m -o $(find sar_core)/logs/rosbags/rosbag_common /rosout /sar/robot_command /sar/robot_state /sar/jibo/lookat /sar/jibo/speech /sar/jibo/animation /sar/jibo/state /sar/jibo/verbose_state /sar/game_command /sar/game_state /sar/jibo/health /sar/system/state /sar/perception/attention_targets /sar/jibo/robot_attention_target /sar/parent_journal"/> <!-- TODO: include topics -->
+    </group>
+
+    <group if="true">
+        <node name="usb_cam_1" pkg="usb_cam" type="usb_cam_node" output="screen" >
+            <param name="video_device" value="/dev/video0" />
+            <param name="image_width" value="1280" /> <!-- 1024, 640, 1280 -->
+            <param name="image_height" value="720" /> <!-- 576, 480, 720-->
+            <param name="pixel_format" value="yuyv" />
+            <param name="camera_frame_id" value="usb_cam" />
+            <param name="io_method" value="mmap"/>
+        </node>
+        <!-- DO NOT SHOW IMAGE: recording cam -->
+<!--         <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
+            <remap from="image" to="/usb_cam_1/image_raw"/>
+            <param name="autosize" value="true" />
+        </node> -->
+        
+    </group>
+
+    <group if="true"> <!-- recording audio and video -->
+        <node name="audio_capture" pkg="audio_capture" type="audio_capture" output="screen">
+            <param name="bitrate" value="128"/>
+        </node>
+        <node pkg="rosbag" type="record" name="rosbag_record_mm"
+           args="--split --duration=10m -o $(find sar_core)/logs/rosbags/rosbag_mm /usb_cam_1/image_raw/compressed /audio"/> <!-- /sar/perception/left_cam/usb_cam_2/image_raw -->
+    </group>
+
+</launch>

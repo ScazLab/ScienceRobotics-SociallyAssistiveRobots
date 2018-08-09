@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>visual_schedule</title>
+
+    <link href="res/lib/pure.min.css" rel="stylesheet">
+    <script src="res/lib/eventemitter2.min.js" type="text/javascript"></script>
+    <script src="res/lib/roslib.min.js" type="text/javascript"></script>
+    <script src="res/lib/jquery.min.js" type="text/javascript"></script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #bg {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url('res/img/loadup.png');
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #loading{
+            height: 1080px;
+            font-size: 130px;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            color: #FFFFFF;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 1080px;
+        }
+
+        #between_game_cover{
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url('res/img/loadup.png');
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+            filter: alpha(opacity=40); /* msie */
+        }
+
+        #user_check_in_bg {
+            margin: auto;
+            background-color: white;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+            font-size: 60px;
+            top: 300px;
+            left: 10px;
+            width: 65%;
+            height: 50%;
+        }
+
+        #game1 {
+            position: absolute;
+            top: 350px;
+            left: 200px;
+        }
+        #game2 {
+            position: absolute;
+            top: 350px;
+            left: 750px;
+        }
+        #game3 {
+            position: absolute;
+            top: 350px;
+            left: 1300px;
+        }
+        #startBtn {
+            position: absolute;
+            top: 600px;
+            left: 750px;
+        }
+
+        .imgStartBtn {
+            margin: 0 auto;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        .imgStartBtnSel {
+            margin: 0 auto;
+            display: block;
+            height: 100%;
+            width: 100%;
+            opacity: 0.4;
+            filter: alpha(opacity=40); /* msie */
+        }
+        .imgStartBtn:hover {
+            border-radius: 25px;
+            -moz-box-shadow: 5px 5px 4px #000;
+            -webkit-box-shadow: 5px 5px 4px #000;
+            box-shadow: 5px 5px 4px #000;
+            cursor: pointer;
+        }
+
+        .imgBtn {
+            border-radius: 25px;
+            margin: 0 auto;
+            display: block;
+            height: 360px;
+            width: 360px;
+        }
+
+        .imgBtnSel {
+            margin: 0 auto;
+            display: block;
+            border-radius: 25px;
+            height: 360px;
+            width: 360px;
+            opacity: 0.4;
+            filter: alpha(opacity=40); /* msie */
+        }
+        .imgBtn:hover {
+            border-radius: 25px;
+            -moz-box-shadow: 5px 5px 4px #000;
+            -webkit-box-shadow: 5px 5px 4px #000;
+            box-shadow: 5px 5px 4px #000;
+            cursor: pointer;
+        }
+        button.game_desp{
+            margin: 10;
+            background:none;
+            border:none;
+            font-size: large;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body onload="show_loading_phrases()">
+    <div id="bg">
+        <div id="loading">
+            <script>
+            function show_loading_phrases(){
+                function getRandomInt(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+                var _loading_phrases = ["Connecting...", "Loading...", "Getting ready...", "Coming up...", "Coming soon...", "Waking up robot..."];
+                var _randInt = getRandomInt(0, _loading_phrases.length - 1);
+                var _item = _loading_phrases[_randInt];
+                if(document.getElementById("loading") != null){
+                    document.getElementById("loading").innerHTML = _item;
+                    setTimeout(show_loading_phrases, 15000);
+                }
+            }
+            </script>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+        var ROBOT = 1;
+        var JS = 2;
+        var VS = 3;
+
+        var ACTION_START = 1;
+        var ACTION_PAUSE = 2;
+        var ACTION_END = 3;
+        var ACTION_OPEN_MENU = 4;
+        var ACTION_SHOW_MENU = 5;
+        var ACTION_CLICK_MENU = 6;
+        var ACTION_SEND_JS_DATA = 7;
+        var ACTION_LOAD_DEFAULT_BG = 8;
+        var ACTION_CLOSE = 9;
+        var ACTION_LOAD_WELCOME_BG = 10;
+        var ACTION_LOAD_IMAGE = 11; //TODO: change others to this command
+        var ACTION_USER_CHECK_IN = 12;
+        var ACTION_SET_DEFAULT_USERS = 13;
+        var ACTION_RELOAD_SESSION_START = 14;
+        var ACTION_RELOAD_OPEN_MENU = 15;
+
+        var STATE_READY = 101;
+        var STATE_END = 102;
+        var STATE_GAME_SELECTED = 103
+        var STATE_USER_START = 104;
+        var STATE_USER_CHECKED_IN = 105;
+        var STATE_CONNECTED = 106
+
+        var MENU_TL = 1;
+        var MENU_BL = 2;
+        var MENU_TC = 3;
+        var MENU_BC = 4;
+        var MENU_TR = 5;
+        var MENU_BR = 6;
+
+        var _child_name = "child";
+        var _guardian1_name = "dad";
+        var _guardian2_name = "mom";
+
+        var game_to_icon_file = {"0": "res/img/game_icons/storytelling.png", "1": "res/img/game_icons/rocket.png" , "2": "res/img/game_icons/moon.png", "3": "res/img/game_icons/star.png", "4": "res/img/game_icons/alien.png", "5": "res/img/game_icons/house.png", "6": "res/img/game_icons/train.png"};
+        var game_to_desctiption = {"0": "Storytelling", "1":"Rocket", "2":"Moon", "3":"Star", "4":"Alien", "5":"House", "6":"Train"};
+        var menu_selection_to_game = {};
+        var loading_audio = new Audio('res/loading.mp3');
+
+
+        function publishAction(msg){
+            setTimeout(function(){
+                var cmdVel = new ROSLIB.Topic({
+                    ros : ros,
+                    name : '/sar/vs',
+                    messageType : 'std_msgs/String'
+                });
+                var out = new ROSLIB.Message({data:JSON.stringify(msg)});
+                cmdVel.publish(out);
+            }, 10); //waits for 10 ms to send the msg
+        }
+
+        var ros = new ROSLIB.Ros({
+            url: 'ws://localhost:9090'
+        });
+        ros.on('connection', function() {
+            publishAction({to:VS, from:JS, content:STATE_CONNECTED});
+            console.log('Connected to websocket server.');
+            loading_audio.play();
+            //repeat
+            loading_audio.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+
+            // setTimeout(function(){
+                publishAction({to:VS, from:JS, content:STATE_READY});
+            // }, 1000);
+
+        });
+        ros.on('error', function(error) {
+            console.log('Error connecting to websocket server: ',
+                error);
+            alert('Error connecting to websocket server: ' + error);
+        });
+        ros.on('close', function() {
+            console.log('Connection to websocket server closed.');
+            publishAction({to:VS, from:JS, content:STATE_END})
+            alert('Connection to websocket server closed.');
+        });
+
+    function menu_setting(mode, game1_status=0, game2_status=0, game3_status=0){
+            var _bg = document.getElementById("bg");
+            if(mode == "add"){
+                var game1_div = document.createElement("div");
+                game1_div.id = "game1";
+                // game1_div.innerHTML = "<img id='game1_img' class='imgBtn' />";
+                var game1_img = document.createElement("img");
+                // game1_img.setAttribute("id","game1_img");
+                game1_img.id = "game1_img";
+                if(game1_status == 0){
+                    game1_img.setAttribute("class", "imgBtn");
+                }
+                else{
+                    game1_img.setAttribute("class", "imgBtnSel");
+                }
+                // game1_img.setAttribute("onclick", "game_selected(this);");
+                game1_img.onclick = function(){
+                    $(this).removeClass("imgBtn").addClass("imgBtnSel");
+                    // console.log(this.id);
+                    // console.log(menu_selection_to_game);
+                    // console.log(menu_selection_to_game[this.id] + " has been clicked!");
+                    publishAction({to:ROBOT, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+                    publishAction({to:VS, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+                    game1_img.onclick = null;
+                    game1_button.onclick = null;
+                    between_game_cover_setting("add")
+                };
+                if(game1_status == 1){ //game 1 has been played
+                    game1_img.onclick = null;
+                }
+                game1_div.appendChild(game1_img);
+
+                var game1_button = document.createElement("button");
+                game1_button.id = "game1_button"
+                game1_button.setAttribute("class","game_desp");
+                game1_button.onclick = null;
+                game1_button.disabled = true;
+                game1_div.appendChild(game1_button);
+                _bg.appendChild(game1_div);
+
+                var game2_div = document.createElement("div");
+                game2_div.id = "game2";
+                // game2_div.innerHTML = "<img id='game2_img' class='imgBtn' />";
+                var game2_img = document.createElement("img");
+                // game2_img.setAttribute("id","game2_img");
+                game2_img.id = "game2_img";
+                if(game2_status == 0){
+                    game2_img.setAttribute("class", "imgBtn");
+                }
+                else{
+                    game2_img.setAttribute("class", "imgBtnSel");
+                }
+                game2_img.onclick = function(){
+                    $(this).removeClass("imgBtn").addClass("imgBtnSel");
+                    // console.log(this.id);
+                    // console.log(menu_selection_to_game);
+                    // console.log(menu_selection_to_game[this.id] + " has been clicked!");
+                    publishAction({to:ROBOT, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+                    publishAction({to:VS, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+                    game2_img.onclick = null;
+                    between_game_cover_setting("add")
+                };
+                if(game2_status == 1){ //game 2 has been played
+                    game2_img.onclick = null;
+                }
+                game2_div.appendChild(game2_img);
+
+                var game2_button = document.createElement("button");
+                game2_button.id = "game2_button"
+                game2_button.setAttribute("class","game_desp");
+                game2_button.onclick = null;
+                game2_button.disabled = true;
+                game2_div.appendChild(game2_button);
+                _bg.appendChild(game2_div);
+
+                var game3_div = document.createElement("div");
+                game3_div.id = "game3";
+                // game3_div.innerHTML = "<img id='game3_img' class='imgBtn' />";
+                var game3_img = document.createElement("img");
+                // game3_img.setAttribute("id","game3_img");
+                game3_img.id = "game3_img";
+                if(game3_status == 0){
+                    game3_img.setAttribute("class", "imgBtn");
+                }
+                else{
+                    game3_img.setAttribute("class", "imgBtnSel");
+                }
+                // game3_img.setAttribute("onclick", "game_selected(this);");
+                game3_img.onclick = function(){
+                    $(this).removeClass("imgBtn").addClass("imgBtnSel");
+                    // console.log(this.id);
+                    // console.log(menu_selection_to_game);
+                    // console.log(menu_selection_to_game[this.id] + " has been clicked!");
+                    publishAction({to:ROBOT, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+                    publishAction({to:VS, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+                    game3_img.onclick = null;
+                    between_game_cover_setting("add")
+                };
+                if(game3_status == 1){ //game 3 has been played
+                    game3_img.onclick = null;
+                }
+                game3_div.appendChild(game3_img);
+
+                var game3_button = document.createElement("button");
+                game3_button.id = "game3_button"
+                game3_button.setAttribute("class","game_desp");
+                game3_button.onclick = null;
+                game3_button.disabled = true;
+                game3_div.appendChild(game3_button);
+                _bg.appendChild(game3_div);
+            }
+            else if(mode == "remove"){
+                $('#game1').remove();
+                $('#game2').remove();
+                $('#game3').remove();
+            }
+        }
+
+        function user_check_in_setting(){
+            var _bg = document.getElementById("bg");
+            var checkin_div = document.createElement("div");
+            checkin_div.id = "user_check_in_bg";
+
+            var title_content = document.createTextNode("Who will be joining me today?");
+            var child_content = document.createTextNode(_child_name);
+            var and_content = document.createTextNode("    &");
+
+
+            var i1 = document.createElement("input");
+            i1.setAttribute('type',"radio");
+            i1.setAttribute('name',"guardian");
+            i1.setAttribute('id',"guardian1");
+            i1.setAttribute('style',"width:35px; height:35px;");
+            i1.innerHTML += _guardian1_name;
+
+            var i1_label = document.createElement("label");
+            i1_label.innerHTML += _guardian1_name
+
+
+            var i2 = document.createElement("input");
+            i2.setAttribute('type',"radio");
+            i2.setAttribute('name',"guardian");
+            i2.setAttribute('id',"guardian2");
+            i2.setAttribute('style',"width:35px; height:35px;");
+            i2.innerHTML += _guardian2_name;
+
+            var i2_label = document.createElement("label");
+            i2_label.innerHTML += _guardian2_name
+
+            var checkin_btn = document.createElement("button");
+            checkin_btn.innerHTML = "Submit";
+            checkin_btn.onclick =function(){
+                if ((document.getElementById("guardian1").checked == true) && (document.getElementById("guardian2").checked == false)){
+                    //set participating users
+                    publishAction({to:VS, from:JS, content:STATE_USER_CHECKED_IN, guardian:_guardian1_name});
+                    document.getElementById("user_check_in_bg").remove();
+                }
+                else if((document.getElementById("guardian1").checked == false) && (document.getElementById("guardian2").checked == true)){
+                    publishAction({to:VS, from:JS, content:STATE_USER_CHECKED_IN, guardian:_guardian2_name});
+                    document.getElementById("user_check_in_bg").remove();
+                }
+                else{
+                    alert("Please select a partcipating guardian.");
+                }
+            };
+
+            checkin_div.appendChild(title_content);
+            checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(child_content);
+            // checkin_div.appendChild(document.createElement("br"));
+            // checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(and_content);
+            checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(i1);
+            checkin_div.appendChild(i1_label);
+            checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(i2);
+            checkin_div.appendChild(i2_label);
+            checkin_div.appendChild(document.createElement("br"));
+            checkin_div.appendChild(checkin_btn);
+
+            _bg.appendChild(checkin_div)
+        }
+
+        function start_button_setting(mode){
+            var _bg = document.getElementById("bg");
+            if(mode == "add"){
+                var startBtn_div = document.createElement("div");
+                startBtn_div.id = "startBtn";
+                var startBtn_img = document.createElement("img");
+                // startBtn_img.setAttribute("id","startBtn_img");
+                startBtn_img.id = "startBtn_img";
+                startBtn_img.setAttribute("class", "imgStartBtn");
+                // startBtn_img.setAttribute("onclick", "lets_start();");
+                startBtn_img.onclick = function(){$(this).removeClass("imgStartBtn").addClass("imgStartBtnSel");
+                // console.log(this.id);
+                publishAction({to:ROBOT, from:JS, content:STATE_USER_START});
+                publishAction({to:VS, from:JS, content:STATE_USER_START}); };
+                startBtn_div.appendChild(startBtn_img);
+                // startBtn_div.innerHTML = "<img id='startBtn_img' class='imgStartBtn' />";
+                _bg.appendChild(startBtn_div);
+            }
+            else if(mode == "remove"){
+                $('#startBtn').remove();
+            }
+        }
+
+        function between_game_cover_setting(mode){
+            var _bg = document.getElementById("bg");
+            if(mode == "add"){
+                var cover_div = document.createElement("div");
+                cover_div.id = "between_game_cover";
+                _bg.appendChild(cover_div);
+                // $('#between_game_cover').css({"background-image": "url('res/img/loadup.png')"});
+            }
+            else if(mode == "remove"){
+                $('#between_game_cover').remove();
+            }
+        }
+
+        // Subscribing to a Topic
+        var vs_listener = new ROSLIB.Topic({
+            ros: ros,
+            name: '/sar/vs',
+            messageType: 'std_msgs/String'
+        });
+
+        vs_listener.subscribe(function(message) {
+                var data = JSON.parse(message['data']);
+                if(data['to'] == JS){ // only process data passed to JS
+                    if(data['content'] == ACTION_SET_DEFAULT_USERS){
+                        _child_name = data['child_name'];
+                        _guardian1_name = data['guardian1_name'];
+                        _guardian2_name = data['guardian2_name'];
+                        console.log("ACTION_SET_DEFAULT_USERS");
+                        console.log(_guardian1_name);
+                    }
+                    else if(data['content'] == ACTION_OPEN_MENU){
+                        // $('#bg').animate({opacity: 0}, 'fast', function() {
+                        //     $(this).css({"background-image": "url('res/img/loadup.png')"}).animate({opacity: 1});
+                        // });
+                        $('#bg').css({"background-image": "url('res/img/loadup.png')"});
+                        // console.log("SWITCHING TO MENU");
+                        _game1 = (data['game1']).toString()
+                        _game2 = (data['game2']).toString()
+                        _game3 = (data['game3']).toString()
+                        menu_setting("add");
+                        start_button_setting("remove");
+                        document.getElementById("game1_img").src = game_to_icon_file[_game1];
+                        var _temp_elem = document.getElementById("game1_button");
+                        var game1_text = document.createTextNode(game_to_desctiption[_game1]);
+                        _temp_elem.appendChild(game1_text);
+                        document.getElementById("game2_img").src = game_to_icon_file[_game2];
+                        _temp_elem = document.getElementById("game2_button");
+                        var game2_text = document.createTextNode(game_to_desctiption[_game2]);
+                        _temp_elem.appendChild(game2_text);
+                        document.getElementById("game3_img").src = game_to_icon_file[_game3];
+                        _temp_elem = document.getElementById("game3_button");
+                        var game3_text = document.createTextNode(game_to_desctiption[_game3]);
+                        _temp_elem.appendChild(game3_text);
+                        // document.getElementById("startBtn_img").src = "";
+                        menu_selection_to_game["game1_img"] = _game1;
+                        menu_selection_to_game["game2_img"] = _game2;
+                        menu_selection_to_game["game3_img"] = _game3;
+                        menu_selection_to_game["game1_button"] = _game1;
+                        menu_selection_to_game["game2_button"] = _game2;
+                        menu_selection_to_game["game3_button"] = _game3;
+                    }
+                    else if(data['content'] == ACTION_RELOAD_OPEN_MENU){
+                        $('#bg').css({"background-image": "url('res/img/loadup.png')"});
+                        _game1 = (data['game1']).toString()
+                        _game2 = (data['game2']).toString()
+                        _game3 = (data['game3']).toString()
+                        _game1_status = data['game1_status']
+                        _game2_status = data['game2_status']
+                        _game3_status = data['game3_status']
+                        menu_setting("add", _game1_status, _game2_status, _game3_status);
+                        start_button_setting("remove");
+                        document.getElementById("game1_img").src = game_to_icon_file[_game1];
+                        var _temp_elem = document.getElementById("game1_button");
+                        var game1_text = document.createTextNode(game_to_desctiption[_game1]);
+                        _temp_elem.appendChild(game1_text);
+                        document.getElementById("game2_img").src = game_to_icon_file[_game2];
+                        _temp_elem = document.getElementById("game2_button");
+                        var game2_text = document.createTextNode(game_to_desctiption[_game2]);
+                        _temp_elem.appendChild(game2_text);
+                        document.getElementById("game3_img").src = game_to_icon_file[_game3];
+                        _temp_elem = document.getElementById("game3_button");
+                        var game3_text = document.createTextNode(game_to_desctiption[_game3]);
+                        _temp_elem.appendChild(game3_text);
+                        // document.getElementById("startBtn_img").src = "";
+                        menu_selection_to_game["game1_img"] = _game1;
+                        menu_selection_to_game["game2_img"] = _game2;
+                        menu_selection_to_game["game3_img"] = _game3;
+                        menu_selection_to_game["game1_button"] = _game1;
+                        menu_selection_to_game["game2_button"] = _game2;
+                        menu_selection_to_game["game3_button"] = _game3;
+                    }
+                    else if(data['content'] == ACTION_SEND_JS_DATA){
+                        if(typeof(data.data.screen) !== 'undefined'){
+                            $('#bg').animate({opacity: 0}, 'slow', function() {
+                            $(this).css({"background-image": "url('res/img/" + data.data.screen + "')"}).animate({opacity: 1});
+                            });
+                            menu_setting("remove");
+                            start_button_setting("remove");
+                        }
+                        publishAction({to:VS, from:JS, content:STATE_READY});
+                    }
+                    else if(data['content'] == ACTION_LOAD_DEFAULT_BG){
+                        // $('#bg').animate({opacity: 0}, 'slow', function() {
+                        //     $(this).css({"background-image": "url('res/img/loadup.png')"}).animate({opacity: 1});
+                        //     });
+                        $('#bg').css({"background-image": "url('res/img/loadup.png')"});
+                            menu_setting("remove");
+                            start_button_setting("remove");
+                    }
+                    else if(data['content'] == ACTION_LOAD_WELCOME_BG){
+                        // remove the loading phrase div
+                        document.getElementById("loading").remove();
+                        loading_audio.pause();
+                        $('#bg').css({"background-image": "url('res/img/welcome_white.png')"});
+                            menu_setting("remove");
+                            start_button_setting("add");
+                            document.getElementById("startBtn_img").src = "res/img/start_button_white.png";
+                    }
+                    else if(data['content'] == ACTION_LOAD_IMAGE){
+                        if(typeof(data.screen) !== 'undefined'){
+                            $('#bg').css({"background-image":"url('res/img/" + data.screen + "')"});
+                                menu_setting("remove");
+                                start_button_setting("remove");
+                        }
+                    }
+                    else if(data['content'] == ACTION_USER_CHECK_IN){
+                        user_check_in_setting()
+                    }
+                    else if(data['content'] == ACTION_SHOW_MENU){
+                        between_game_cover_setting("remove");
+                    }
+                    else if(data['content'] == ACTION_END){
+                        // TODO: may need to change this default image
+                        $('#bg').css({"background-image": "url('res/img/loadup.png')"});
+                        menu_setting("remove");
+                        start_button_setting("remove");
+                    }
+                    else if(data['content'] == ACTION_CLOSE){
+                        $('#bg').animate({opacity: 0}, 'slow', function() {
+                            $(this).css({"background-image": "url('res/img/powering_off.png')"}).animate({opacity: 1});
+                            });
+                        // $('#bg').css({"background-image": "url('res/img/powering_off.png')"});
+                            menu_setting("remove");
+                            start_button_setting("remove");
+                        window.setTimeout(function(){window.close();}, 10000);
+                    }
+                }
+        });
+
+    function game_selected(){
+       $(this).removeClass("imgBtn").addClass("imgBtnSel");
+       // console.log($(this));
+       // console.log(this.id);
+       // console.log(menu_selection_to_game);
+       //  console.log(menu_selection_to_game[this.id] + " has been clicked!");
+        publishAction({to:ROBOT, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+        publishAction({to:VS, from:JS, content:STATE_GAME_SELECTED, menu:menu_selection_to_game[this.id]});
+    }
+
+    function lets_start(){
+       // alert("!");
+        //$(this).removeClass("imgStartBtn").addClass("imgStartBtnSel");
+        $(this).removeClass("imgStartBtn").addClass("imgStartBtnSel");
+        // console.log($(this).id);
+        // alert("!!");
+        publishAction({to:ROBOT, from:JS, content:STATE_USER_START});
+        publishAction({to:VS, from:JS, content:STATE_USER_START});
+    }
+
+    </script>
+
+</html>

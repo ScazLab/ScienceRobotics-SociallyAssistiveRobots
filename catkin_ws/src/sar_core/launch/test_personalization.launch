@@ -1,0 +1,17 @@
+<launch>
+    <group if="false">
+        <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+    	    <arg name="port" value="9090"/>
+  	    </include>
+  	</group>
+  	<group if="false">
+  	    <include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper.launch" />
+  	</group>
+
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+    <param name="/sar/global/_g_day" type="int" value="1" />
+
+  	<node pkg="sar_core" type="personalization_manager.py" name="personalization_manager" output="screen"/>
+  	<node pkg="sar_core" type="simulated_session_manager.py" name="simulated_session_manager" output="screen"/>
+  	<node pkg="sar_core" type="simulated_game.py" name="simulated_game" output="screen"/>
+</launch>

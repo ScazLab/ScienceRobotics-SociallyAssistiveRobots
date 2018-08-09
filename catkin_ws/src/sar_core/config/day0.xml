@@ -1,0 +1,21 @@
+<launch>
+
+    <!-- core nodes -->
+    <node pkg="sar_core" type="session_manager.py" name="session_manager" output="screen">
+        <!-- <param name="_g_day" type="int" value="1" /> -->
+    </node>
+    <node pkg="sar_core" type="visual_schedule.py" name="visual_schedule" output="screen" />
+    <node pkg="sar_core" type="user_tracking_fusion.py" name="user_tracking_fusion" output="screen">
+        <param name="flag_fusion_mode" type="str" value="left" />
+    </node>
+    <node pkg="sar_core" type="user_monitor.py" name="user_monitor" output="screen">
+        <param name="test_flag_face_following" type="bool" value="false" />
+        <param name="test_flag_ja_seeking" type="bool" value="false" />
+    </node>
+    <node pkg="sar_core" type="robot_proxy.py" name="robot_proxy" output="screen" />
+    <node pkg="sar_core" type="vja_monitor.py" name="vja_monitor" output="screen" />
+
+    <node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen" />
+
+
+</launch>

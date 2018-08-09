@@ -1,0 +1,9 @@
+<launch>
+    
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+    	<arg name="port" value="9090"/>
+  	</include>
+  	<param name="/sar/global/_child_name" type="str" value="Eliza" />
+  	<param name="/sar/global/_guardian_name" type="str" value="Paul" />
+  	<node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen" />
+</launch>

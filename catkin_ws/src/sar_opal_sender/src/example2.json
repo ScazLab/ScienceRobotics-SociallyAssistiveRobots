@@ -1,0 +1,9 @@
+{
+    "name": "dragon",
+    "tag": "PlayObject",
+    "draggable": "false",
+    "audioFile": "wakeup",
+    "position": [300,-100,0],
+    "scale": [100,100,100]
+}
+

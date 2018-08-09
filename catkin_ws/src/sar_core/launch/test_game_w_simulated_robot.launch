@@ -1,0 +1,35 @@
+<launch>
+
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+    	<arg name="port" value="9090"/>
+  	</include>
+
+  	<!-- Global variables here -->
+    <param name="/sar/global/_robot_id" type="str" value="birch" />
+    <param name="/sar/global/_default_notification_level" type="int" value="2" /> <!-- what does 2 mean? -->
+    <param name="/sar/global/_send_signals_to_server" type="bool" value="false" />
+
+    <param name="/sar/global/_pilot_deployment" type="bool" value="true" />
+    <param name="/sar/global/_reset_to_day1" type="bool" value="false" />
+    <param name="/sar/global/_child_name" type="str" value="Eliza" />
+    <param name="/sar/global/_guardian_name" type="str" value="Paul" />
+
+
+    <param name="/sar/global/_ip_address" type="str" value="127.0.0.1" />
+    <param name="/sar/global/_p_whole_system_ready" type="bool" value="false" />
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+
+    <node pkg="sar_core" type="session_manager.py" name="session_manager" output="screen">
+        <param name="_g_day" type="int" value="0" />
+    </node>
+    <node pkg="sar_core" type="personalization_manager.py" name="personalization_manager" output="screen" />
+  	<node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen" />
+
+    <!-- <include file="$(find sound_play)/soundplay_node.launch" /> -->
+    <group if="true">
+        <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>
+        <node pkg="sar_core" type="tts.py" name="tts" output="screen"/>
+    </group>
+    <node pkg="sar_core" type="simulated_jibo.py" name="simulated_jibo" output="screen" />
+
+</launch>

@@ -1,0 +1,11 @@
+DATA LOGGING
+----------------------------------------------
+
+SESSION
+	session start time
+	session end time
+
+
+GAME
+	game start time 
+	game end time

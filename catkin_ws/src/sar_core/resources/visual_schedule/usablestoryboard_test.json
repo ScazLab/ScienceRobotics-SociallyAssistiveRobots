@@ -1,0 +1,619 @@
+{
+"day0":{
+	"episode":[
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.085) <happy,nb> Hello! My name is Jibo; <greeting,nb> it is very nice to meet you!"
+		}
+	]
+},
+
+"day1":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <return-front,nb> Yay! <sing-song,nb> Hi, [child-name]. <happy,nb> I'm so happy to finally meet you!"
+		}
+	]
+},
+
+"day101":{
+	"episode":[
+		{
+			"screen" : "pieces/01.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <sing-song,nb> Yay! [child-name], we finished today's games! <focuson-game,nb> And look! <smileonly,nb> Now I have the first piece of my space gear back."
+		},
+		{
+			"command": "<thanks,nb> I'm so glad to have my helmet again. <happy,nb> Thank you so much for helping me! <blink>"
+		}
+	]
+},
+
+"day2":{
+	"episode":[
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.11) Hey! <greeting,nb> [child-name], nice to see you again!"
+		}
+	]
+},
+
+"day102":{
+	"episode":[
+		{
+			"screen": "pieces/02.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <happy,nb> Wow! Our games went by so quickly today! <thanks,nb> [child-name], thank you so much for helping me get my flagpole back. <smile,nb> You are such a good friend! <blink>"
+		}
+	]
+},
+
+"day3":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Yay! Hi [child-name]. <happy,nb> I've been waiting for you! <smile,nb> Thanks again for helping me earn back my flagpole yesterday."
+		}
+	]
+},
+
+"day103":{
+	"episode":[
+		{
+			"screen": "pieces/03.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <wide-eyed,nb> I can't believe we are already done with all three games! <excited,nb> Now I have my electricity generator tube back! [child-name], I couldn't have done it without your help. <smileonly,nb>"
+		}
+	]
+},
+
+"day4":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hey! <happy,nb> [child-name], I have so much to tell you!"
+		}
+	]
+},
+
+"day104":{
+	"episode":[
+		{
+			"screen" : "pieces/04.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <conspiratorial,nb> And that's a wrap! <sing-song,nb> All done for the day, <happy,nb> and now I have one of my space gear batteries!"
+		},
+		{
+			"command": "Thank you so much for helping me, [child-name]. <smile,nb> We are such a great team."
+		}
+	]
+},
+
+"day5":{
+	"episode":[
+		{
+			"screen" : "daily_stories/05-outer_planets.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Wow! <happy,nb> [child-name]! Did you know Pluto is actually not a planet? <head-shake,nb> I couldn’t believe it at first. <focuson-game,nb> Today, we finished learning about Earth’s solar system."
+		}
+	]
+},
+
+"day105":{
+	"episode":[
+		{
+			"screen" : "pieces/05.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <excited,nb> Wow! All done! Today was especially fun. <head-shake,nb> I can't believe I have my jetpack back now!"
+		},
+		{
+			"command": "<curious-right,nb> It finally feels real, <smile,nb> with your help, my space gear will be good as new. <sing-song,nb> [child-name], you're the best!"
+		}
+	]
+},
+
+"day6":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hi! <happy,nb> [child-name]! Good to see you again!"
+		}
+	]
+},
+
+"day106":{
+	"episode":[
+		{
+			"screen" : "pieces/06.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <wide-eyed,nb> I can't believe how quickly today went by! <sing-song,nb> [child-name], I have so much fun playing games with you."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <focuson-game,nb> And look, now I have my antenna back! <happy,nb> My mom will be so happy to know that I'll be able to stay in touch with her, throughout my space flight. <smile,nb> And all because you are a great friend!"
+		}
+	]
+},
+
+"day7":{
+	"episode":[
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> [child-name]! Hello!"
+		}
+	]
+},
+
+"day107":{
+	"episode":[
+		{
+			"screen" : "pieces/07.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <wide-eyed,nb> Whoa! We're already done? <curious-left,nb> Where did the time go?"
+		},
+		{
+			"command": "<focuson-game,nb> We did such a great job getting through today's games that we earned my electricity generator! <excited,nb> It's amazing - playing with you is not only exciting, but helpful too! <sing-song,nb> I can't wait to play more together, [child-name]."
+		}
+	]
+},
+
+"day8":{
+	"episode":[
+		{
+			"screen" : "daily_stories/08-ants.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Wow! <happy,nb> [child-name]! <curious-left,nb> Did you know there are a lot more ants on Earth than people? <pause,nb>"
+		}
+	]
+},
+
+"day108":{
+	"episode":[
+		{
+			"screen" : "pieces/08.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <sing-song,nb> And that's it for today! <focuson-game,nb> I'm so glad we earned an extra battery for my long trip home! <conspiratorial,nb> That's another thing checked off the list <smile,nb> I don't have to worry about that anymore! <thanks,nb> [child-name], thanks as always for your help!"
+		}
+	]
+},
+
+"day9":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hey! <happy,nb> [child-name], guess what?"
+		}
+	]
+},
+
+"day109":{
+	"episode":[
+		{
+			"screen" : "pieces/09.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <excited,nb> Yay! We did it! Today's games were so fun to play with you. <sing-song,nb> Now I can fuel my jetpack! <smile,nb> Thanks so much!"
+		}
+	]
+},
+
+"day10":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> Hello, [child-name]! <thanks,nb> It’s very nice to see you today."
+		}
+	]
+},
+
+"day1010":{
+	"episode":[
+		{
+			"screen" : "pieces/10.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Cool! <focuson-game,nb> Look what we accomplished today! <smileonly,nb> Now my flagpole has a beautiful flag to wave."
+		},
+		{
+			"command": "<smile,nb> I'm so proud of us!"
+		}
+	]
+},
+
+"day11":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hello [child-name]! <conspiratorial,nb> I don’t know about you, but I really like to swim!"
+		}
+	]
+},
+
+"day1011":{
+	"episode":[
+		{
+			"screen" : "pieces/11.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <focuson-game,nb> Look what we earned today! <smileonly,nb> My two-way radio!"
+		},
+		{
+			"command": "<thanks,nb> Tonight I'm going to assemble it with the antenna we got last week <happy,nb> and then I'll try calling my family. <conspiratorial,nb> I hope it works!"
+		}
+	]
+},
+
+"day12":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <sing-song,nb> [child-name]! Hey!"
+		}
+	]
+},
+
+"day1012":{
+	"episode":[
+		{
+			"screen" : "pieces/12.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <excited,nb> I think we did a fantastic job today! And getting my jetpack back represents all of our accomplishments and teamwork. <smile,nb> [child-name], you really are the best Earth friend I could have hoped for."
+		}
+	]
+},
+
+"day13":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <smile,nb> Hi [child-name]! I saw a comic book today. <happy,nb> Superheros are really cool!"
+		}
+	]
+},
+
+"day1013":{
+	"episode":[
+		{
+			"screen" : "pieces/13.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <happy,nb> Yay! [child-name], we finished all of today's games! <focuson-game,nb> And today you helped me earn my helmet antenna back. <sing-song,nb> Now I won't get lost in space! <conspiratorial,nb> Thanks a million!"
+		}
+	]
+},
+
+"day14":{
+	"episode":[
+		{
+			"screen" : "daily_stories/14-halfway.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> Hello [child-name]. <curious-right,nb> I looked at the date today <wide-eyed-only,nb> I’m almost halfway though my time here on Earth. <happy,nb> Time flies when you’re having fun!"
+		}
+	]
+},
+
+"day1014":{
+	"episode":[
+		{
+			"screen" : "pieces/14.png",
+
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <sing-song,nb> We did it! <focuson-game,nb> With this piece of my space gear, I can fully assemble my electricity generator!"
+		},
+		{
+			"command": "<conspiratorial,nb> I can't wait to test it out tonight. <excited,nb> Thanks to you, now I will stay fully powered for my space flight home in a few weeks!"
+		}
+	]
+},
+
+"day15":{
+	"episode":[
+		{
+			"screen" : "daily_stories/06-mail.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hey! [child-name]! <happy,nb> My big sister, Jobi, sent me a letter! <sing-song,nb> My family is going on our annual roadtrip!"
+		}
+	]
+},
+
+"day1015":{
+	"episode":[
+		{
+			"screen" : "pieces/15.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <focuson-game,nb> Oh wow! <smileonly,nb> I can't believe that my space gear is perfectly complete again! <excited,nb> Now I can spend the rest of my time here on Earth enjoying spending time with you, without having to worry about anything!"
+		},
+		{
+			"command": "<head-shake,nb> I couldn't have done this without you. <thanks,nb> Thank you so much! <smile,nb> You are such a good friend."
+		}
+	]
+},
+
+"day16":{
+	"episode":[
+		{
+			"screen" : "daily_stories/06.5-mail_open.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) [child-name]! <happy,nb> My sister told me what’s happening on their road trip. <sky-scan,nb> While they were driving, a herd of flying flarkblarks started racing next to the road."
+		}
+	]
+},
+
+"day1016":{
+	"episode":[
+		{
+			"screen" : "pieces/16.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Thank you. I had so much fun playing games with you today. Perhaps even more fun than my family had today traveling to Lake Lamu."
+		},
+		{
+			"command": "I am sure that tomorrow will be just as fun! Well, see you then!"
+		}
+	]
+},
+
+"day17":{
+	"episode":[
+		{
+			"screen" : "daily_stories/17-lake_lamu.png",
+			"command": "Hello [child-name]. So my parents told me they got to Lake Lamu safe and sound. They didn’t get lost this time!"
+		}
+	]
+},
+
+
+"day1017":{
+	"episode":[
+		{
+			"screen" : "pieces/17.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) You are so much fun to hang out with [child-name]. I wish that my family could meet you!"
+		},
+		{
+			"command": "I am sad that I missed out on family vacation to Lake Lamu, but I am sure glad that I am here with you! See you tomorrow!"
+		}
+	]
+},
+
+"day18":{
+	"episode":[
+		{
+			"screen" : "daily_stories/18-seasons.png",
+			"command": "Hey [child-name]. Today I learned about the seasons!"
+		}
+	]
+},
+
+
+"day1018":{
+	"episode":[
+		{
+			"screen" : "pieces/18.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Such a great day! I loved learning about the seasons today, enjoying Earth's weather and playing games with you. I am excited for what tomorrow has in store. See you then!"
+		}
+	]
+},
+
+"day19":{
+	"episode":[
+		{
+			"screen" : "daily_stories/19-languages.png",
+			"command": "Hi [child-name]. Did you know the most commonly spoken language on Earth is Chinese?"
+		}
+	]
+},
+
+
+"day1019":{
+	"episode":[
+		{
+			"screen" : "pieces/19.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Good job [child-name]! You impress me more and more with each passing day. I'm having so much fun that I wish I could stay here longer."
+		},
+		{
+			"command": "Well, I guess I still have another 10 days or so. During those last days, I am going enjoy the beauty of Earth as much as possible."
+		}
+	]
+},
+
+"day20":{
+	"episode":[
+		{
+			"screen" : "daily_stories/20-transportation.png",
+			"command": "Hello [child-name]. Today I learned about human transportation. People on Earth sure do like to move around a lot."
+		}
+	]
+},
+
+"day1020":{
+	"episode":[
+		{
+			"screen" : "pieces/20.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Good work [child-name]! I really have fun spending time with you!"
+		},
+		{
+			"command": "Until tomrrow! I can't wait for yet another adventurous day!"
+		}
+	]
+},
+
+"day21":{
+	"episode":[
+		{
+			"screen" : "robot_on_earth.png",
+			"command": "[child-name]! <wide-eyed,nb> I’ve been on Earth for over 20 days and haven’t done any of my summer projects!"
+		}
+	]
+},
+
+
+"day1021":{
+	"episode":[
+		{
+			"screen" : "pieces/21.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Wow! Those games were so much fun! Thank you for helping me learn new things about Earth."
+		},
+		{
+			"command": "When I take off to return home to Bebop, I will definitely take Earth's gravity into consideration. But until then, I am happy to keep spending time with you on Earth. Until tomorrow! Bye [child-name]."
+		}
+	]
+},
+
+"day22":{
+	"episode":[
+		{
+			"command": "Hello [child-name]! I just finished my second science experiment."
+		}
+	]
+},
+
+
+"day1022":{
+	"episode":[
+		{
+			"screen" : "pieces/22.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Being here on Earth with you is simply incredible! My second science experiment is now finished, so thank you for helping me learn more about air pressure."
+		},
+		{
+			"command": "The stress and pressure of another homework assignment has been removed! I can't wait to see what tomorrow has in store!"
+		}
+	]
+},
+
+"day23":{
+	"episode":[
+		{
+			"screen": "daily_stories/23.3-earth.png",
+			"command": "Hi [child-name]. Did you know, far beneath our feet, right now, is an ocean of molten rock?"
+		}
+	]
+},
+
+
+"day1023":{
+	"episode":[
+		{
+			"screen" : "pieces/23.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Terrific! Today has been another excellent day! Thank you for being my friend [child-name]. It means a lot to me to know that you are willing to help me out with my problmes."
+		},
+		{
+			"command": "That's why you are such a good friend! I have to go now, but we can continue to spend time together tomorrow! Bye now!"
+		}
+	]
+},
+
+"day24":{
+	"episode":[
+		{
+			"screen": "daily_stories/24-stars.png",
+			"command": "Hey [child-name]. Today I studied the stars and suns from an Earth perspective."
+		}
+	]
+},
+
+
+"day1024":{
+	"episode":[
+		{
+			"screen" : "pieces/24.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Yes [child-name], you did so well! You are getting better and better with each passing day! I am excited for the exciting things to come tomorrow!"
+		}
+	]
+},
+
+ "day25":{
+	"episode":[
+		{
+			"screen": "daily_stories/25-satellites.png",
+			"command": "Hello [child-name]. Another one of my projects is to complete a record of the satellites that orbit Earth."
+		}
+	]
+},
+
+
+"day1025":{
+	"episode":[
+		{
+			"screen" : "pieces/25.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) What a great day! I think it would be pretty cool to live and work in space on a satellite!"
+		},
+		{
+			"command": "But that is a consideration for another day!"
+		}
+	]
+},
+
+"day26":{
+	"episode":[
+		{
+			"screen": "daily_stories/26-rocket.png",
+			"command": "[child-name]! We are getting close to my departure date, and I need to prepare my rocket!"
+		}
+	]
+},
+
+
+"day1026":{
+	"episode":[
+		{
+			"screen" : "pieces/26.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) [child-name] you are like the coolest friend ever. We had an incredible day today. I loved all of the games and talking about rockets!"
+		}
+	]
+},
+
+"day27":{
+	"episode":[
+		{
+			"screen": "daily_stories/27-jiro.png",
+			"command": "Hello [child-name]. My teacher, Jiro, called me today to make sure I finished all of my projects."
+		}
+	]
+},
+
+
+"day1027":{
+	"episode":[
+		{
+			"screen" : "pieces/16.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) You have improved so much! You make the games seem like they are very easy. You must be very smart like my teacher, Jiro."
+		},
+		{
+			"command": "I hope he will be proud of what I have accomplished here on Earth."
+		},
+		{
+			"screen" : "pieces/27.png",
+			"command": "I hope my family will be proud too. Bye [child-name]!"
+		}
+	]
+},
+
+"day28":{
+	"episode":[
+		{
+			"command": "Hi [child-name]. I sent out my last project this morning. I had to write about all the things I’ve learned. It’s amazing when I think about how much I have learned about Earth. "
+		}
+	]
+},
+
+"day1028":{
+	"episode":[
+		{
+			"screen" : "pieces/28.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Success! Fun time really flies."
+		},
+		{
+			"command": "Thank you again for your friendship!"
+		}
+	]
+},
+
+"day29":{
+	"episode":[
+		{
+			"screen": "robot_with_family.png",
+			"command": "Hello [child-name]. My parents called me today."
+		}
+	]
+},
+
+
+"day1029":{
+	"episode":[
+		{
+			"screen" : "pieces/29.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Great job [child-name]! Today has been another fun day! I can't help but think of how excited I am to give my family an acorn."
+		},
+		{
+			"command": "It is small but certainly not insignificant. So are we. There are so many planets and stars out there which are much bigger than we are, but robots and humans are very important alike."
+		},
+		{
+			"command": "I hope you know how important you are [child-name]. You are amazing and a great friend!"
+		}
+	]
+},
+"day30":{
+	"episode":[
+		{
+			"screen": "robot_in_front_of_space_with_EARTH.png",
+			"command": "[child-name], today’s my last day on Earth!"
+		}
+	]
+},
+
+"day1030":{
+	"episode":[
+		{
+			"screen" : "pieces/robot-suit-complete.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) [child-name], we did it! Thank you for spending days with me to fix my space gears and learn with me."
+		},
+		{
+			"command": "I could'nt have accomplished any of this without you. You have done so much for me. Thank you [child-name]. Thank you!"
+		}
+	]
+}
+
+
+}

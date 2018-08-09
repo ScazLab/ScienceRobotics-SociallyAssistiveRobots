@@ -1,0 +1,48 @@
+{
+    "0": {
+        "child-accuracy": 1.0,
+        "child-order-question-accuracy": 0.0,
+        "child-emotion-question-accuracy": 0.0
+    },
+    "1": {
+        "child-builder-location-accuracy": 0.25,
+        "child-builder-piece-choice-accuracy": 0.25,
+        "child-explainer-location-accuracy": 0.25,
+        "child-explainer-piece-choice-accuracy": 0.25
+    },
+    "2": {
+        "attempts_mean": 0.0,
+        "attempts_variance": 0.0,
+        "time_spent_mean": 0.0,
+        "time_spent_variance": 0.0,
+        "activity_with_most_attempts": 0.0,
+        "activity_child_spent_longest": 0.0,
+        "child_success_percentage": 1.0
+    },
+    "3": {
+        "attempts_mean": 0.0,
+        "attempts_variance": 0.0,
+        "time_spent_mean": 0.0,
+        "time_spent_variance": 0.0,
+        "activity_with_most_attempts": 0.0,
+        "activity_child_spent_longest": 0.0,
+        "child_success_percentage": 1.0
+    },
+    "4": {
+        "attempts_mean": 0.0,
+        "attempts_variance": 0.0,
+        "time_spent_mean": 0.0,
+        "time_spent_variance": 0.0,
+        "activity_with_most_attempts": 0.0,
+        "activity_child_spent_longest": 0.0,
+        "child_success_percentage": 1.0
+    },
+    "5": {
+	"child-guesser-percentage-correct":0.5,
+        "child-builder-percentage-correct":0.5
+    },
+    "6": {
+        "train-piece-errors":0.5,
+        "train-order-errors":0.5
+    }
+}

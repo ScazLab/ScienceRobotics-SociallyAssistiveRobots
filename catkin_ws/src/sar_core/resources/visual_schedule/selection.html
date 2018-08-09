@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SAR</title>
+    <link href="res/lib/pure.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="res/lib/eventemitter2.min.js"/>
+    <script type="text/javascript" src="res/lib/roslib.min.js"/>
+    <script src="res/lib/jquery.min.js" type="text/javascript"/>
+    <style>
+        body {
+            background-color: #DAF7A6;
+        }
+
+        .overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1000;
+        }
+
+        .pure-u-1-3 {
+            margin-top: 4%;
+        }
+
+        .imgBtn {
+            border-radius: 25px;
+            margin: 0 auto;
+            display: block;
+            height: 70%;
+            width: 70%;
+        }
+
+        .imgBtnSel {
+            margin: 0 auto;
+            display: block;
+            border-radius: 25px;
+            border: 20px solid #ff4f33;// #33f6ff ;
+            height: 67%;
+            width: 67%;
+        }
+
+        .UnChosenImg{
+            border-radius: 25px;
+            margin: 0 auto;
+            display: block;
+            height: 70%;
+            width: 70%;
+        }
+
+        .imgBtn:hover {
+            border-radius: 25px;
+            -moz-box-shadow: 5px 5px 4px #000;
+            -webkit-box-shadow: 5px 5px 4px #000;
+            box-shadow: 5px 5px 4px #000;
+            cursor: pointer;
+        }
+
+        .houseImg {
+            content: url("res/img/game_icons/house.png");
+        }
+
+        .houseImgDis {
+            content: url("res/img/game_icons/house_disabled.png");
+        }
+
+        .rocketImg {
+            content: url("res/img/game_icons/rocket.png");
+        }
+
+        .rocketImgDis {
+            content: url("res/img/game_icons/rocket_disabled.png");
+        }
+
+        .trainImg {
+            content: url("res/img/game_icons/train.png");
+        }
+
+        .trainImgDis {
+            content: url("res/img/game_icons/train_disabled.png");
+        }
+
+        .numbersImg {
+            content: url("res/img/game_icons/numbers.png");
+        }
+
+        .numbersImgDis {
+            content: url("res/img/game_icons/numbers_disabled.png");
+        }
+
+        .orgImg {
+            content: url("res/img/game_icons/organization.png");
+        }
+
+        .orgImgDis {
+            content: url("res/img/game_icons/organization_disabled.png");
+        }
+
+        .colImg {
+            content: url("res/img/game_icons/collaboration.png");
+        }
+
+        .colImgDis {
+            content: url("res/img/game_icons/collaboration_disabled.png");
+        }
+    </style>
+    <script type="text/javascript">
+
+    var ROBOT = 1;
+    var JS = 2;
+    var VS = 3;
+
+    var ACTION_START = 1;
+    var ACTION_PAUSE = 2;
+    var ACTION_END = 3;
+    var ACTION_OPEN_MENU = 4;
+    var ACTION_SHOW_MENU = 5;
+    var ACTION_CLICK_MENU = 6;
+    var STATE_READY = 101;
+    var STATE_END = 102;
+    var STATE_GAME_SELECTED = 103
+    var MENU_TL = 1;
+    var MENU_BL = 2;
+    var MENU_TC = 3;
+    var MENU_BC = 4;
+    var MENU_TR = 5;
+    var MENU_BR = 6;
+
+    var STORYTELLING = 0;
+    var ROCKET_BARRIER = 1;
+
+    function publishAction(msg){
+        setTimeout(function(){
+            var cmdVel = new ROSLIB.Topic({
+                ros : ros,
+                name : '/sar/vs',
+                messageType : 'std_msgs/String'
+            });
+            var out = new ROSLIB.Message({data:JSON.stringify(msg)});
+            cmdVel.publish(out);
+        }, 50); //waits for 50 ms to send an acknowledgment signal
+    }
+    var ros = new ROSLIB.Ros({
+        url: 'ws://localhost:9090'
+    });
+    ros.on('connection', function() {
+        console.log('Connected to websocket server.');
+        publishAction({to:VS, from:JS, content:STATE_READY})
+    });
+    ros.on('error', function(error) {
+        console.log('Error connecting to websocket server: ',
+            error);
+        alert('Error connecting to websocket server: ' + error);
+    });
+    ros.on('close', function() {
+        console.log('Connection to websocket server closed.');
+        publishAction({to:VS, from:JS, content:STATE_END})
+        alert('Connection to websocket server closed.');
+    });
+
+    </script>
+</head>
+
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1-3 ColA">
+            <img class="imgBtn houseImg colA" />
+        </div>
+        <div class="pure-u-1-3 ColB">
+            <img class="imgBtn rocketImg colB" />
+        </div>
+        <div class="pure-u-1-3 ColC">
+            <img class="imgBtn trainImg colC" />
+        </div>
+        <div class="pure-u-1-3 ColA">
+            <img class="imgBtn numbersImg colA" />
+        </div>
+        <div class="pure-u-1-3 ColB">
+            <img class="imgBtn orgImg colB" />
+        </div>
+        <div class="pure-u-1-3 ColC">
+            <img class="imgBtn colImg colC" />
+        </div>
+    </div>
+    <div class="overlay"></div>
+</body>
+<script type="text/javascript">
+$(".imgBtn").click(function()
+{
+    $(this).removeClass("imgBtn").addClass("imgBtnSel");
+
+    if($(this).hasClass("colA")){ //COL A
+        $(".houseImg").removeClass("houseImg").addClass("houseImgDis");
+        $(".numbersImg").removeClass("numbersImg").addClass("numbersImgDis");
+        $(".ColA").find(".imgBtn").removeClass("imgBtn").addClass("UnChosenImg");
+    }
+
+    if($(this).hasClass("colB")){ //COL B
+        $(".rocketImg").removeClass("rocketImg").addClass("rocketImgDis");
+        $(".orgImg").removeClass("orgImg").addClass("orgImgDis");
+        $(".ColB").find(".imgBtn").removeClass("imgBtn").addClass("UnChosenImg");
+    }
+
+    if($(this).hasClass("colC")){ //COL C
+        $(".trainImg").removeClass("trainImg").addClass("trainImgDis");
+        $(".colImg").removeClass("colImg").addClass("colImgDis");
+        $(".ColC").find(".imgBtn").removeClass("imgBtn").addClass("UnChosenImg");
+    }
+    name = -1;
+    if($(this).hasClass("houseImgDis") && !($(this).hasClass("posted")) && !($(this).hasClass("UnChosenImg"))){
+        name = ROCKET_BARRIER; // TODO: update the names
+    }else if($(this).hasClass("rocketImgDis") && !($(this).hasClass("posted")) && !($(this).hasClass("UnChosenImg"))){
+         name = ROCKET_BARRIER;
+    }else if($(this).hasClass("trainImgDis") && !($(this).hasClass("posted")) && !($(this).hasClass("UnChosenImg"))){
+         name = ROCKET_BARRIER;
+    }else if($(this).hasClass("numbersImgDis") && !($(this).hasClass("posted")) && !($(this).hasClass("UnChosenImg"))){
+         name = ROCKET_BARRIER;
+    }else if($(this).hasClass("orgImgDis") && !($(this).hasClass("posted")) && !($(this).hasClass("UnChosenImg"))){
+         name = ROCKET_BARRIER;
+    }else if($(this).hasClass("colImgDis") && !($(this).hasClass("posted")) && !($(this).hasClass("UnChosenImg"))){
+         name = ROCKET_BARRIER;
+    }
+    $(this).addClass("posted");
+    if(name != -1){
+        console.log(name + " has been clicked!");
+        publishAction({to:ROBOT, from:JS, content:STATE_GAME_SELECTED, menu:name});
+        publishAction({to:VS, from:JS, content:STATE_GAME_SELECTED, menu:name});
+    }
+});
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "expedition-games",
+  "version": "0.0.0",
+  "description": "JS games for Expedition grant",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/interaction-lab/expedition-games.git"
+  },
+  "author": "USC",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/interaction-lab/expedition-games/issues"
+  },
+  "dependencies": {
+    "http-server": "~0.9.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "browserify": "~13.1.0",
+    "vinyl-source-stream": "~1.1.0",
+    "gulp-sourcemaps": "~1.6.0"
+  }
+}

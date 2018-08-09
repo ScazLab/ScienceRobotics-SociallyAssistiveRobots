@@ -1,0 +1,34 @@
+<launch>
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find sar_core)/config/rosconsole.conf"/>
+    <env name="ROS_PYTHON_LOG_CONFIG_FILE" value="$(find sar_core)/config/python_logging.conf"/>
+
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+        <arg name="port" value="9090"/>
+    </include>
+
+    <group if="false">
+        <include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper.launch" />
+        <include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper_record.launch" />
+    </group>
+
+    <!-- Global variables -->
+    <!-- server communication -->
+    <param name="/sar/global/_robot_id" type="str" value="robot" />
+    <param name="/sar/global/_default_notification_level" type="int" value="1" /> <!-- 2: both email and text; 1: just email; 0: none -->
+    <param name="/sar/global/_send_signals_to_server" type="bool" value="true" />
+
+    <param name="/sar/global/_pilot_deployment" type="bool" value="false" />
+    <param name="/sar/global/_reset_to_day1" type="bool" value="false" />
+    <param name="/sar/global/_child_name" type="str" value="Child" />
+    <param name="/sar/global/_guardian_name" type="str" value="Dad" />
+    <param name="/sar/global/_guardian1_name" type="str" value="Dad" /> <!-- dad -->
+    <param name="/sar/global/_guardian2_name" type="str" value="Mom" /> <!-- mom -->
+
+
+    <param name="/sar/global/_ip_address" type="str" value="127.0.0.1" />
+    <param name="/sar/global/_p_whole_system_ready" type="bool" value="false" />
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+
+    <include file="$(find sar_core)/config/sar_core_node.xml" />
+
+</launch>

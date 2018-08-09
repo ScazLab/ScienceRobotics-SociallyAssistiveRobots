@@ -1,0 +1,9 @@
+<launch>
+
+    <include file="$(find clm_ros_wrapper)/launch/face_recognition_two_faces_assessment_mom.launch" />
+
+    <node pkg="sar_core" type="user_tracking_fusion.py" name="user_tracking_fusion" output="screen">
+        <param name="flag_fusion_mode" type="str" value="left" />
+    </node>
+
+</launch>

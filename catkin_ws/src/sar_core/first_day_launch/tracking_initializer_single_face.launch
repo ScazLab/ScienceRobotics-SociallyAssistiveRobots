@@ -1,0 +1,5 @@
+<launch>
+
+	<include file="$(find clm_ros_wrapper)/launch/face_recognition_initializer.launch" />
+
+</launch>

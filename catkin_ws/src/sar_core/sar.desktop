@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SAR
+Exec=/home/sar/catkin_ws/src/sar_core/run_sar_application.sh
+Icon=/home/sar/catkin_ws/src/sar_core/resources/graphics/app_icon.png
+Terminal=true
+Type=Application

@@ -1,0 +1,92 @@
+
+<launch>
+   
+   <!-- camera frame to world frame rotation matrix 
+    rotation_cf2wf_ij refers to the entry in row i and column j-->
+   <param name="rotation_cf2wf_11" type="double" value="-0.9130"/>
+   <param name="rotation_cf2wf_12" type="double" value="0"/>
+   <param name="rotation_cf2wf_13" type="double" value="0.4078"/>
+   <param name="rotation_cf2wf_21" type="double" value="-0.4078"/>
+   <param name="rotation_cf2wf_22" type="double" value="0"/>
+   <param name="rotation_cf2wf_23" type="double" value="-0.9130"/>
+   <param name="rotation_cf2wf_31" type="double" value="0"/>
+   <param name="rotation_cf2wf_32" type="double" value="-1"/>
+   <param name="rotation_cf2wf_33" type="double" value="0"/>
+
+   <!-- camera frame to world frame translation vector 
+    translation_cf2wf_i refers to the entry i-->
+   <param name="translation_cf2wf_1" type="double" value="342"/>
+   <param name="translation_cf2wf_2" type="double" value="390"/>
+   <param name="translation_cf2wf_3" type="double" value="180"/>
+
+    <!-- screen parameters - dimensions and angles -->
+   <param name="screenAngleInDegrees" type="int" value="52"/>
+   <param name="screenHeight" type="double" value="380"/>
+   <param name="screenWidth" type="double" value="520"/>
+   <param name="screenGap" type="double" value="20"/> <!-- only used when detecting the targets on screen-->
+
+   <!-- screen parameters - for inside/outside check TODO -->
+
+   <!-- robot parameters - position -->
+   <param name="robot_position_wf_1" type="double" value="340"/>
+   <param name="robot_position_wf_2" type="double" value="-100"/>
+   <param name="robot_position_wf_3" type="double" value="0"/>
+
+   <!-- world frame to robot frame rotation matrix 
+    rotation_wf2rf_ij refers to the entry in row i and column j
+    referring to 3*pi/4 counter-clockwise rotation
+    robot frame is right-handed and world frame is left-handed
+    so using reflections for the second row-->
+   <param name="rotation_wf2rf_11" type="double" value="-0.7041"/> <!-- cos(theta) 70710678118-->
+   <param name="rotation_wf2rf_12" type="double" value="-0.7100"/> <!-- sin(theta)-->
+   <param name="rotation_wf2rf_13" type="double" value="0"/> 
+   <param name="rotation_wf2rf_21" type="double" value="0.7100"/> <!-- -sin(theta)-->
+   <param name="rotation_wf2rf_22" type="double" value="-0.7041"/> <!-- cos(theta), minue due to reflection-->
+   <param name="rotation_wf2rf_23" type="double" value="0"/>
+   <param name="rotation_wf2rf_31" type="double" value="0"/>
+   <param name="rotation_wf2rf_32" type="double" value="0"/>
+   <param name="rotation_wf2rf_33" type="double" value="1"/>
+
+   <!-- robot parameters - radius for inside/outside check
+    FIX IT -->
+   <param name="robot_radius" type="double" value="200"/>
+
+  <!--<arg name="value" default="0"/>-->
+  <!--<arg name="webcam_num"/>-->
+  <!--<param name ="device" value="$(arg webcam_num)" type="int"/>-->
+  <!--<node pkg="clm_ros_wrapper" type="clm_ros_wrapper" name="clm_ros_wrapper" output="screen"></node>-->
+
+   <!-- type="int"/> -->
+  
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+  </node>
+
+  <node pkg="clm_ros_wrapper" type="scene_publisher" name="scene_publisher" output="screen"> 
+    <param name="device_test" type="int" value="0"/>
+  </node>
+
+  <node pkg="clm_ros_wrapper" type="clm_ros_wrapper" name="clm_ros_wrapper" output="screen"> 
+   <param name ="device_test" type ="int" value="0"/> 
+  </node>
+
+ <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <remap from="image" to="clm_ros_wrapper/face_image"/>
+    <param name="autosize" value="true" />
+  </node>
+
+  <node pkg="clm_ros_wrapper" type="find_gazepoint" name="find_gazepoint" output="screen"> 
+   <param name="device_test" type="int" value="0"/>
+  
+  </node>
+
+  <node pkg="clm_ros_wrapper" type="target_detector" name="target_detector" output="screen"> 
+   <param name="device_test" type="int" value="0"/>
+  </node>
+
+</launch>

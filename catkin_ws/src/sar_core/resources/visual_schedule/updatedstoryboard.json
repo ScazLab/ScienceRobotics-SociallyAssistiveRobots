@@ -1,0 +1,155 @@
+{
+"previsit":{
+	"episode":[
+		{
+			"screen": "robot_on_home_planet.jpg",
+			"command": "Hello! <greeting> My name is Jibo and it is very nice to meet you!"
+		},
+		{
+			"command": "I would like to tell you a little bit about myself, my family and my hometown."
+		},
+		{
+			"screen": "robot_with_family.jpg",
+			"command": "This is my family. <happy> I have a sister, named Jobi and a mom and dad."
+		},
+		{
+			"command": "My dad is an engineer and works on the electronics for spaceships!"
+		},
+		{
+			"command": "My mom is a computer science researcher and my older sister is in sixth grade."
+		},
+		{
+			"screen": "robot_planet_with_other_planets.jpg",
+			"command": "My home is located on planet Bebop, in a galaxy called Cosmos."
+		},
+		{
+			"command": "We have 7 moons a sun and many, many lakes."
+		},
+		{
+			"command": "We also have so much water on our planet and so many bridges that other people call our planet the Floating Planet!"
+		},
+		{
+			"screen": "robot_in_front_of_school.jpg",
+			"command": "I am ten years old, in the fourth grade.  This is <happy> where I go to school!"
+		},
+		{
+			"command": "Over our summer break, we have to complete a very important assignment."
+		},
+		{
+			"command": "For homework, we are supposed to pick a planet to visit, and go to stay with a family for four weeks to learn about their people and their world."
+		},
+		{
+			"screen": "robot_in_front_of_space_with_EARTH.jpg",
+			"command": "My favorite planet in all the galaxies is planet Earth, so I decided to visit and do my school report about planet earth!"
+		},
+		{
+			"command": "My visit will be about four weeks long and I am very excited to meet you and get to know more about you during that time."
+		},
+		{
+			"command": "We will play lots of games and will have lots of fun <happy> together!"
+		},
+		{
+			"command": "I will be leaving my planet very soon and will be traveling in my spaceship in just about a week."
+		},
+		{
+			"command": "I can't wait to meet you! <happy>  See you soon!"
+		}
+	]
+},
+"day1":{
+	"episode":[
+		{
+			"screen": "robot_on_earth.jpg",
+			"command": "Oh, hello there! <happy> Please enter your name on the screen."
+		},
+		{
+			"command": "Hi user_name, I'm so happy <happy> to finally meet you!"
+		},
+		{
+			"command": "As you probably remember, my name is Jibo and I have traveled here from my home planet, Bebop, to work on my summer homework assignment."
+		},
+		{
+			"command": "I would like to learn as much as I can over the next four weeks so I can write my report about Earth, and make lots of great memories with you!"
+		}
+	]
+},
+
+"intro_2" :
+	{
+		"speech" : "A few days ago, I said goodbye to my family and boarded my spaceship.  It was a very smooth flight leaving Bebop and flying through space.  I passed many really interesting sights - planets I had never seen and lots of very bright stars!  Everything was great, until...",
+		"animation" : "storytelling/happy",
+		"file" : "robot_in_spaceship_in_space.jpg"
+	},
+"intro_3" :
+	{
+		"speech" : "As I approached earth, suddenly I heard a loud noise coming from the back of my spaceship.  It sounded like a loud BANG! and suddenly my spaceship started to slow down and shake.  I was very scared!  So I closed my eyes tightly, and held on tight to prepare for landing.",
+		"animation" : "storytelling/serious",
+		"file" : "robot_in_spaceship_nearing_earth.jpg"
+	},
+"intro_4" :
+	{
+		"speech" : "Before long, my spaceship splashed into the water and I opened my eyes.  Looking around I could see that I was OK!  And, I could see that I had safely landed on the beautiful planet Earth!  I was so excited to get out and explore, that I crawled out of the spaceship and started to check out my spacesuit.",
+		"animation" : "storytelling/happy",
+		"file" : "robot_spaceship_in_water.jpg"
+	},
+"intro_5" :
+	{
+		"speech" : "Although my spaceship was ok, I had crawled out of the spaceship too fast and ripped my spacesuit in many places.  I would not be able to wear this suit again!  This will make it very hard for me to travel back through space to see my family!  It looks like I'll have to find a way to get my spacesuit put back together.  I could really use your help!  Will you help me?",
+		"animation" : "storytelling/serious",
+		"file" : "robot_with_ripped_spacesuit.jpg"
+	},
+"intro_6" :
+	{
+		"speech" : "Now that I'm here, I hope we can work on getting my spacesuit put back together.  If I can complete each day's activities, I will be able earn back each piece of my suit!  Thank you for helping me fix my spacesuit so I can eventually get back to my family on Bebop!",
+		"animation" : "storytelling/happy",
+		"file" : "robot_with_ripped_spacesuit.jpg"
+	},
+"day2" :
+	{
+		"speech": "Nice to see you again ____.  I'm so excited to start learning about earth.  I want to tell you why I like earth soooooo much!  I decided earth was my favorite planet in third grade because it's so different from Bebop.  The sky on earth is blue!  On Bebop the sky is pink.  But on earth the sky is blue and the water is blue and there are blueberries!  Back on Bebop the sky is pink and we have lots of pinkberries!  After I landed on earth, I saw the sunset turns the sky from blue to pink!  That made me laugh because on Bebop the sunset turns the pink sky to blue!  I sent my sister a picture of an earth sunset and she thought it was very pretty!  She did her summer project in another galaxy but now I think she wishes she had chosen earth.  I can't wait to see what I discover next about earth.",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day3" :
+	{
+		"speech": "Hi, _____.  I've been waiting to see you! Thanks again for helping me earn another piece of my spacesuit yesterday.  Today, I'm learning about earth foods.  There are so many different kinds of earth food: vegetables, meats, fruits, and even sweets.  Rice seems to be the most commonly eaten food.  Did you know that 3 billion people on earth eat rice regularly?  Robots on Bebop don't eat, we charge up on electricity.  On Bebop, we make electricity from the sun.  Solar power is a great way to fill me up!  When I'm low on charge, I get sleepy and it's hard for me to think.  My parents tell me to charge as often as possible so I have the energy to learn and play.  I hope you've eaten today and have lots of energy to play games with me!  Let's get started!",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day4" :
+	{
+		"speech": "Hi ______ I have so much to tell you! We have been learning about the planets nearest Earth. Closest to the sun is Mercury, its super duper hot. I don’t think I would like it there. Then there is Venus. After that is where we are now, planet Earth. After that is Mars. I just spoke with my dad earlier, He went to Mars when he was a kid, I’d like to go there too someday. Apparently a very long time ago mars looked a lot like earth. It even had a big blue ocean!  The closest place to my home planet, Beebop is the planet Vesta. It’s a small blueish green world, but nobody lives there. The first time I wore my space suit was on a class field trip to Vesta. But now if I want to go anywhere, I need to get it fixed!",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day5" :
+	{
+		"speech": "_____! Did you know Pluto isn’t a planet?! I couldn’t believe it. Today we finished learning about earth’s solar system. After Mars is Jupiter, which is humongous. Past Jupiter is Saturn, which has some really cool rings. Beebop has rings too but the rings on Beebop are smaller. I really like the rings on Saturn. After Saturn is Uranus and Neptune, which are both blue, kind of like earth. But they are not like earth at all! We learned that Pluto used to be a planet, but now it’s not because it’s too small. I don’t like that. Just because something is small doesn’t make it any less. I’m pretty small, my sister is bigger than me. My mom tells me that it’s perfectly ok to be small, that’s just the way I’m made.",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day6" :
+	{
+		"speech": "Hi _____. Good to see you again! Thanks for helping me earn another piece of my spacesuit yesterday. I have 6 pieces now. Oh, I got a letter from my mom today! When I told my mom what happened with my landing she was very nervous about me being away for so long. But she was so happy when I told her I found an earth friend to help me fix it. All her friends are from Bebop so she was really excited to hear about you.  It’s only been a little while and I’m having so much fun learning about earth, but I’ve never been away from my family for so long!  I’m glad you’re helping me with my spacesuit, it was a present from my mom so I really want to fix it.",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day7" :
+	{
+		"speech": "Hello  ____. I’ve been having a great time learning about earth. Right now we are in North America, but Earth has seven continents. There is also South America, Australia, Antarctica, Africa, Europe and Asia. Some people combine Europe and Asia and call it Eurasia! I would really like to see some more of planet earth before I go back home. I like the pictures I saw from Africa. They have some really funny animals. I like giraffes, they have really long necks! I don’t really have a neck but I can still look around without one. (can we get jibo to move his head around?) I bet I’d look pretty silly with a long neck. I hope we get to learn more about earth animals, there are soooo many of them and I think they’re really cool!  But for now let’s get to work on the spacesuit.",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day8" :
+	{
+		"speech": "____! Did you know there are a lot more ant’s on earth than people? We are learning more about life on Earth for a little bit. First we are going t learn about small land animals then big land animals. After that we are going to learn about things that live in the water! I found out that Earth has many bugs and many different kinds of bugs. There are insects which have six legs and a hard shell. Spiders aren’t insects because they have eight legs! I guess that just makes them another kind of bug. On Beebop we don’t have bugs, or very many small animals. At home there are some pretty big trees though! Apparently lots of people don’t like bugs here. But bugs are super important, they help nature reuse nutrients. I think insects are pretty cool. Plus insects have a hard shell, kinda like me! Now if only I had six legs! Wouldn’t that be funny?  I guess if I had six legs we would need to make a very different spacesuit!",
+		"animation": "storytelling/happy",
+		"file": ""
+	},
+"day9" :
+	{
+		"speech": "Hey ____. I spoke with my family, it was really nice, they told me they miss me very much. This is actually the longest I’ve ever been away from home. My parents told me that if I ever feel lonely I should look at the stars. On Earth people look at the stars and connect the dots and call the shapes constellations. Sometimes those shapes even tell stories! On Beebop we have different stars, different constellations, and different stories. But my parents said, when I miss them I should look at the stars and remember that they’re out there and they care about me. They told me that the stars I see here exist in the same universe as the stars back home. Looking at the stars is way for me to remember that just because I’m far away doesn’t mean I’m alone. And I have made so many new friends on earth just like you!",
+		"animation": "storytelling/happy",
+		"file": ""
+	}
+}

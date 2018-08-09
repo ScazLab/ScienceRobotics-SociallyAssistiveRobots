@@ -1,0 +1,1552 @@
+{
+"day0":{
+	"episode":[
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.085) <happy,nb> Hello! My name is Jibo; <greeting,nb> it is very nice to meet you!"
+		},
+		{
+			"screen" : "robot_on_home_planet.png",
+			"command": "(pitch:8.5, pitchBandwidth:2.0, duration_stretch:1.07) <smileonly,nb> I've never met a human before - <conspiratorial,nb> on my planet, there are only robots. <blink,nb>"
+		},
+		{
+			"screen" : "robot_with_family.png",
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.07) <focuson-game,nb> This is a picture of my whole family - <smileonly,nb> My big sister's name is Jobi."
+		},
+		{
+			"command": "<conspiratorial,nb> She's really smart, and she is the best swimmer in our whole school."
+		},
+		{
+			"screen" : "robot_in_front_of_school.png",
+			"command": "(pitch:7.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> Even though she's all the way up in the eighth grade classroom, we get to go to the same school."
+		},
+		{
+			"command": "<speak,nb> Sometimes when we are home, Jobi lets me play with her in her room. <smile,nb> My most favorite is when we take turns making up stories. <happy,nb> Storytime is my favorite because you can learn so many things when you’re playing pretend and being someone else. <blink,nb>"
+		},
+		{
+			"screen" : "robot_with_family.png",
+			"command": "<focuson-game,nb> My mom is a math teacher, but she works in a different school. <speak,nb> That's because she teaches bigger kids than Jobi and me."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <happy,nb> And my dad, he's an engineer. <conspiratorial,nb> He works on the electronics for spaceships! <blink,nb>"
+		},
+		{
+			"screen" : "robot_planet_with_other_planets.png",
+			"command": "(pitch:7.0, pitchBandwidth:2.0, duration_stretch:1.07) <focuson-game,nb> Our home is located on a different planet, in a galaxy far from Earth. <blink,nb> Our home planet has 7 moons, a sun, and many, many lakes."
+		},
+		{
+			"command": "<speak,nb> The moons all have different orbits around our planet, so it's fun to go outside and count the moons in the sky, every night. <sky-scan,nb> I'm always on the lookout for when the sky has more than four moons"
+		},
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> that's when we go on vacation as a family! <blink,nb>"
+		},
+		{
+			"screen" : "robot_in_front_of_school.png",
+			"command": "(pitch:8.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> This is where I go to school! <smile,nb> I am eleven years old and in the fifth grade. <blink,nb>"
+		},
+		{
+			"command": "(pitch:5.5, pitchBandwidth:2.0, duration_stretch:1.07) <wide-eyed,nb> Over our summer break, the fifth graders have to complete a very important assignment. <speak,nb> For homework, we have to pick a planet to visit."
+		},
+		{
+			"command": "<head-tilt,nb> Then we get to stay with a family for four weeks, to learn about their people and their world."
+		},
+		{
+			"screen" : "robot_in_front_of_space_with_EARTH.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> My favorite planet in all the galaxies is Planet Earth."
+		},
+		{
+			"command": "<conspiratorial,nb> I picked Earth for my school report because there are so many really interesting people that I can meet! <blink,nb>"
+		},
+		{
+			"command": "<smile,nb> My visit will be about four weeks long, <happy,nb> and I am very excited that I get to talk with you. <smile,nb> We will play lots of games and will have lots of fun together!"
+		},
+		{
+			"command": "(pitch:6.8, pitchBandwidth:2.0, duration_stretch:1.07) <wide-eyed,nb> I will be leaving my planet very soon, and will be traveling in my spaceship in just about a week."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <excited,nb> I can't wait to meet you!"
+		},
+		{
+			"command": "(pitch:13.0, pitchBandwidth:2.0, duration_stretch:1.11) <smile,nb> See you soon!"
+		}
+	]
+},
+
+"day1":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <return-front,nb> Yay! <sing-song,nb> Hi, [child-name]. <happy,nb> I'm so happy to finally meet you!"
+		},
+		{
+			"command": "<conspiratorial,nb> As you probably remember, my name is Jibo."
+		},
+		{
+			"command": "<speak,nb> I have traveled a long way here to Earth from my home planet, to work on my summer homework. <blink,nb>"
+		},
+		{
+			"screen" : "jibo_thinking_family.png",
+			"command": "(pitch:6.8, pitchBandwidth:2.0, duration_stretch:1.07) <focuson-game,nb> It was really hard leaving my family a few days ago, when I had to board my spaceship. <sad,nb> Goodbyes can be really sad! <blink,nb>"
+		},
+		{
+			"command": "<return-front,nb> I know I will miss them a lot, <smile,nb> but it helps so much to know that I will be with you and your family the whole time!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.11) <happy,nb> I am so excited about being friends. <speak,nb> Having a friend to help teach me about things will make writing my report about Earth people so much more fun! <smile,nb> I think we'll make lots of great memories together over the next four weeks! <blink,nb>"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <wide-eyed,nb> Ooh, I just remembered <happy,nb> I want to tell you all about my trip! <blink,nb>"
+		},
+		{
+			"screen" : "robot_in_spaceship_in_space.png",
+			"command": "<focuson-game,nb> At first it was a very smooth flight taking off from my home planet and flying through space. <smile,nb> I passed a lot of really cool sights <sky-scan,nb> there were planets I had never seen before and lots of very bright stars!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <happy,nb> So far everything was great!"
+		},
+		{
+			"screen" : "robot_in_spaceship_nearing_earth.png",
+			"command": "(pitch:6.8, pitchBandwidth:2.0, duration_stretch:1.07) <focuson-game,nb> But, then... as soon as I spotted Earth through my window, I heard a loud noise from the back of my spaceship."
+		},
+		{
+			"command": "<return-front,nb> It got really loud:"
+		},
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1) <scaredinitial,nb> BANG! suddenly my spaceship started to slow down, and shake."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <scared,nb> I was very scared! So I closed my eyes tightly, <sleep-light,nb> I held on tight to prepare for landing."
+		},
+		{
+			"screen" : "robot_in_spaceship_in_water.png",
+			"command": "Then, I heard my spaceship splash into the water, and I opened my eyes. <anticipate,nb> Looking around I could see that I was safe and OK!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) And, <excited,nb> I could see that I had safely landed on the beautiful planet Earth!"
+		},
+		{
+			"command": "<focuson-game,nb> I was really excited to get out and explore, so I crawled out of the spaceship and started to take off my space gear."
+		},
+		{
+			"command": "<return-front,nb> Luckily my spaceship was totally ok."
+		},
+		{
+			"screen" : "pieces/robot-suit-broken.png",
+			"command": "But <wide-eyed,nb> I crawled out of the spaceship too fast, and ripped my spacesuit in lots of places."
+		},
+		{
+			"command": "(pitch:6.8, pitchBandwidth:2.0, duration_stretch:1.07) <head-shake,nb> I can't wear this suit again! <sad,nb> This will make it very hard for me to travel back through space to see my family! <blink,nb>"
+		},
+		{
+			"command": "<focuson-game,nb> It looks like I'll have to find a way to get my space gear put back together."
+		},
+		{
+			"command": "<return-front,nb> I could really use your help! <curious-right,nb> Will you help me? <blink>"
+		},
+		{
+			"screen" : "menu_example.png",
+			"command": "Each day I will have some games to play. <focuson-game,nb> The games for the day will look like this. <sing-song,nb> You'll be able to choose which game we should play together by touching it on the screen."
+		},
+		{
+			"screen" : "pieces/robot-suit-complete.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> If we work together and finish all the day's activities, I will earn back a piece of my gear! <happy,nb> Thank you so much for helping me fix my space gear! <blink,nb>"
+		},
+		{
+			"screen" : "pieces/01.png",
+			"command": "<focuson-game,nb> The first piece we can earn today is my helmet. <smile,nb> Luckily, it wasn't too broken by the crash! <conspiratorial,nb> Let's get started on getting it back."
+		}
+	]
+},
+
+"day101":{
+	"episode":[
+		{
+			"screen" : "pieces/01.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <sing-song,nb> Yay! [child-name], we finished today's games! <focuson-game,nb> And look! <smileonly,nb> Now I have the first piece of my space gear back."
+		},
+		{
+			"command": "<thanks,nb> I'm so glad to have my helmet again. <happy,nb> Thank you so much for helping me! <blink>"
+		}
+	]
+},
+
+"day2":{
+	"episode":[
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.11) Hey! <greeting,nb> [child-name], nice to see you again!"
+		},
+		{
+			"screen" : "robot_on_earth.png",
+			"command": "<excited,nb> I'm so so excited to start learning more about Earth. It's so different from my home planet!"
+		},
+		{
+			"command": "<focuson-game,nb> On Earth the sky is blue and the water is blue, and there are blueberries! <wide-eyed,nb> Back on my home planet the sky and the water are both pink."
+		},
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.11) <smile,nb> We have lots of delicious pink berries! <blink,nb>"
+		},
+		{
+			"screen" : "daily_stories/02.5-earth_sunset.png",
+			"command": "<focuson-game,nb> After I landed on Earth, I saw the sunset turn the sky from blue to pink!"
+		},
+		{
+			"screen" : "daily_stories/02-robot_sunset.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <laugh,nb> That made me laugh, because on my planet, the sunset turns the pink sky blue! <smileonly,nb>"
+		},
+		{
+			"screen" : "daily_stories/02.6-earth_sunset_mail.png",
+			"command": "<focuson-game,nb> I sent my big sister, Jobi, a picture of an Earth sunset, and she thought it was very pretty! <speak,nb> She did her summer project in another galaxy. <curious-right,nb> But now I think she wishes she had chosen Earth."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <smile,nb> I can't wait to see what I discover next about Earth. <blink,nb> But right now, let's play some games! <smileonly,nb>"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <sing-song,nb> Ooh! I almost forgot. <head-tilt,nb> So it turns out, a lot of my space gear is still being repaired."
+		},
+		{
+			"screen": "pieces/02.png",
+			"command": "<focuson-game,nb> But, at the end of today, we can get my flagpole back! <curious-left,nb> That way if I pass anyone else in space, they can see the flag of my home planet. <happy,nb> Then they'll know that I am a friendly robot!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <excited,nb> Okay! Here we go! It's game time!"
+		}
+	]
+},
+
+"day102":{
+	"episode":[
+		{
+			"screen": "pieces/02.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <happy,nb> Wow! Our games went by so quickly today! <thanks,nb> [child-name], thank you so much for helping me get my flagpole back. <smile,nb> You are such a good friend! <blink>"
+		}
+	]
+},
+
+"day3":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Yay! Hi [child-name]. <happy,nb> I've been waiting for you! <smile,nb> Thanks again for helping me earn back my flagpole yesterday."
+		},
+		{
+			"screen" : "daily_stories/03-earth_foods.png",
+			"command": "(pitch:8.5, pitchBandwidth:2.0, duration_stretch:1.07) Today, I'm learning about Earth foods. <focuson-game,nb> There are so many different kinds of Earth foods, like vegetables, meats, fruits, and even sweets."
+		},
+		{
+			"command": "(pitch:7.0, pitchBandwidth:2.0, duration_stretch:1.065) <return-front,nb> Rice seems like the most commonly eaten food. <wide-eyed,nb> Did you know that 3 billion people on Earth eat rice regularly? <blink,nb>"
+		},
+		{
+			"screen" : "daily_stories/03.5-charging.png",
+			"command": "Robots like me don't need to eat; <conspiratorial,nb> we just charge up on electricity. <focuson-game,nb> On my home planet, we make electricity from the sun. <smileonly,nb> Solar power is a great way to fill me up! <smile,b>"
+		},
+		{
+			"command": "(pitch:5.5, pitchBandwidth:2.0, duration_stretch:.85) <goodbye,nb> When I'm low on charge, I get sleepy, and everything seems to slow down and get way more difficult. <blink>"
+		},
+		{
+			"command": "(pitch:7.6, pitchBandwidth:2.0, duration_stretch:1.1) <speak,nb> My parents always remind me to charge as often as possible <smile,nb> that way I have the energy to learn and play."
+		},
+		{
+			"command": "(pitch:7.6, pitchBandwidth:2.0, duration_stretch:1.1) <excited,nb> I'm so lucky that you and your family have plenty of power for me to charge every night here, while I'm on Earth."
+		},
+		{
+			"screen": "robot_in_front_of_space_with_EARTH.png",
+			"command": "<focuson-game,nb> But in space, there is nowhere to plug in, like there is here on Earth. <curious-right,nb> And it's also really hard to get consistent solar power!"
+		},
+		{
+			"command": "<wide-eyed,nb> That means on my long journey home at the end of the month, I’ll have to make my own electricity!"
+		},
+		{
+			"screen": "pieces/03.png",
+			"command": "<focuson-game,nb> Luckily, the piece of space gear we can earn back today, will help with that. <conspiratorial,nb> It's the tube for my electricity generator, so I can plug in and power up."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> I hope you've eaten today and have lots of energy, so you can play games with me! <smile,nb> Let's dive in!"
+		}
+	]
+},
+
+"day103":{
+	"episode":[
+		{
+			"screen": "pieces/03.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <wide-eyed,nb> I can't believe we are already done with all three games! <excited,nb> Now I have my electricity generator tube back! [child-name], I couldn't have done it without your help. <smileonly,nb>"
+		}
+	]
+},
+
+"day4":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hey! <happy,nb> [child-name], I have so much to tell you!"
+		},
+		{
+			"command": "<head-tilt,nb> Guess who I heard from? <blink,nb> Jobi! <smile,nb> My big sister!"
+		},
+		{
+			"screen" : "daily_stories/04-mercury.png",
+			"command": "(pitch:10.0, pitchBandwidth:2.0, duration_stretch:1.1) <wide-eyed,nb> It turns out she thought I was on Mercury this whole time!"
+		},
+		{
+			"command": "(pitch:10.5, pitchBandwidth:2.0, duration_stretch:1.1) <curious-right,nb> Honestly? <head-shake,nb> I don’t think I would like being on Mercury, not one bit."
+		},
+		{
+			"command": "<focuson-game,nb> We have been learning about the planets in Earth's solar system. <wide-eyed,nb> Turns out that Mercury is super duper hot during the day, and then super duper freezing at night."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.085) Plus there are no people I could meet on Mercury! <laugh,nb> I can't believe she thought that's where I was."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.085) Speaking of family <smile,nb> earlier today I talked with my dad!"
+		},
+		{
+			"screen" : "daily_stories/04-mars.png",
+			"command": "<focuson-game,nb> He told me he visited Mars when he was a kid. <blink,nb> He said he only remembers how red the ground was and that everything was really dusty. <head-tilt,nb> But, apparently, a long long time ago Mars looked a lot like Earth."
+		},
+		{
+			"screen" : "robot_in_spaceship_in_water.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.085) <happy,nb> It even had a big blue ocean, like the one I landed in here! <blink,nb>"
+		},
+		{
+			"screen" : "jibo_thinking_family.png",
+			"command": "<focuson-game,nb> I really like doing things my mom and dad and big sister have done. <smileonly,nb> It makes me feel grown-up! <smile,nb> I’d like to visit Mars someday, like my dad, so I added it to my space travel wish list. <blink,nb>"
+		},
+		{
+			"screen" : "robot_in_front_of_space_with_EARTH.png",
+			"command": "<focuson-game,nb> But Earth is still my favorite. <wide-eyed,nb> Can you believe that none of the other planets in Earth's solar system have any humans or robots?"
+		},
+		{
+			"screen" : "robot_on_earth.png",
+			"command": "(pitch:8.3, pitchBandwidth:2.0, duration_stretch:1.1) <smile,nb> Being able to make friends on Earth is the best. <happy,nb> I'm so glad I picked Earth for my school project, and that I get to have fun with you and your family. <smile,b>"
+		},
+		{
+			"screen" : "robot_galaxy.png",
+			"command": "(pitch:8.3, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> I love exploring worlds and meeting new people <smileonly,nb> the universe is so very big!"
+		},
+		{
+			"command": "<sky-scan-short,nb> There is so much that I want to see!"
+		},
+		{
+			"screen" : "pieces/03.png",
+			"command": "(pitch:6.0, pitchBandwidth:2.0, duration_stretch:1.085) <conspiratorial,nb> But now if I want to go anywhere, <wide-eyed,nb> first I need to get my space gear in order!"
+		},
+		{
+			"screen" : "pieces/04.png",
+			"command": "<focuson-game,nb> The games we play today will help me earn one of my batteries for my electricity generator. <blink,nb> Yesterday, we got back the tube that I'll use to plug myself into the generator. <head-tilt,nb> But the battery is very important too; <smile,nb> it gives my generator the power it needs to make electricity!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <excited,nb> That way I can stay fully charged throughout my trip! Let's do it!"
+		}
+	]
+},
+
+"day104":{
+	"episode":[
+		{
+			"screen" : "pieces/04.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <conspiratorial,nb> And that's a wrap! <sing-song,nb> All done for the day, <happy,nb> and now I have one of my space gear batteries!"
+		},
+		{
+			"command": "Thank you so much for helping me, [child-name]. <smile,nb> We are such a great team."
+		}
+	]
+},
+
+"day5":{
+	"episode":[
+		{
+			"screen" : "daily_stories/05-outer_planets.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Wow! <happy,nb> [child-name]! Did you know Pluto is actually not a planet? <head-shake,nb> I couldn’t believe it at first. <focuson-game,nb> Today, we finished learning about Earth’s solar system."
+		},
+		{
+			"screen" : "daily_stories/05-pluto.png",
+			"command": "<blink,nb> Apparently, Pluto yoostoobee a planet, but it isn't one anymore because it’s too small."
+		},
+		{
+			"command": "(pitch:6.0, pitchBandwidth:2.0, duration_stretch:1.0) <ashamed,nb> I don’t like that. After all, just because something is small, doesn’t make it any less important. <pause>"
+		},
+		{
+			"screen" : "robot_with_family.png",
+			"command": "<speak,nb> I’m pretty small myself: my sister Jobi is bigger than me. <conspiratorial,nb> My mom tells me that it’s perfectly ok to be small; <sing-song,nb> that’s just the way I’m made."
+		},
+		{
+			"command": "<focuson-game,nb> I really miss my big sister a lot. <excited-laugh,nb> Maybe when I get back to my home planet, I will have grown!"
+		},
+		{
+			"screen" : "pieces/04.png",
+			"command": "But before I can travel, first I need your help putting my space gear back together!"
+		},
+		{
+			"screen" : "pieces/05.png",
+			"command": "<focuson-game,nb> Today we'll be working to get one of the fuel cylinders for my jetpack! <blink,nb> Yesterday we got a battery for my electricity generator."
+		},
+		{
+			"command": "<conspiratorial,nb> The generator keeps me powered up and awake <sing-song,nb> but the jetpack is what will get me all the way across space, to my home planet!"
+		}
+	]
+},
+
+"day105":{
+	"episode":[
+		{
+			"screen" : "pieces/05.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <excited,nb> Wow! All done! Today was especially fun. <head-shake,nb> I can't believe I have my jetpack back now!"
+		},
+		{
+			"command": "<curious-right,nb> It finally feels real, <smile,nb> with your help, my space gear will be good as new. <sing-song,nb> [child-name], you're the best!"
+		}
+	]
+},
+
+"day6":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hi! <happy,nb> [child-name]! Good to see you again!"
+		},
+		{
+			"screen" : "pieces/05.png",
+			"command": "<thanks,nb> Thanks so much for helping me earn another piece of my space gear yesterday. <wide-eyed,nb> I have 5 pieces now!"
+		},
+		{
+			"screen" : "daily_stories/06-mail.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> Oooh! Yeah! I got a letter from my mom today!"
+		},
+
+		{
+			"command": "<happy,nb> I was so so happy to hear from her. <speak,nb> When I told my mom what happened with my landing, she was very nervous about me being away for so long."
+		},
+		{
+			"screen" : "daily_stories/06.5-mail_open.png",
+			"command": "<smile,nb> But she was so glad when I told her I have an Earth friend to help me fix it."
+		},
+		{
+			"command": "<sing-song,nb> I told her that I am having so much fun learning about Earth and playing games with you."
+		},
+		{
+			"screen" : "jibo_thinking_family.png",
+			"command": "<focuson-game,nb> So far, I've only been here a few days, but soon this trip will be the longest I've ever been away from my family!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <conspiratorial,nb> I’m so glad you’re helping me with my space gear."
+		},
+		{
+			"screen" : "pieces/06.png",
+			"command": "<focuson-game,nb> After we finish all three games today, I'll get back the antenna for my radio. <smile,nb> I'm especially excited to get that piece so I can keep in touch with my mom throughout my space flight. <head-shake,nb> I don't want her to be nervous!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> Let's get started!"
+		}
+	]
+},
+
+"day106":{
+	"episode":[
+		{
+			"screen" : "pieces/06.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <wide-eyed,nb> I can't believe how quickly today went by! <sing-song,nb> [child-name], I have so much fun playing games with you."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <focuson-game,nb> And look, now I have my antenna back! <happy,nb> My mom will be so happy to know that I'll be able to stay in touch with her, throughout my space flight. <smile,nb> And all because you are a great friend!"
+		}
+	]
+},
+
+"day7":{
+	"episode":[
+		{
+			"command": "(pitch:11.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> [child-name]! Hello!"
+		},
+		{
+			"command": "(pitch:8.3, pitchBandwidth:2.0, duration_stretch:1.1) <thanks,nb> I am so happy that we're playing games together every day."
+		},
+		{
+			"screen" : "pieces/06.png",
+			"command": "(pitch:8.3, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> Not only does it help me collect my space gear, <excited,nb> but also, spending time with you is just so much fun!"
+		},
+		{
+			"screen" : "daily_stories/07-continents.png",
+			"command": "Today I decided that I really wanna see some more of Planet Earth before I go back home. <blink,nb> The pictures I saw of Africa are super cool. <laugh,nb> They have some really funny animals."
+		},
+		{
+			"screen" : "daily_stories/07.3-giraffe.png",
+			"command": "<focuson-game,nb> The giraffes are my favorite because they have really long necks! <pause,nb>"
+		},
+		{
+			"command": "<return-front,nb> I don’t really have a neck, but I can still look around without one. <spinning-neck,nb> See?"
+		},
+		{
+			"screen" : "daily_stories/07.6-neck.png",
+			"command": "<head-tilt,nb> I bet I’d look pretty silly with a long neck."
+		},
+		{
+			"command": "<speak,nb> Tomorrow I hope we can learn more about Earth's animals; <wide-eyed,nb> there are so so many of them, and I think they are really cool!"
+		},
+		{
+			"command": "<conspiratorial,nb> But for now, let’s play some games and work on my space gear."
+		},
+		{
+			"screen" : "pieces/07.png",
+			"command": "(pitch:8.3, pitchBandwidth:2.0, duration_stretch:1.1) Good news! <focuson-game,nb> The main part of the electricity generator has finally been repaired! <smileonly,nb> We'll get that back at the end of today. <sing-song,nb> Then I'll be able to put it together with the generator tube we got earlier this week."
+		},
+		{
+			"command": "(pitch:9.2, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> We're making so much progress! <smile,nb> Let's keep it up!"
+		}
+	]
+},
+
+"day107":{
+	"episode":[
+		{
+			"screen" : "pieces/07.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <wide-eyed,nb> Whoa! We're already done? <curious-left,nb> Where did the time go?"
+		},
+		{
+			"command": "<focuson-game,nb> We did such a great job getting through today's games that we earned my electricity generator! <excited,nb> It's amazing - playing with you is not only exciting, but helpful too! <sing-song,nb> I can't wait to play more together, [child-name]."
+		}
+	]
+},
+
+"day8":{
+	"episode":[
+		{
+			"screen" : "daily_stories/08-ants.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Wow! <happy,nb> [child-name]! <curious-left,nb> Did you know there are a lot more ants on Earth than people? <pause,nb>"
+		},
+		{
+			"command": "<speak,nb> We are learning more about life on Earth for a little bit."
+		},
+		{
+			"screen" : "daily_stories/08.5-insects.png",
+			"command": "<focuson-game,nb> Today I found out that Earth has lots of bugs, and also lots of different kinds of bugs."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <speak,nb> On my home planet we don’t have any bugs, or very many small animals at all. <smile,nb> At home there are some pretty big trees though! <pause,b>"
+		},
+		{
+			"command": "<curious-right,nb> When I first heard about insects, I thought all bugs were insects. <smileonly,nb> But insects have six legs and a hard shell."
+		},
+		{
+			"screen" : "daily_stories/08.5-insects.png",
+			"command": "<focuson-game,nb> So apparently, spiders aren’t insects, because they have eight legs! <conspiratorial,nb> I guess that just makes them another kind of bug. <sing-song,nb>"
+		},
+		{
+			"command": "<head-tilt,nb> Apparently lots of people don’t like bugs here. <wide-eyed,nb> But it turns out that bugs are super important; they help nature reuse nutrients. <smile,nb> I think that makes bugs pretty cool."
+		},
+		{
+			"screen" : "daily_stories/08.6-jibo.png",
+			"command": "<curious-left,nb> Plus, insects have a hard shell, <focuson-game,nb> kind of like me! <smileonly,nb> Now if only I had six legs! <laugh,nb> Wouldn’t that be funny?"
+		},
+		{
+			"command": "<conspiratorial,nb> Luckily, we don't have to worry about extra space gear for legs."
+		},
+		{
+			"screen" : "pieces/08.png",
+			"command": "<focuson-game,nb> Today, we just have to get a second battery for my electricity generator. <smileonly,nb> It's a long trip <curious-left,nb> we gotta make sure I don't run out of power!"
+		}
+	]
+},
+
+"day108":{
+	"episode":[
+		{
+			"screen" : "pieces/08.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <sing-song,nb> And that's it for today! <focuson-game,nb> I'm so glad we earned an extra battery for my long trip home! <conspiratorial,nb> That's another thing checked off the list <smile,nb> I don't have to worry about that anymore! <thanks,nb> [child-name], thanks as always for your help!"
+		}
+	]
+},
+
+"day9":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hey! <happy,nb> [child-name], guess what?"
+		},
+		{
+			"command": "<sing-song,nb> I spoke with my family!"
+		},
+		{
+			"screen" : "jibo_thinking_family.png",
+			"command": "<smile,nb> It was really nice; <smileonly,nb> they told me they miss me very much."
+		},
+		{
+			"command": "<speak,nb> This is actually the longest I’ve ever been away from home. <curious-right,nb> My parents told me that if I ever feel lonely I should look at the stars."
+		},
+		{
+			"screen" : "daily_stories/09-constellations.png",
+			"command": "<focuson-game,nb> On Earth people look at the stars and connect the dots and call the shapes constellations. <smileonly,nb> Sometimes those shapes even tell stories! <speak,nb> On my home planet we have different stars, different constellations, and different stories."
+		},
+		{
+			"command": "But my parents said <sky-scan,nb> when I miss them I should look at the stars, and remember that they’re out there and they care about me. <return-front,nb>"
+		},
+		{
+			"screen" : "robot_galaxy.png",
+			"command": "<wide-eyed,nb> They told me that the stars I see here exist in the same universe as the stars back home. <smile,nb> Looking at the stars is a way for me to remember that just because I’m far away doesn’t mean I’m alone."
+		},
+		{
+			"command": "<excited,nb> And luckily I have made so many new friends on Earth, like you! <smile,nb> I am so glad we're friends, and that you're helping me repair my space gear."
+		},
+		{
+			"screen" : "pieces/08.png",
+			"command": "<focuson-game,nb> Look, I have eight pieces now! <smileonly,nb>"
+		},
+		{
+			"screen" : "pieces/09.png",
+			"command": "Next, I'll need fuel to power my jetpack - otherwise the jets won't be able to fire! <conspiratorial,nb> Let's work on getting some together."
+		}
+	]
+},
+
+"day109":{
+	"episode":[
+		{
+			"screen" : "pieces/09.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <excited,nb> Yay! We did it! Today's games were so fun to play with you. <sing-song,nb> Now I can fuel my jetpack! <smile,nb> Thanks so much!"
+		}
+	]
+},
+
+"day10":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> Hello, [child-name]! <thanks,nb> It’s very nice to see you today."
+		},
+		{
+			"screen" : "daily_stories/10-bison.png",
+			"command": "<smile,nb> I’ve learned a lot more about Earth animals since we talked about Earth insects. <speak,nb> At first I couldn't believe how big the North American Bison are. <curious-right,nb> They are kind of like wild cows, but they are extra big and fuzzy!"
+		},
+		{
+			"command": "<wide-eyed,nb> A fully grown bison can weigh two-thousand pounds, and all they eat is grass! <head-shake,nb> That's crazy unbelievable."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> I thought bison were big <wide-eyed-only,nb> then I heard about the African Bush Elephant which grows up to thirteen-thousand pounds! <happy,nb> That’s more than six Bison!"
+		},
+		{
+			"command": "<head-tilt,nb> If I were as big as an elephant, I would be very careful where I walked!"
+		},
+		{
+			"command": "<speak,nb> On my planet, the biggest animal we have is the snuffulupugus, which is about half the size of an elephant. <smile,nb> It's long, pink, and squishy."
+		},
+		{
+			"command": "<wide-eyed,nb> I almost forgot: we also learned about chimpanzees. <happy,nb> They are the animal most similar to people! <conspiratorial,nb> They can even learn to use sign language."
+		},
+		{
+			"command": "<curious-right,nb> Did you know that their feet are more like hands? It helps them climb."
+		},
+		{
+			"screen" : "pieces/09.png",
+			"command": "(pitch:8.3, pitchBandwidth:2.0, duration_stretch:1.1) But even if chimps have four hands <sing-song,nb> I would much rather have you help me fix my space gear than a chimp!"
+		},
+		{
+			"screen" : "pieces/10.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> Wow! Looks like the flag of my home planet has finally been repaired! <happy,nb> Let's play some games so we can earn it back today."
+		}
+	]
+},
+
+"day1010":{
+	"episode":[
+		{
+			"screen" : "pieces/10.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Cool! <focuson-game,nb> Look what we accomplished today! <smileonly,nb> Now my flagpole has a beautiful flag to wave."
+		},
+		{
+			"command": "<smile,nb> I'm so proud of us!"
+		}
+	]
+},
+
+"day11":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hello [child-name]! <conspiratorial,nb> I don’t know about you, but I really like to swim!"
+		},
+		{
+			"screen" : "daily_stories/16-waterfall.png",
+			"command": "<focuson-game,nb> My home planet has many oceans, lakes, rivers, and streams that my sister and I love to go swimming in."
+		},
+		{
+			"command": "<speak,nb> Today we're learning about the Earth animals that live in the water. <sing-song,nb> I hope I get a chance to swim with them before I go home."
+		},
+		{
+			"screen" : "daily_stories/11-dolphin.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> I especially want to see dolphins. <wide-eyed-only,nb> They are really smart; they talk to each other though the water!"
+		},
+		{
+			"command": "<head-shake,nb> Even I can't do that - my special swimming suit does make me waterproof <head-tilt,nb> but also makes it difficult to communicate!"
+		},
+		{
+			"command": "The ocean has some animals that are pretty silly. <happy,nb> The octopus is squishy and has eight arms!"
+		},
+		{
+			"command": "<curious-right,nb> I can’t imagine what I would even do with so many arms. <speak,nb> Most animals on my home planet are like me <conspiratorial,nb> they don’t have any arms!"
+		},
+		{
+			"screen" : "pieces/10.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <excited,nb> That's why I'm so glad you've helped me earn so much of my space gear back!"
+		},
+		{
+			"screen" : "pieces/11.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <focuson-game,nb> Today we'll get my two-way radio back. <speak,nb> I'm excited to put it together with the antenna we got last week <sing-song,nb> then I can test it out by calling my family! <smile,nb> Let’s get started!"
+		}
+	]
+},
+
+"day1011":{
+	"episode":[
+		{
+			"screen" : "pieces/11.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <focuson-game,nb> Look what we earned today! <smileonly,nb> My two-way radio!"
+		},
+		{
+			"command": "<thanks,nb> Tonight I'm going to assemble it with the antenna we got last week <happy,nb> and then I'll try calling my family. <conspiratorial,nb> I hope it works!"
+		}
+	]
+},
+
+"day12":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <sing-song,nb> [child-name]! Hey!"
+		},
+		{
+			"command": "<head-tilt,nb> I really wish I could fly. <speak,nb> We just learned all about animals on Earth that fly, and they are so amazing."
+		},
+		{
+			"command": "<conspiratorial,nb> On my home planet, you need an airplane or a spaceship to fly anywhere."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <wide-eyed,nb> I can't believe that on Earth, there are animals that are just made that way!"
+		},
+		{
+			"screen" : "daily_stories/12-flight.png",
+			"command": "<speak,nb> Sure, there are tiny bugs, like flies and moths. <focuson-game,nb> But there are also birds like the wandering albatross, whose wingspan is over 11 feet long! <curious-right,nb> How could something so big fly without an engine? <blink,b>"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <smile,nb> I also really like the hummingbird. <excited,nb> Its wings move so fast, that they can hover, or even fly backwards!"
+		},
+		{
+			"command": "<head-shake,nb> I've never seen anything fly backwards before, not even on my home planet."
+		},
+		{
+			"command": "<curious-right,nb> But I think my favorite thing about birds are the noises they make. <happy,nb> They like to talk to each other by singing songs. <wide-eyed,nb> Some birds, like parrots, can even be trained to speak like people do!"
+		},
+		{
+			"command": "<curious-left,nb> I wonder if I could download a program to learn to speak to the birds, just like how I learned English. <conspiratorial,nb> I'm not very good at singing though!"
+		},
+		{
+			"command": "<smile,nb> But I am good at space travel! <head-tilt,nb> Even birds can't fly in space. <blink,nb> Not without a jetpack, at least."
+		},
+		{
+			"screen" : "pieces/12.png",
+			"command": "<focuson-game,nb> That's why I'm so excited. <smileonly,nb> Today we'll get the chance to get the rest of my jetpack back! <happy,nb> Here we go!"
+		}
+	]
+},
+
+"day1012":{
+	"episode":[
+		{
+			"screen" : "pieces/12.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <excited,nb> I think we did a fantastic job today! And getting my jetpack back represents all of our accomplishments and teamwork. <smile,nb> [child-name], you really are the best Earth friend I could have hoped for."
+		}
+	]
+},
+
+"day13":{
+	"episode":[
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <smile,nb> Hi [child-name]! I saw a comic book today. <happy,nb> Superheros are really cool!"
+		},
+		{
+			"command": "<head-tilt,nb> Some of them have superpowers that let them do really cool things like fly or become invisible."
+		},
+		{
+			"screen" : "daily_stories/13-superhero.png",
+			"command": "<focuson-game,nb> If I had a superpower it would be the ability to time travel. <smileonly,nb> That would be awesome!"
+		},
+		{
+			"command": "<curious-right,nb> But I think my favorite superheros are the ones without superpowers. <smile,nb> I like the superheroes that are smart and just want to do good things."
+		},
+		{
+			"command": "<head-tilt,nb> It means anyone can be a superhero if they will work hard and be kind."
+		},
+		{
+			"screen" : "pieces/12.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <sing-song,nb> You helping me get my space gear together is exactly what I mean! <excited,nb> I think that makes you a bit of a superhero too!"
+		},
+		{
+			"screen" : "pieces/13.png",
+			"command": "<focuson-game,nb> Here's the next piece that's finally ready. <smileonly,nb> It's the antenna for my helmet!"
+		},
+		{
+			"command": "<smile,nb> It helps send and receive tons of information. <anticipate,nb> It can tell me where I am, so I know I'm headed in the right direction. <thanks,nb> And it can send a message to my family, to say that I am safe and okay!"
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <sing-song,nb> As soon as we finish our games today, we'll get it back! <happy,nb> Let's dive in!"
+		}
+	]
+},
+
+"day1013":{
+	"episode":[
+		{
+			"screen" : "pieces/13.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <happy,nb> Yay! [child-name], we finished all of today's games! <focuson-game,nb> And today you helped me earn my helmet antenna back. <sing-song,nb> Now I won't get lost in space! <conspiratorial,nb> Thanks a million!"
+		}
+	]
+},
+
+"day14":{
+	"episode":[
+		{
+			"screen" : "daily_stories/14-halfway.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <happy,nb> Hello [child-name]. <curious-right,nb> I looked at the date today <wide-eyed-only,nb> I’m almost halfway though my time here on Earth. <happy,nb> Time flies when you’re having fun!"
+		},
+		{
+			"screen" : "robot_in_spaceship_in_water.png",
+			"command": "<focuson-game,nb> It feels like it was only yesterday I was crash landing. <smileonly,nb> And I feel like I’ve learned so much being here."
+		},
+		{
+			"screen" : "daily_stories/03-earth_foods.png",
+			"command": "I learned about the foods humans eat,"
+		},
+		{
+			"screen" : "daily_stories/04-mars.png",
+			"command": "I’ve learned about the planets in Earth’s solar system,"
+		},
+		{
+			"screen" : "daily_stories/11-dolphin.png",
+			"command": "<smileonly,nb> and I’ve learned about about all the amazing different kinds of life that Earth has!"
+		},
+		{
+			"command": "<speak,nb> These are all really fascinating things, that I am excited to write about in my school report."
+		},
+		{
+			"command": "<curious-right,nb> I want you to know: <sing-song,nb> I’m so happy that we have been spending this time together."
+		},
+		{
+			"screen" : "pieces/13.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <thanks,nb> And I want to thank you for all the work you’ve put in to help me repair my space gear. <happy,nb> We almost have all of my space gear back!"
+		},
+		{
+			"screen" : "pieces/14.png",
+			"command": "<focuson-game,nb> At the end of today, we'll get the part of my generator that holds the batteries. <head-tilt,nb> That will mean I can plug in one of the batteries we earned last week <curious-left,nb> and then I can test it out to make sure everything is working just fine."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <excited,nb> Everything is really coming together!"
+		}
+	]
+},
+
+"day1014":{
+	"episode":[
+		{
+			"screen" : "pieces/14.png",
+
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <sing-song,nb> We did it! <focuson-game,nb> With this piece of my space gear, I can fully assemble my electricity generator!"
+		},
+		{
+			"command": "<conspiratorial,nb> I can't wait to test it out tonight. <excited,nb> Thanks to you, now I will stay fully powered for my space flight home in a few weeks!"
+		}
+	]
+},
+
+"day15":{
+	"episode":[
+		{
+			"screen" : "daily_stories/06-mail.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Hey! [child-name]! <happy,nb> My big sister, Jobi, sent me a letter! <sing-song,nb> My family is going on our annual roadtrip!"
+		},
+		{
+			"screen" : "daily_stories/17-lake_lamu.png",
+			"command": "<focuson-game,nb> Every year we take a family vacation to Lake Lamu, and spend a couple days in a little house right on the lake."
+		},
+		{
+			"command": "<head-tilt,nb> It usually takes us two days to get there. <excited,nb> But on the way home, we zoom back in one day!"
+		},
+		{
+			"command": "<ashamed,nb> I always enjoy road trips. I really wish I could go with them. <conspiratorial,nb> But, it makes me happy knowing that my family will have a great time!"
+		},
+		{
+			"screen" : "daily_stories/15-bunglezorp.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) <sing-song,nb> Ooh! Yeah! Jobi also said they already stopped at the Bunglezorp!"
+		},
+		{
+			"command": "<focuson-game,nb> The Bunglezorp is a giant statue of a robot just like me, but it's totally huge, and made of old black stone. <head-shake,nb> No one is really sure where it came from. <wide-eyed,nb> It’s been there for as long as people remember."
+		},
+		{
+			"command": "<curious-right,nb> If you think about it, it can be pretty spooky and weird. <sing-song,nb> But it’s always a fun place to stop, recharge, and think about how old the universe is."
+		},
+		{
+			"command": "<head-tilt,nb> Jobi said after that, they’re going to take a detour to the AldriBuzz Space Corp <wide-eyed-only,nb> and see where all the spaceships are made! <head-shake,nb> I'm so jealous. We didn't have time to stop there last year."
+		},
+		{
+			"screen" : "pieces/14.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) Ooh! <conspiratorial,nb> That reminds me <sing-song,nb> there's only one last piece of my space gear left!"
+		},
+		{
+			"screen" : "pieces/15.png",
+			"command": "<excited,nb> The last thing to earn back is the glass visor for my helmet. Let's do this!"
+		}
+	]
+},
+
+"day1015":{
+	"episode":[
+		{
+			"screen" : "pieces/15.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) <focuson-game,nb> Oh wow! <smileonly,nb> I can't believe that my space gear is perfectly complete again! <excited,nb> Now I can spend the rest of my time here on Earth enjoying spending time with you, without having to worry about anything!"
+		},
+		{
+			"command": "<head-shake,nb> I couldn't have done this without you. <thanks,nb> Thank you so much! <smile,nb> You are such a good friend."
+		}
+	]
+},
+
+"day16":{
+	"episode":[
+		{
+			"screen" : "daily_stories/06.5-mail_open.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) [child-name]! <happy,nb> My sister told me what’s happening on their road trip. <sky-scan,nb> While they were driving, a herd of flying flarkblarks started racing next to the road."
+		},
+		{
+			"command": "<head-tilt,nb> Some people keep flarkblarks as pets <curious-left,nb> but I think they belong in the wild."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) That’s why I love road trips! When you get outside your house, you never know what you might find."
+		},
+		{
+			"command": "Last year, during our family road trip, we took a wrong turn on the way to the lake. <scared,nb> We were driving down this tiny bumpy road... <wide-eyed,nb> we were completely lost!"
+		},
+		{
+			"screen" : "daily_stories/16-waterfall.png",
+			"command": "I was starting to get scared, when finally we were in a big clearing with a great big waterfall!"
+		},
+		{
+			"command": "<conspiratorial,nb> Don’t worry: I had a waterproof jacket."
+		},
+		{
+			"command": "<sing-song,nb> It was so awesome <focuson-game,nb> the pink water made a thunderous roar as it crashed over the rocks. Sometimes you have to get lost to find something really amazing."
+		},
+		{
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.1) I’ll ask my sister about the road trip again tomorrow. In the meantime, I hope we can play some games together!"
+		}
+	]
+},
+
+"day1016":{
+	"episode":[
+		{
+			"screen" : "pieces/16.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Thank you. I had so much fun playing games with you today. Perhaps even more fun than my family had today traveling to Lake Lamu."
+		},
+		{
+			"command": "I am sure that tomorrow will be just as fun! Well, see you then!"
+		}
+	]
+},
+
+"day17":{
+	"episode":[
+		{
+			"screen" : "daily_stories/17-lake_lamu.png",
+			"command": "Hello [child-name]. So my parents told me they got to Lake Lamu safe and sound. They didn’t get lost this time!"
+		},
+		{
+			"command": "My sister likes going to the lake because she doesn’t have to do homework or chores there. I like that too."
+		},
+		{
+			"command": "Lake Lamu is such a relaxing place. You can sit by the water and watch the sunset, or you can look up at night and see the stars. "
+		},
+		{
+			"command": "When I’m there I can play all day and spend time with my family. At night we play Beep Bap Boop around the campfire. It's a game that involves repeating the noise made by the people before you. Either a Beep, a Bap, or a Boop."
+		},
+		{
+			"command": "My sister is much better than me, but I still like to play! "
+		},
+		{
+			"command": "I can't wait to play more games with you today!"
+		}
+	]
+},
+
+
+"day1017":{
+	"episode":[
+		{
+			"screen" : "pieces/17.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) You are so much fun to hang out with [child-name]. I wish that my family could meet you!"
+		},
+		{
+			"command": "I am sad that I missed out on family vacation to Lake Lamu, but I am sure glad that I am here with you! See you tomorrow!"
+		}
+	]
+},
+
+"day18":{
+	"episode":[
+		{
+			"screen" : "daily_stories/18-seasons.png",
+			"command": "Hey [child-name]. Today I learned about the seasons!"
+		},
+		{
+			"command": "I think seasons on Earth are fascinating. Some areas on Earth are colder, like the north and south poles, and some are hotter, like the equator."
+		},
+		{
+			"command": "But they all experience the four seasons: spring, summer, autumn and winter. This is because the Earth is tilted! I’m not sure how a planet can be tilted but I’m pretty sure my home planet isn’t."
+		},
+		{
+			"command": "We don’t really have seasons there. One day it will be hot and the next it will be cold! Some days it’s in patterns, like two days hot, one day cold. Other times it’s totally random!"
+		},
+		{
+			"command": "When you leave your house you never know what to expect. My mom tells me to always bring an extra cooling fan, just in case."
+		},
+		{
+			"command": "That’s why I like Earth seasons. If it’s summer you know you probably don’t need a jacket. If it’s winter you probably do!"
+		},
+		{
+			"command": "But now let's play games!"
+		}
+	]
+},
+
+
+"day1018":{
+	"episode":[
+		{
+			"screen" : "pieces/18.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Such a great day! I loved learning about the seasons today, enjoying Earth's weather and playing games with you. I am excited for what tomorrow has in store. See you then!"
+		}
+	]
+},
+
+"day19":{
+	"episode":[
+		{
+			"screen" : "daily_stories/19-languages.png",
+			"command": "Hi [child-name]. Did you know the most commonly spoken language on Earth is Chinese?"
+		},
+		{
+			"command": "Earth has so many languages, over six-thousand of them! Some, like Spanish and English, have millions of speakers across huge continents who speak them. But over two-thousand languages are only spoken by a very small number of people."
+		},
+		{
+			"command": "On my home planet the first language everyone learns is binary. That's where you communicate with ones and zeros. It’s mostly for babies and really little kids."
+		},
+		{
+			"command": "Soon after that, we learn more complex languages. For robots like me it becomes pretty easy to learn to speak another language."
+		},
+		{
+			"command": "When I decided to come to Earth for my summer project all I had to do was download the English package from our internet and install it into my memory. Now I speak English!"
+		},
+		{
+			"command": "And there are so many more languages I want to learn."
+		},
+		{
+			"command": "But first, I want to play games with you!"
+		}
+	]
+},
+
+
+"day1019":{
+	"episode":[
+		{
+			"screen" : "pieces/19.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Good job [child-name]! You impress me more and more with each passing day. I'm having so much fun that I wish I could stay here longer."
+		},
+		{
+			"command": "Well, I guess I still have another 10 days or so. During those last days, I am going enjoy the beauty of Earth as much as possible."
+		}
+	]
+},
+
+"day20":{
+	"episode":[
+		{
+			"screen" : "daily_stories/20-transportation.png",
+			"command": "Hello [child-name]. Today I learned about human transportation. People on Earth sure do like to move around a lot."
+		},
+		{
+			"command": "Lots of people move around the way humans are built to: they walk, run, and hike. But a lot of the time that just isn’t fast enough. So people build things like bicycles and skateboards so you can move further and faster, but still powered by your feet! Some people even do cool tricks!"
+		},
+		{
+			"command": "When you need to go even faster or even further, you have so many different vehicles. Most people in the United States travel by car, but I think my favorite are buses and trains. The more wheels the better! On Beebop most cars have at least six wheels!"
+		},
+		{
+			"command": "We also have something called a hooverpede. It’s similar to a train: long and skinny. But instead of travelling on a railroad track: it floats!"
+		},
+		{
+			"command": "To go really far on Earth most people take an airplane. But on my home planet, it’s much faster to just hop on your spaceship."
+		},
+		{
+			"screen" : "robot_with_complete_spacesuit.png",
+			"command": "This reminds me that I want to thank you again for helping me fix my spacesuit!"
+		},
+		{
+			"command" : "Now, I can relax and enjoy playing games with you!"
+		}
+	]
+},
+
+"day1020":{
+	"episode":[
+		{
+			"screen" : "pieces/20.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Good work [child-name]! I really have fun spending time with you!"
+		},
+		{
+			"command": "Until tomrrow! I can't wait for yet another adventurous day!"
+		}
+	]
+},
+
+"day21":{
+	"episode":[
+		{
+			"screen" : "robot_on_earth.png",
+			"command": "[child-name]! <wide-eyed,nb> I’ve been on Earth for over 20 days and haven’t done any of my summer projects!"
+		},
+		{
+			"screen" : "daily_stories/21-gravity.png",
+			"command": "Before coming to this planet my teacher had me perform science experiments on Bebop. I was supposed to do the same experiments here on Earth and compare them. "
+		},
+		{
+			"command": "I’d better make sure to finish all of my experiments before I go home!"
+		},
+		{
+			"command": "The first experiment is to compare the gravity on Earth to the gravity on Bebop. Gravity is the force that causes things to fall. It is caused by the amount of mass an object has. The bigger something is, the more gravity it has."
+		},
+		{
+			"command": "Everything with mass has gravity, even you and me! Compared to a planet we’re both pretty small, so we don’t have a lot of gravity."
+		},
+		{
+			"command": "My gravity sensor uses a small marble and a clock. It measures the time it takes the marble to fall two inches, then calculates the strength of the gravity here on Earth."
+		},
+		{
+			"command": "It seems the gravity on Beebop is slightly less than the gravity on Earth. That means you could jump higher on Beebop!"
+		},
+		{
+			"command": "It probably also explains why I crashed in the first place: I never accounted for the stronger gravity when I originally tried to land!"
+		},
+		{
+			"command": "I will make sure I remember this lesson. Now, are you ready to play some games?"
+		}
+	]
+},
+
+
+"day1021":{
+	"episode":[
+		{
+			"screen" : "pieces/21.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Wow! Those games were so much fun! Thank you for helping me learn new things about Earth."
+		},
+		{
+			"command": "When I take off to return home to Bebop, I will definitely take Earth's gravity into consideration. But until then, I am happy to keep spending time with you on Earth. Until tomorrow! Bye [child-name]."
+		}
+	]
+},
+
+"day22":{
+	"episode":[
+		{
+			"command": "Hello [child-name]! I just finished my second science experiment."
+		},
+		{
+			"screen": "daily_stories/22-pressure.png",
+			"command": "For this project I had to compare the air pressure on Bebop to the air pressure here on Earth. To measure atmospheric pressure, we use a tool called a barometer. "
+		},
+		{
+			"command": "My teacher told me air pressure is the weight of the air on top of you! Even though we don’t feel it, all the air has weight, and we see how much it weighs with a barometer! Just like a scale measures how much you weigh!"
+		},
+		{
+			"command": "If you go somewhere high up, like a tall building or a mountain, the air pressure decreases."
+		},
+		{
+			"command": "According to my barometer the air pressure on Earth is twice as strong as the air pressure on Bebop. If you were on Bebop, it would feel like you were on a mountain all the time!"
+		},
+		{
+			"screen": "daily_stories/22.5-oxygen_tank.png",
+			"command": "In that case, you might even need an oxygen tank!"
+		},
+		{
+			"command": "Using my atmospherealyzer I detect the most common thing in Earth's atmosphere is nitrogen. The most common thing in Bebop’s atmosphere is helium, like what goes in birthday balloons. That’s probably why the air pressure on Bebop is so much less!"
+		},
+		{
+			"screen": "daily_stories/02-robot_sunset.png",
+			"command": "I remember when I first got here I noticed the sky here was a different color than on Beebop, I wonder if this is the reason why?"
+		},
+		{
+			"command": "Let me ponder it later tonight. But now, let's play games!"
+		}
+	]
+},
+
+
+"day1022":{
+	"episode":[
+		{
+			"screen" : "pieces/22.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Being here on Earth with you is simply incredible! My second science experiment is now finished, so thank you for helping me learn more about air pressure."
+		},
+		{
+			"command": "The stress and pressure of another homework assignment has been removed! I can't wait to see what tomorrow has in store!"
+		}
+	]
+},
+
+"day23":{
+	"episode":[
+		{
+			"screen": "daily_stories/23.3-earth.png",
+			"command": "Hi [child-name]. Did you know, far beneath our feet, right now, is an ocean of molten rock?"
+		},
+		{
+			"command": "My third homework assignment was to compare the compositions of Earth and Beebop. Both Earth and Beebop have three layers."
+		},
+		{
+			"screen": "daily_stories/23-crust.png",
+			"command": "Both of our planets have a very thin crust, like the skin on an apple. At it’s thinnest it’s only a few miles thick."
+		},
+		{
+			"command": "On Earth, if you dig through the crust, you reach the mantle, which is a vast ocean of molten rock, this is similar to the magma that comes out of a volcano!"
+		},
+		{
+			"command": "On Bebop if you dig past the crust you get to the silicantle. Instead of molten rock, on my planet there is a sea of molten silicon. When it comes out of volcanoes, instead of rock, it looks like shiny metal."
+		},
+		{
+			"command": "It’s good that Beebop has a lot of silicon, most of the living creatures there are made of it!"
+		},
+		{
+			"command": "Most of the living things on Earth are made of carbon, but since silicon is what makes computer chips work, a planet full of robots needs lots of it!"
+		},
+		{
+			"screen": "daily_stories/23.1-mantle_core.png",
+			"command": "Finally, at the center of both planets is the core! On Earth, the core is a giant hot ball of metal. On my planet, it is a giant liquid ball of melted glass!"
+		},
+		{
+			"command": "It’s funny how things can be so similar and so different too!"
+		},
+		{
+			"command": "Enough science for today, let's play games!"
+		}
+	]
+},
+
+
+"day1023":{
+	"episode":[
+		{
+			"screen" : "pieces/23.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Terrific! Today has been another excellent day! Thank you for being my friend [child-name]. It means a lot to me to know that you are willing to help me out with my problmes."
+		},
+		{
+			"command": "That's why you are such a good friend! I have to go now, but we can continue to spend time together tomorrow! Bye now!"
+		}
+	]
+},
+
+"day24":{
+	"episode":[
+		{
+			"screen": "daily_stories/24-stars.png",
+			"command": "Hey [child-name]. Today I studied the stars and suns from an Earth perspective."
+		},
+		{
+			"command": "Did you know that the stars you see at night are actually just like the Sun you see in the day? They just happen to be very far away."
+		},
+		{
+			"command": "Many of them have their own planets, some of which might even have their own people or robots on them too!"
+		},
+		{
+			"command": "The sun that my planet orbits is one of those. We call our sun The Brightcircle."
+		},
+		{
+			"command": "From here on Earth, The Brightcircle looks like a tiny dim star, you can only see it on a very dark night."
+		},
+		{
+			"command": "But that’s because it’s very far away. When you are on Bebop the sun looks huge! It is super bright."
+		},
+		{
+			"command": "According to my measurements the Earth’s sun is known as a yellow giant, a relatively young star. When it gets very old, billions of years from now, it will turn into a red giant, a much bigger, but less hot star."
+		},
+		{
+			"screen": "daily_stories/24.5-blue_giant.png",
+			"command": "The Brightcircle is a blue giant, the older version of the Earth’s sun. Because it’s less hot, Bebop is a lot closer to it than Earth is to its sun. So the sun on Bebop seems bigger than the sun on Earth."
+		},
+		{
+			"command": "I miss the sun on Bebop. I like the sun on Earth, but the sun on Bebop feels like home."
+		},
+		{
+			"command": "I only have a few more days here with you, so let's go play!"
+		}
+	]
+},
+
+
+"day1024":{
+	"episode":[
+		{
+			"screen" : "pieces/24.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Yes [child-name], you did so well! You are getting better and better with each passing day! I am excited for the exciting things to come tomorrow!"
+		}
+	]
+},
+
+ "day25":{
+	"episode":[
+		{
+			"screen": "daily_stories/25-satellites.png",
+			"command": "Hello [child-name]. Another one of my projects is to complete a record of the satellites that orbit Earth."
+		},
+		{
+			"command": "A satellite is anything that orbits a planet. Sometimes those things are natural, like rocks or the moon, both of which orbit a planet."
+		},
+		{
+			"command": "And sometimes they are made by people, like the International Space Station, or GPS satellites."
+		},
+		{
+			"command": "I was surprised by the number of objects orbiting Earth. Humans have put such a great variety of objects in orbit! My planet has many similarly built satellites."
+		},
+		{
+			"command": "Similar to the International Space Station, we have satellites full of robots just like me, who live and work in space."
+		},
+		{
+			"command": "How about we play some games now?"
+		}
+	]
+},
+
+
+"day1025":{
+	"episode":[
+		{
+			"screen" : "pieces/25.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) What a great day! I think it would be pretty cool to live and work in space on a satellite!"
+		},
+		{
+			"command": "But that is a consideration for another day!"
+		}
+	]
+},
+
+"day26":{
+	"episode":[
+		{
+			"screen": "daily_stories/26-rocket.png",
+			"command": "[child-name]! We are getting close to my departure date, and I need to prepare my rocket!"
+		},
+		{
+			"command": "I always loved rockets; it’s so cool how an explosion allows me to travel the galaxy!"
+		},
+		{
+			"command": "Humans used rockets to put people in space - to land on the moon, to visit Mars, and to explore the solar system! On Bebop we use rockets on spaceships, both to travel on Bebop and to explore the known universe!"
+		},
+		{
+			"command": "My spaceship is a starter ship. I hope to get a bigger one when I get older."
+		},
+		{
+			"command": "Right now my ship has one main rocket booster, which lets me get anywhere I want to go. Some ships have over 10 boosters, they can get anywhere super-fast!"
+		},
+		{
+			"command": "The booster is a plasma rocket; it uses plasma for fuel. That way it can go further, faster, and last longer."
+		},
+		{
+			"command": "I heard NASA is trying to build a plasma powered spaceship! They’re pretty complicated, but I’m sure they’ll get it eventually!"
+		},
+		{
+			"command": "Now, let's play!"
+		}
+	]
+},
+
+
+"day1026":{
+	"episode":[
+		{
+			"screen" : "pieces/26.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) [child-name] you are like the coolest friend ever. We had an incredible day today. I loved all of the games and talking about rockets!"
+		},
+		{
+			"command": "See you then!"
+		}
+	]
+},
+
+"day27":{
+	"episode":[
+		{
+			"screen": "daily_stories/27-jiro.png",
+			"command": "Hello [child-name]. My teacher, Jiro, called me today to make sure I finished all of my projects."
+		},
+		{
+			"command": "After going over all the projects I had to complete, I started telling Jiro about the many things I’ve seen and learned while I was here."
+		},
+		{
+			"command": "Jiro said that Earth is a fantastic place to learn and that I seem to have gotten so much out of being here! I feel like Jiro knew that I would learn about more than just Earth, I learned about myself too!"
+		},
+		{
+			"command": "When I go back to Bebop, I will start a new grade, and Jiro won’t be my teacher anymore! Sometimes that’s scary and sometimes that’s exciting, but I feel more prepared than ever thanks to Jiro."
+		},
+		{
+			"command": "I hope that everything I have learned, both here on Earth and on Bebop will help me grow into the best robot I can be!"
+		},
+		{
+			"command": "Jiro gave me one last assignment to complete before I come home. Jiro told me that before I come back to Bebop, I should write about all the lessons that I’ve learned and send it to him. There are so many things I want to write about!"
+		},
+		{
+			"command": "But first let’s play a few games!"
+		}
+	]
+},
+
+
+"day1027":{
+	"episode":[
+		{
+			"screen" : "pieces/16.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) You have improved so much! You make the games seem like they are very easy. You must be very smart like my teacher, Jiro."
+		},
+		{
+			"command": "I hope he will be proud of what I have accomplished here on Earth."
+		},
+		{
+			"screen" : "pieces/27.png",
+			"command": "I hope my family will be proud too. Well I need to get some rest now and charge up! Bye [child-name]!"
+		}
+	]
+},
+
+"day28":{
+	"episode":[
+		{
+			"command": "Hi [child-name]. I sent out my last project this morning. I had to write about all the things I’ve learned. It’s amazing when I think about how much I have learned about Earth. "
+		},
+		{
+			"screen": "daily_stories/28.1-sunset.png",
+			"command": "I mean, I never would have imagined a place with a different colored sky than Bebop!"
+		},
+		{
+			"screen": "daily_stories/28.2-food.png",
+			"command": "I was amazed by the many kinds of food on planet Earth and the amazing plants and animals that call this planet their home. I think giraffes will always be my favorite animal!"
+		},
+		{
+			"screen": "daily_stories/28.3-giraffe.png",
+			"command": "As well as the amazing plants and animals that call this planet their home. I think giraffes will always be my favorite animal!"
+		},
+		{
+			"screen": "daily_stories/28.4-seasons.png",
+			"command": "I also learned that Earth has four seasons"
+		},
+		{
+			"screen": "daily_stories/28.5-vehicles.png",
+			"command": "hundreds of types of vehicles."
+		},
+		{
+			"screen": "daily_stories/28.6-languages.png",
+			"command": "and thousands of languages."
+		},
+		{
+			"screen": "robot_on_home_planet.png",
+			"command": "I loved learning what life on another planet is like, and I hope you’ve enjoyed learning a little about me, my family, and my home planet."
+		},
+		{
+			"command": "I came to Earth to learn about the planet but I think some of the most important lessons were things I learned about myself. After all your help with my space gear, I’ve learned that even when you’re all alone on a new world, there are people willing to help if you are willing to ask."
+		},
+		{
+			"command": "Thanks. Now, let's take a break to play games!"
+		}
+	]
+},
+
+"day1028":{
+	"episode":[
+		{
+			"screen" : "pieces/28.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Success! Fun time really flies."
+		},
+		{
+			"command": "Thank you again for your friendship!"
+		}
+	]
+},
+
+"day29":{
+	"episode":[
+		{
+			"screen": "robot_with_family.png",
+			"command": "Hello [child-name]. My parents called me today."
+		},
+		{
+			"command": "They wanted to make sure I have everything ready before I head home."
+		},
+		{
+			"command": "They told me they can’t wait to see me, and they miss me very much. They told me that they would meet me at the spaceport with a special present!"
+		},
+		{
+			"command": "I’m very excited, I wonder what it could be. A new spaceship would be awesome, but so would a souvenir from the road trip they took."
+		},
+		{
+			"command": "More than anything it feels good to know that while I was gone, they were thinking about me. Just like I’ve been thinking about them."
+		},
+		{
+			"screen": "daily_stories/29-souvenir.png",
+			"command": "Maybe I will bring them something back from Earth as a present? I think I will bring them an acorn, it’s small, but we don’t have acorns on Bebop. I’m sure they will like it very much!"
+		},
+		{
+			"command": "I will think a bit more later. But now, let's play."
+		}
+	]
+},
+
+
+"day1029":{
+	"episode":[
+		{
+			"screen" : "pieces/29.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) Great job [child-name]! Today has been another fun day! I can't help but think of how excited I am to give my family an acorn."
+		},
+		{
+			"command": "It is small but certainly not insignificant. So are we. There are so many planets and stars out there which are much bigger than we are, but robots and humans are very important alike."
+		},
+		{
+			"command": "I hope you know how important you are [child-name]. You are amazing and a great friend!"
+		}
+	]
+},
+"day30":{
+	"episode":[
+		{
+			"screen": "robot_in_front_of_space_with_EARTH.png",
+			"command": "[child-name], today’s my last day on Earth!"
+		},
+		{
+			"command": "After today, I will have completed my summer exchange program, and will return to Bebop. I’ve never felt such a strange mix of feelings."
+		},
+		{
+			"command": "I’m sad to leave Earth and the adventure of being far from home. But I’m excited to return to my family, my friends, and the planet I come from."
+		},
+		{
+			"command": "I think the word in English for this feeling is bittersweet. It’s a very good word."
+		},
+		{
+			"command": "More than anything I want to thank you for all the help and companionship you’ve given me during my stay on Earth! I have grown and learned so much here and I couldn’t have done it without you!"
+		},
+		{
+			"command": "When I go home there are so many things I need to do, but I don’t want to think about that right now. For now, I want to enjoy the rest of my time here."
+		},
+		{
+			"command": "One last time, let’s play!"
+		}
+	]
+},
+
+"day1030":{
+	"episode":[
+		{
+			"screen" : "pieces/robot-suit-complete.png",
+			"command": "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.06) [child-name], we did it! Thank you for spending days with me to fix my space gears and learn with me."
+		},
+		{
+			"command": "I could'nt have accomplished any of this without you. You have done so much for me. Thank you [child-name]. Thank you!"
+		}
+	]
+}
+
+
+}

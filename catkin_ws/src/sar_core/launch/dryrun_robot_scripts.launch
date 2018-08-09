@@ -1,0 +1,18 @@
+<launch>
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find sar_core)/config/rosconsole.conf"/>
+    <env name="ROS_PYTHON_LOG_CONFIG_FILE" value="$(find sar_core)/config/python_logging.conf"/>
+
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+        <arg name="port" value="9090"/>
+    </include>
+
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+    <param name="/sar/global/_child_name" type="str" value="Eliza" />
+    <param name="/sar/global/_guardian_name" type="str" value="Paul" />
+    <param name="/sar/global/_guardian1_name" type="str" value="Paul" />
+    <param name="/sar/global/_guardian2_name" type="str" value="Mary" />
+
+    <node pkg="sar_core" type="visual_schedule.py" name="visual_schedule" output="screen" />
+    <node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen" />
+    <node pkg="sar_core" type="dryrun_robot_scripts.py" name="dryrun_robot_scripts" output="screen" />
+</launch>

@@ -1,0 +1,8 @@
+{
+    "name": "ball2",
+    "tag": "PlayObject",
+    "draggable": "true",
+    "audioFile": "chimes",
+    "position": [-300,300,0],
+    "scale": [100,100,100]
+}

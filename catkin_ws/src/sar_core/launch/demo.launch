@@ -1,0 +1,33 @@
+<launch>
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find sar_core)/config/rosconsole.conf"/>
+    <env name="ROS_PYTHON_LOG_CONFIG_FILE" value="$(find sar_core)/config/python_logging.conf"/>
+    
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+        <arg name="port" value="9090"/>
+    </include>
+
+    <group if="true"> 
+        <include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper.launch" />
+    </group>
+
+    <!-- Global variables here -->
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+    <param name="/sar/global/_child_name" type="str" value="Eliza" />
+    <param name="/sar/global/_guardian_name" type="str" value="Paul" />
+
+    <!-- core nodes -->
+    <node pkg="sar_core" type="session_manager.py" name="session_manager" output="screen">
+        <param name="_g_day" type="int" value="1" />
+    </node>
+    <node pkg="sar_core" type="visual_schedule.py" name="visual_schedule" output="screen" />
+    <node pkg="sar_core" type="user_tracking_fusion.py" name="user_tracking_fusion" output="screen">
+        <param name="flag_fusion_mode" type="str" value="left" />
+    </node>
+    <node pkg="sar_core" type="user_monitor.py" name="user_monitor" output="screen">
+        <param name="test_flag_face_following" type="bool" value="false" />
+        <param name="test_flag_ja_seeking" type="bool" value="false" />
+    </node>
+
+    <node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen" />
+
+</launch>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Expeditions: USC_Space_Games</title>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
+<!--         <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+        <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script> -->
+
+        <script type="text/javascript" src="roslibjs-develop/eventemitter/eventemitter2.min.js"></script>
+        <script type="text/javascript" src="roslibjs-develop/build/roslib.min.js"></script>
+
+        <script type="text/javascript" src="scripts/build/main.js"></script>
+
+        <style>
+        body{
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+    <script type="text/javascript">
+
+    var url = 'ws://' + window.location.hostname + ':9090';
+
+    window.onload = function() {
+
+        var loading = true;
+        var activities = {};
+
+        var CONST = SARLIB.constants
+
+        // ROS connection handler
+        var ros = new ROSLIB.Ros({
+            url : url
+        });
+
+        var game = new SARLIB.LoadingScreen();
+
+        // Subscribe to /sar/game_command ROS Topic
+        var game_command = new ROSLIB.Topic({
+            ros : ros,
+            name : '/sar/game_command',
+            messageType : 'sar_game_command_msgs/GameCommand'
+        });
+
+        // PUBLISHERS
+        // Game States
+        var game_state = new ROSLIB.Topic({
+            ros : ros,
+            name : '/sar/game_state',
+            messageType : 'sar_game_command_msgs/GameState'
+        });
+        // Robot Commands
+        var robot_command = new ROSLIB.Topic({
+            ros : ros,
+            name : '/sar/robot_command',
+            messageType : 'sar_robot_command_msgs/RobotCommand'
+        });
+
+        var publishGameState = (game, state, performance) => {
+            var msg = new ROSLIB.Message({
+                header: {
+                    frame_id: "JS" //TODO: figure out proper value for this
+                },
+                game: game,
+                state: state,
+            });
+            if (performance === null)
+                performance = {};
+
+            msg.performance = JSON.stringify(performance);
+            game_state.publish(msg);
+        };
+
+        var publishRobotCommand = (command, interrupt, properties) => {
+            var msg = new ROSLIB.Message({
+                header: {
+                    frame_id: "JS" //TODO: figure out proper value for this
+                },
+                id: 'TODO - Find real id', //TODO: figure out proper value for this
+                command: command,
+                interrupt: interrupt,
+                properties: properties
+            });
+            robot_command.publish(robotMessage);
+        };
+
+        var resetToLoadingScreen = () => {
+            game = new SARLIB.LoadingScreen();
+            loading = true;
+            window.close();
+        };
+        /***********************************
+         * Callback for GameCommand Node
+         *   Handles starting and ending games
+         ***********************************/
+        game_command.subscribe( message => {
+
+            switch(message.command) {
+                // Start game message
+                case CONST.GameCommands.START:
+                    console.log('Received game START message for ' +
+                        Object.getOwnPropertyNames(CONST.Games)[message.game]);
+
+                    // If on loading screen, then start next game
+                    if (loading) {
+                        switch(message.game) {
+                            // Start Galactic Traveler
+                            case CONST.Games.GALACTIC_TRAVELER:
+                                game.end();
+                                publishGameState(message.game, CONST.GameStates.START, null);
+                                game = new SARLIB.Menu(ros, message.game, SARLIB.GalacticTraveler, SARLIB.GalacticTravelerTutorial, message.level, resetToLoadingScreen);
+                                loading = false;
+                                break;
+
+                            // Start Spaceship TidyUp
+                            case CONST.Games.SPACESHIP_TIDYUP:
+                                game.end();
+                                publishGameState(message.game, CONST.GameStates.START, null);
+                                game = new SARLIB.Menu(ros, message.game, SARLIB.SpaceshipTidyup, SARLIB.SpaceshipTidyupTutorial, message.level, resetToLoadingScreen);
+                                loading = false;
+                                break;
+
+                            // Start Alien Codes
+                            case CONST.Games.ALIEN_CODES:
+                                game.end();
+                                publishGameState(message.game, CONST.GameStates.START, null);
+                                game = new SARLIB.Menu(ros, message.game, SARLIB.AlienCodes, SARLIB.AlienCodesTutorial, message.level, resetToLoadingScreen);
+                                loading = false;
+                                break;
+
+                            default:
+                                console.log('Error: Unknown game passed');
+                                break;
+                        }
+                    }
+                    else {
+                        console.log('FAILED TO START Game. Already Playing!');
+                        publishGameState(message.game, CONST.GameStates.IN_PROGRESS, null);
+                    }
+                    break;
+
+                case CONST.GameCommands.END:
+                    console.log('Received game END message for ' +
+                        Object.getOwnPropertyNames(CONST.Games)[message.game]);
+
+                    if (!loading)
+                        game.end();
+
+                    window.close(); // shutdown the window if launched from command line
+
+                    break;
+
+                default:
+                    break;
+            }
+        });
+
+        // ROS CONNECTION DEBUG INFO
+        ros.on('connection', function() {
+            console.log('Connected to websocket server.');
+
+            // on load, publish ready states
+            publishGameState(CONST.Games.GALACTIC_TRAVELER, CONST.GameStates.READY, null);
+            publishGameState(CONST.Games.SPACESHIP_TIDYUP, CONST.GameStates.READY, null);
+            publishGameState(CONST.Games.ALIEN_CODES, CONST.GameStates.READY, null);
+        });
+        ros.on('error', function(error) {
+            console.log('Error connecting to websocket server: ', error);
+        });
+        ros.on('close', function() {
+            console.log('Connection to websocket server closed.');
+        });
+    };
+
+    </script>
+
+    </body>
+</html>

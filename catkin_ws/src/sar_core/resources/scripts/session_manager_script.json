@@ -1,0 +1,161 @@
+{
+    "end_of_daily_session":[
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> That was fun! <thanks,nb> Thank you for playing with me! <happy,nb> See you tomorrow, [child-name]!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> I really enjoyed today's games! <excited,nb> I hope you enjoyed them too! We'll have some more fun tomorrow! <conspiratorial,nb> See ya later, [child-name]!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> I always have so much fun playing games with you, [child-name]. <excited,nb> I can't wait to do more tomorrow! Bye for now!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> I feel like we are getting really good at these games <curious-left,nb> don't you? <happy,nb> Let's play again tomorrow! <smile,nb> Bye [child-name]!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> Playing games with you is so fun and exciting. <excited,nb> I'm so glad we get to do this every day! See you tomorrow, [child-name]!"
+        ],
+        [
+            "<yawn-only,nb> Well...",
+            "<head-tilt,nb> It's about time for me to power down and charge up.",
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <excited,nb> I can't wait until we get to play more tomorrow! <conspiratorial,nb> See you soon, [child-name]!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> Thanks for all your help, [child-name]! <excited,nb> I had a great time today! Let's do it again tomorrow. <sing-song,nb> Bye, [child-name]! Have a good night!"
+        ],
+        [
+            "<lookat-child,nb> When the day's games are over <curious-right,nb> I always start to get a little sad...",
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <excited,nb> But then I remember that we get to play together again tomorrow! I really can't wait. <conspiratorial,nb> Catch you later, [child-name]!"
+        ],
+        [
+            "<lookat-child,nb> I had a blast today. <curious-left,nb> How about you? <blink,b>",
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <excited,nb> I have a feeling tomorrow will be even more fun! Take care, [child-name], and see you then!"
+        ]
+    ],
+    "before_parent_journal":[
+        [
+            "<return-front,nb> Thank you [guardian-name], for joining today's session. <curious-right,nb> Now we'll ask you to please take a short survey to briefly document the day.",
+            "<thanks,nb> Thanks for giving us such important feedback! Goodnight."
+        ],
+        [
+            "<return-front,nb> [guardian-name], I'm happy you joined us today. <happy,nb> I think we are making progress! <head-tilt,nb> Please take a few minutes to fill out the daily survey.",
+            "<thanks,nb> Thank you for your help! Goodnight."
+        ],
+        [
+            "<return-front,nb> Hey [guardian-name]! <thanks,nb> As you know, your feedback about each day's session is so important for our assessments. <conspiratorial,nb> We're really grateful for your survey contributions! <focuson-game,nb> Here is the one for today. <smileonly,nb> Have a great night!"
+        ],
+        [
+            "<return-front,nb> Survey time! <head-tilt,nb> This should only take a few minutes. <thanks,nb> As always, we really appreciate your help, [guardian-name]. <smile,nb> See you tomorrow!"
+        ],
+        [
+            "<return-front,nb> Today went well <curious-left,nb> don't you think, [guardian-name]? <blink,b>",
+            "<head-tilt,nb> Please take a second to jot down some notes in the daily survey.",
+            "Thank you for collaborating with us! <smile,nb> Have a great night!"
+        ],
+        [
+            "<return-front,nb> Okay [guardian-name], <sing-song,nb> it's that time again! <thanks,nb> Thanks as always for your help with this daily survey. <conspiratorial,nb> I'll leave you to it. <smile,nb> See you tomorrow!"
+        ],
+        [
+            "<return-front,nb> Done with another day, [guardian-name]! <head-tilt,nb> Let's briefly ree cord it in the daily survey. <thanks,nb> Thank you for your diligent documentation. <smile,nb> Take care."
+        ]
+    ],
+    "loading_selected_game":[
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Great choice! <blink,nb> Let me get that game ready."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Ooh! I love that game. <blink,nb> Give me one second to load it for you."
+        ],
+        [
+            "This game is definitely a fun one.",
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) I'm loading it now!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Awesome! <blink,nb> Coming right up!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Yay! You're great at this game. <blink,nb> Get ready to play..."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Nice! <blink,nb> Getting it ready right now..."
+        ]
+    ],
+    "transition_between_games":[
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> That was fun! <sing-song,nb> Let's play more! <focuson-game,nb> What would you want to play next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> You are getting even better at that game. <smile,nb> We still have another game to play today <conspiratorial,nb> in order to get a piece of my space gear back. <focuson-game,nb> Which one should we try next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> That one went by so fast! <sing-song,nb> Let's play another. <focuson-game,nb> Why don't you pick the game we'll do next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> Yay! <sing-song,nb> Let's play another. <focuson-game,nb> Which one would you like to do next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> Time for the next game! <sing-song,nb> So many chances to play together! <smile,nb> This is exciting <focuson-game,nb> which one should we do next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> You're so great! <sing-song,nb> That game was super fun. <focuson-game,nb> Which one can we play next?"
+        ],
+        [
+            "<lookat-child,nb> I really love that game <curious-left,nb> don't you, [child-name]? <blink,b>",
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <sing-song,nb> Actually, I love all the games we play together! <smile,nb> I'm excited to play another one with you. <focuson-game,nb> Which one do you want to pick next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> As always <smile,nb> fantastic job, [child-name]. <focuson-game,nb> Which one can we play together next?"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> You make playing that game really really fun. <sing-song,nb> Let's do another one! <focuson-game,nb> Which do you think we should play next?"
+        ]
+    ],
+    "game_times_up":[
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> We're reaching the end of game time! <conspiratorial,nb> Let's start wrapping up!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> Time's almost up! <sing-song,nb> Let's try to finish up."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> That's a wrap for that game! <conspiratorial,nb> Put those finishing touches in place and let's wrap up together."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> We're almost done with this game for today! <smile,nb> Let's finish up really quickly before we move on."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> Wow! <sing-song,nb> Time really does fly when you're having fun! <conspiratorial,nb> Let's finalize everything now, and wrap it up."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <lookat-child,nb> That's time! <sing-song,nb> That one went by really quickly today, don't you think? <curious-left,nb> Let's wrap up the rest of the game together."
+        ]
+    ],
+    "user_finished_game":[
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) I really enjoyed that game. <happy,nb> Thanks for playing it with me!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Fantastic job! <excited,nb> I hope you had as much fun playing that game as I did."
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Wow! <happy,nb> You put in a great effort for that game today. Awesome job!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) You are so fantastic at that game. <excited,nb> I love playing that one together!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) That's one of my favorite games. <happy,nb> You are so good at it!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) I love playing that game with you. <happy,nb> Great job with it today!"
+        ],
+        [
+            "<conspiratorial,nb> That game went super well <curious-left,nb> don't you think? <blink,b>",
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) <happy,nb> Thanks for playing it with me!"
+        ],
+        [
+            "(pitch:9.0, pitchBandwidth:2.0, duration_stretch:1.07) Great choice picking that game, [child-name]; <excited,nb> I had so much fun playing it with you!"
+        ]
+    ]
+}
+

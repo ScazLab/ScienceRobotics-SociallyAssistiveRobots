@@ -1,0 +1,12 @@
+<launch>
+    
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+    	<arg name="port" value="9090"/>
+  	</include>
+  	<!-- <include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper.launch" /> -->
+  	<!-- <node pkg="sar_core" type="user_monitor.py" name="user_monitor" output="screen">
+  	    <param name="test_flag_face_following" type="bool" value="true" />
+  	    <param name="test_flag_ja_seeking" type="bool" value="false" />
+  	</node> -->
+  	<!-- <node pkg="sar_core" type="seek_joint_attention.py" name="seek_joint_attention" output="screen"/> --> 
+</launch>

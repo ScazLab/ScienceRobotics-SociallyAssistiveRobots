@@ -1,0 +1,21 @@
+<launch>
+    
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+    	<arg name="port" value="9090"/>
+  	</include>
+  	<group if="false">
+  		<include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper.launch" />
+  		<node pkg="sar_core" type="user_monitor.py" name="user_monitor" output="screen">
+  	    	<param name="test_flag_face_following" type="bool" value="false" />
+  	    	<param name="test_flag_ja_seeking" type="bool" value="false" />
+  		</node>
+  	</group>
+
+    <param name="/sar/global/_child_name" type="str" value="Eliza" />
+    <param name="/sar/global/_guardian_name" type="str" value="Paul" />
+    <param name="/sar/global/_ip_address" type="str" value="127.0.0.1" />
+    <param name="/sar/global/_p_whole_system_ready" type="bool" value="false" />
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+
+  	<node pkg="sar_robot_translation" type="robot_translation_node.py" name="robot_translation_node" output="screen"/>
+</launch>

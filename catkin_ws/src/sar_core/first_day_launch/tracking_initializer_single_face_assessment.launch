@@ -1,0 +1,5 @@
+<launch>
+
+	<include file="$(find clm_ros_wrapper)/launch/single_face_recognition_assessment.launch" />
+
+</launch>

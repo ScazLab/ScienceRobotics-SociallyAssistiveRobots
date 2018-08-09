@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SAR</title>
+    <link href="res/lib/pure.min.css" rel="stylesheet">
+    <script src="res/lib/eventemitter2.min.js" type="text/javascript"></script>
+    <script src="res/lib/roslib.min.js" type="text/javascript"></script>
+    <script src="res/lib/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    var ROBOT = 1;
+    var JS = 2;
+    var VS = 3;
+
+    var ACTION_START = 1;
+    var ACTION_PAUSE = 2;
+    var ACTION_END = 3;
+    var ACTION_OPEN_MENU = 4;
+    var ACTION_SHOW_MENU = 5;
+    var ACTION_CLICK_MENU = 6;
+    var ACTION_SEND_JS_DATA = 7;
+
+    var STATE_READY = 101;
+    var STATE_END = 102;
+    var STATE_GAME_SELECTED = 103
+
+    var MENU_TL = 1;
+    var MENU_BL = 2;
+    var MENU_TC = 3;
+    var MENU_BC = 4;
+    var MENU_TR = 5;
+    var MENU_BR = 6;
+
+    function publishAction(msg){
+        setTimeout(function(){
+            var cmdVel = new ROSLIB.Topic({
+                ros : ros,
+                name : '/sar/vs',
+                messageType : 'std_msgs/String'
+            });
+            var out = new ROSLIB.Message({data:JSON.stringify(msg)});
+            cmdVel.publish(out);
+        }, 50); //waits for 50 ms to send an acknowledgment signal
+    }
+    var ros = new ROSLIB.Ros({
+        url: 'ws://localhost:9090'
+    });
+    ros.on('connection', function() {
+        console.log('Connected to websocket server.');
+        //getNewScreen("subscribe");
+        publishAction({to:VS, from:JS, content:STATE_READY});
+    });
+    ros.on('error', function(error) {
+        console.log('Error connecting to websocket server: ',
+            error);
+        alert('Error connecting to websocket server: ' + error);
+    });
+    ros.on('close', function() {
+        console.log('Connection to websocket server closed.');
+        publishAction({to:VS, from:JS, content:STATE_END})
+        alert('Connection to websocket server closed.');
+    });
+
+    // Subscribing to a Topic
+    var vs_listener = new ROSLIB.Topic({
+        ros: ros,
+        name: '/sar/vs',
+        messageType: 'std_msgs/String'
+    });
+
+    vs_listener.subscribe(function(message) {
+            var data = JSON.parse(message['data']);
+            if(data['content'] == ACTION_OPEN_MENU){
+                console.log("SWITCHING TO MENU");
+                // TODO: listening to topic for what games to play for the day
+                window.location.href = "selection.html"
+                //publishAction({to:VS, from:JS, action:ACTION_SHOW_MENU});
+
+            }
+            if(data['content'] == ACTION_SEND_JS_DATA){
+                //data = JSON.parse(message);
+                //console.log(data);
+                if(typeof(data.data.screen) !== 'undefined'){
+                    $('#bg').animate({opacity: 0}, 'slow', function() {
+                    $(this).css({"background-image": "url('res/img/" + data.data.screen + "')"}).animate({opacity: 1});
+                    });
+                }
+                publishAction({to:VS, from:JS, content:STATE_READY});
+            }
+    });
+
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #bg {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url('res/img/loadup.png');
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg"></div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<launch>
+    
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+    	<arg name="port" value="9090"/>
+  	</include>
+  	
+	<!-- <include file="$(find clm_ros_wrapper)/launch/clm_ros_wrapper.launch" /> -->
+
+
+	<!-- Global variables here -->
+    <param name="/sar/global/_p_sar_core_dir" type="str" value="$(find sar_core)" />
+
+
+
+  	<node pkg="sar_core" type="simulated_robot.py" name="simulated_robot" output="screen">
+  	</node>
+	  
+  	<node pkg="sar_core" type="visual_schedule.py" name="visual_schedule" output="screen">
+  	</node>
+
+  	<!-- <node pkg="sar_core" type="seek_joint_attention.py" name="seek_joint_attention" output="screen"/> --> 
+</launch>
