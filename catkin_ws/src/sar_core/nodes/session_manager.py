@@ -513,8 +513,6 @@ class session_manager(object):
                     _min_count = cumulative_game_count
                     _min_count_game = int(game_id_str)
             game_to_play.append(_min_count_game)
-        # TEST
-        game_to_play = [0,1,5]
         if GameCommand.STORYTELLING not in game_to_play:
             rospy.loginfo('NOT PLAYING SOCIAL STORY GAME TODAY')
             self.ss_signal_pub.publish('exit')
