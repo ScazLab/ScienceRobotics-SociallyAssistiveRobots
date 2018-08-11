@@ -1,0 +1,20 @@
+<library path="src">
+  <class name="jibo_gaze_control" type="sar_rqt.jibo_robot.jibo_gaze_control" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A simple control interface for the Jibo robot.
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>SAR</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
